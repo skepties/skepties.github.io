@@ -7,17 +7,6 @@ var global_json = {};
 
 (function($) {
 
-  // prettyPhoto
-  jQuery(document).ready(function(){
-    jQuery('a[data-gal]').each(function() {
-      jQuery(this).attr('rel', jQuery(this).data('gal'));
-    });
-    jQuery("a[data-rel^='prettyPhoto']").prettyPhoto({animationSpeed:'slow',theme:'light_square',slideshow:false,overlay_gallery: false,social_tools:false,deeplinking:false});
-  });
-  $(document).ready(function(){
-    $("a[rel^='prettyPhoto']").prettyPhoto();
-  });
-
   function with_ajax_json( name, url, callback_first, callback_next ){
     if( !global_json[name] ){
       $.getJSON( url, function(result){
