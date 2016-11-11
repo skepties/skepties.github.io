@@ -156,6 +156,15 @@ h2 {
     color: white;
     font-size: 1.6rem;
     overflow-x: auto; }
+    @media only screen and (min-width: 480px) {
+      .sk-main-banner .sk-content {
+        width: 100%; } }
+    @media only screen and (min-width: 768px) {
+      .sk-main-banner .sk-content {
+        width: 50%; } }
+    @media only screen and (min-width: 992px) {
+      .sk-main-banner .sk-content {
+        width: 36%; } }
     .sk-main-banner .sk-content a {
       color: white; }
 
