@@ -1,6 +1,10 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <urlset xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://www.sitemaps.org/schemas/sitemap/0.9 http://www.sitemaps.org/schemas/sitemap/0.9/sitemap.xsd" xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
 <url>
+<loc>http://skepties.net/p16/the-survival-of-the-fittest-natural-selection-and-adaptation/</loc>
+<lastmod>2016-11-11T00:00:00+02:00</lastmod>
+</url>
+<url>
 <loc>http://skepties.net/p16/typical-misconceptions-about-evolution/</loc>
 <lastmod>2016-11-06T00:00:00+02:00</lastmod>
 </url>
@@ -173,16 +177,19 @@
 <lastmod>2016-01-08T02:13:31+02:00</lastmod>
 </url>
 <url>
+<loc>http://skepties.net/404.html</loc>
+</url>
+<url>
 <loc>http://skepties.net/category/</loc>
 </url>
 <url>
 <loc>http://skepties.net/contact/</loc>
 </url>
 <url>
-<loc>http://skepties.net/recent/</loc>
+<loc>http://skepties.net/</loc>
 </url>
 <url>
-<loc>http://skepties.net/</loc>
+<loc>http://skepties.net/recent/</loc>
 </url>
 <url>
 <loc>http://skepties.net/tags/</loc>

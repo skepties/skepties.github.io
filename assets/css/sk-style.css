@@ -202,6 +202,34 @@ h2 {
   box-shadow: 2px 2px 15px #ccc;
   quotes: none;
   font-size: 90%; }
+.sk-single-article b[blue], .sk-single-article b.blue, .sk-single-article i[blue], .sk-single-article i.blue, .sk-single-article p[blue], .sk-single-article p.blue, .sk-single-article span[blue], .sk-single-article span.blue {
+  color: blue; }
+.sk-single-article b[b-blue], .sk-single-article b.b-blue, .sk-single-article i[b-blue], .sk-single-article i.b-blue, .sk-single-article p[b-blue], .sk-single-article p.b-blue, .sk-single-article span[b-blue], .sk-single-article span.b-blue {
+  background-color: blue; }
+.sk-single-article b[red], .sk-single-article b.red, .sk-single-article i[red], .sk-single-article i.red, .sk-single-article p[red], .sk-single-article p.red, .sk-single-article span[red], .sk-single-article span.red {
+  color: red; }
+.sk-single-article b[b-red], .sk-single-article b.b-red, .sk-single-article i[b-red], .sk-single-article i.b-red, .sk-single-article p[b-red], .sk-single-article p.b-red, .sk-single-article span[b-red], .sk-single-article span.b-red {
+  background-color: red; }
+.sk-single-article b[white], .sk-single-article b.white, .sk-single-article i[white], .sk-single-article i.white, .sk-single-article p[white], .sk-single-article p.white, .sk-single-article span[white], .sk-single-article span.white {
+  color: white; }
+.sk-single-article b[b-white], .sk-single-article b.b-white, .sk-single-article i[b-white], .sk-single-article i.b-white, .sk-single-article p[b-white], .sk-single-article p.b-white, .sk-single-article span[b-white], .sk-single-article span.b-white {
+  background-color: white; }
+.sk-single-article b[black], .sk-single-article b.black, .sk-single-article i[black], .sk-single-article i.black, .sk-single-article p[black], .sk-single-article p.black, .sk-single-article span[black], .sk-single-article span.black {
+  color: black; }
+.sk-single-article b[b-black], .sk-single-article b.b-black, .sk-single-article i[b-black], .sk-single-article i.b-black, .sk-single-article p[b-black], .sk-single-article p.b-black, .sk-single-article span[b-black], .sk-single-article span.b-black {
+  background-color: black; }
+.sk-single-article b[yellow], .sk-single-article b.yellow, .sk-single-article i[yellow], .sk-single-article i.yellow, .sk-single-article p[yellow], .sk-single-article p.yellow, .sk-single-article span[yellow], .sk-single-article span.yellow {
+  color: yellow; }
+.sk-single-article b[b-yellow], .sk-single-article b.b-yellow, .sk-single-article i[b-yellow], .sk-single-article i.b-yellow, .sk-single-article p[b-yellow], .sk-single-article p.b-yellow, .sk-single-article span[b-yellow], .sk-single-article span.b-yellow {
+  background-color: yellow; }
+.sk-single-article b[green], .sk-single-article b.green, .sk-single-article i[green], .sk-single-article i.green, .sk-single-article p[green], .sk-single-article p.green, .sk-single-article span[green], .sk-single-article span.green {
+  color: green; }
+.sk-single-article b[b-green], .sk-single-article b.b-green, .sk-single-article i[b-green], .sk-single-article i.b-green, .sk-single-article p[b-green], .sk-single-article p.b-green, .sk-single-article span[b-green], .sk-single-article span.b-green {
+  background-color: green; }
+.sk-single-article b[pupple], .sk-single-article b.pupple, .sk-single-article i[pupple], .sk-single-article i.pupple, .sk-single-article p[pupple], .sk-single-article p.pupple, .sk-single-article span[pupple], .sk-single-article span.pupple {
+  color: pupple; }
+.sk-single-article b[b-pupple], .sk-single-article b.b-pupple, .sk-single-article i[b-pupple], .sk-single-article i.b-pupple, .sk-single-article p[b-pupple], .sk-single-article p.b-pupple, .sk-single-article span[b-pupple], .sk-single-article span.b-pupple {
+  background-color: pupple; }
 
 .bs-callout {
   padding: 20px;

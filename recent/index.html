@@ -99,6 +99,26 @@
   
   <article class="row">
 <div class="sk-main-img col-xs-4">
+  <a href="/p16/the-survival-of-the-fittest-natural-selection-and-adaptation/" class="article-url">
+    <img class="article-image img-responsive" src="/img/2016/featured-the-survival-of-the-fittest-natural-selection-and-adaptation.jpg
+" data-thumb="">
+
+  </a>
+</div>
+<div class="sk-content col-xs-8">
+<h3 class="sk-title"><a href="/p16/the-survival-of-the-fittest-natural-selection-and-adaptation/" class="article-url article-title">적자생존: 자연 선택과 적응</a></h3>
+<div class="sk-meta article-updated">
+  Nov 11, 2016. | By: paul
+</div>
+<div class="sk-excerpt article-excerpt">
+  진화의 방향성과 무작위성 미국의 과학 교육을 위한 NCSE(National Center for...
+</div>
+</div>
+</article>
+
+  
+  <article class="row">
+<div class="sk-main-img col-xs-4">
   <a href="/p16/typical-misconceptions-about-evolution/" class="article-url">
     <img class="article-image img-responsive" src="/img/2016/typical-misconceptions-about-evolution.jpg
 " data-thumb="">
@@ -277,26 +297,6 @@
 </article>
 
   
-  <article class="row">
-<div class="sk-main-img col-xs-4">
-  <a href="/p/2357/" class="article-url">
-    <img class="article-image img-responsive" src="/img/2016/enceladus_1453478157.jpg
-" data-thumb="">
-
-  </a>
-</div>
-<div class="sk-content col-xs-8">
-<h3 class="sk-title"><a href="/p/2357/" class="article-url article-title">엔켈라두스의 간헐천은 커튼 형태로 분출된다</a></h3>
-<div class="sk-meta article-updated">
-  Feb 8, 2016. | By: anonymous
-</div>
-<div class="sk-excerpt article-excerpt">
-  주장: 토성의 위성 엔켈라두스의 남극 간헐천은 단순한 제트 분출이 아니라...
-</div>
-</div>
-</article>
-
-  
 </div>
 <!-- Pagination links -->
 
@@ -361,7 +361,7 @@
 <div id="sk-tag-cloud" style="font-weight:bold;"></div>
 <script>var fill = d3.scale.category20();var data = [
 
-  {word:"과학",weight:3,link:"/tags#과학"},
+  {word:"과학",weight:4,link:"/tags#과학"},
 
   {word:"증거",weight:1,link:"/tags#증거"},
 
@@ -517,13 +517,13 @@
 
   {word:"게이",weight:1,link:"/tags#게이"},
 
-  {word:"진화",weight:5,link:"/tags#진화"},
+  {word:"진화",weight:6,link:"/tags#진화"},
 
   {word:"진화에 관한 사실",weight:1,link:"/tags#진화에 관한 사실"},
 
   {word:"진화주의",weight:1,link:"/tags#진화주의"},
 
-  {word:"적자생존",weight:1,link:"/tags#적자생존"},
+  {word:"적자생존",weight:2,link:"/tags#적자생존"},
 
   {word:"약육강식",weight:1,link:"/tags#약육강식"},
 
@@ -565,7 +565,7 @@
 
   {word:"폭력성",weight:1,link:"/tags#폭력성"},
 
-  {word:"자연선택",weight:1,link:"/tags#자연선택"},
+  {word:"자연선택",weight:2,link:"/tags#자연선택"},
 
   ];
 
@@ -799,48 +799,70 @@ Copyright © 2016 by Skepties | <a href="/tos">이용약관</a> | <a href="/priv
   });
 </script>
 
-
 <script>
-  (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
-      (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
-    m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
-  })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+  $(document).ready(function () {
+    var $allVideos = $("iframe.sk-full");
 
-  ga('create', 'UA-56121005-4', 'auto');
-  ga('send', 'pageview');
-
+    $allVideos.each(function() {
+      $el = $(this);
+      $el
+      .data('aspectRatio', $el.height() / $el.width())
+      .removeAttr('height').removeAttr('width');
+    });
+    // When the window is resized
+    $(window).resize(function() {
+      $allVideos.each(function() {
+        var newWidth = $(this).parent().width();
+        var $el = $(this);
+        $el.width(newWidth).height(newWidth * $el.data('aspectRatio'));
+      });
+    }).resize();
+  });
 </script>
 
-<script>
-  window.ALGOLIA_CONFIG = {
-    'applicationId': 'Z66HIGXS9A',
-    'indexName': 'skepties.net',
-    'apiKey': '6f67d6bc0a00d5b3a338c2d3d09164fc',
-    'baseurl': ''
-  }
-</script>
-<script id="algolia__template" type="text/template">
   
-  <div class="algolia__result">
-    <a class="algolia__result-link" href="{{ full_url }}#algolia:{{ css_selector }}">{{{ _highlightResult.title.value }}}</a>
-    {{#posted_at}}
-    <div class="algolia__result-date">{{ posted_at_readable }}</div>
-    {{/posted_at}}
-    <div class="algolia__result-text">{{{ _highlightResult.text.value }}}</div>
-  </div>
   
-</script>
-<script id="algolia__template--no-results" type="text/template">
-  No results found.
-</script>
+  <script>
+    (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+        (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+      m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+    })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
 
-<script src="//cdn.jsdelivr.net/algoliasearch/3.6.0/algoliasearch.min.js"></script>
-<script src="//cdn.jsdelivr.net/algoliasearch.helper/2.1.0/algoliasearch.helper.min.js"></script>
-<script src="//cdn.jsdelivr.net/hogan.js/3.0.2/hogan.min.js"></script>
-<script src="//cdn.jsdelivr.net/momentjs/2.10.3/moment.min.js"></script>
-<script src="/assets/js/algolia.js"></script>
+    ga('create', 'UA-56121005-4', 'auto');
+    ga('send', 'pageview');
 
+  </script>
+  
+  <script>
+    window.ALGOLIA_CONFIG = {
+      'applicationId': 'Z66HIGXS9A',
+      'indexName': 'skepties.net',
+      'apiKey': '6f67d6bc0a00d5b3a338c2d3d09164fc',
+      'baseurl': ''
+    }
+  </script>
+  <script id="algolia__template" type="text/template">
+    
+    <div class="algolia__result">
+      <a class="algolia__result-link" href="{{ full_url }}#algolia:{{ css_selector }}">{{{ _highlightResult.title.value }}}</a>
+      {{#posted_at}}
+      <div class="algolia__result-date">{{ posted_at_readable }}</div>
+      {{/posted_at}}
+      <div class="algolia__result-text">{{{ _highlightResult.text.value }}}</div>
+    </div>
+    
+  </script>
+  <script id="algolia__template--no-results" type="text/template">
+    No results found.
+  </script>
 
+  <script src="//cdn.jsdelivr.net/algoliasearch/3.6.0/algoliasearch.min.js"></script>
+  <script src="//cdn.jsdelivr.net/algoliasearch.helper/2.1.0/algoliasearch.helper.min.js"></script>
+  <script src="//cdn.jsdelivr.net/hogan.js/3.0.2/hogan.min.js"></script>
+  <script src="//cdn.jsdelivr.net/momentjs/2.10.3/moment.min.js"></script>
+  <script src="/assets/js/algolia.js"></script>
+
+  
 
     </div>
   </body>
