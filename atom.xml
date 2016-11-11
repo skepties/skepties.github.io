@@ -1,38 +1,39 @@
-<?xml version="1.0" encoding="utf-8"?><?xml-stylesheet type="text/xml" href="http://skepties.net/feed.xslt.xml"?><feed xmlns="http://www.w3.org/2005/Atom"><generator uri="http://jekyllrb.com" version="3.3.0">Jekyll</generator><link href="http://skepties.net/atom.xml" rel="self" type="application/atom+xml" /><link href="http://skepties.net/" rel="alternate" type="text/html" /><updated>2016-11-10T16:09:03+02:00</updated><id>http://skepties.net//</id><title type="html">스켑티즈</title><subtitle>Write an awesome description for your new site here. You can edit this line in _config.yml. It will appear in your document head meta (for Google search results) and in your feed.xml site description.</subtitle><entry><title type="html">진화에 대한 대표적 오개념들</title><link href="http://skepties.net/p16/typical-misconceptions-about-evolution/" rel="alternate" type="text/html" title="진화에 대한 대표적 오개념들" /><published>2016-11-06T00:00:00+02:00</published><updated>2016-11-06T00:00:00+02:00</updated><id>http://skepties.net/p16/typical-misconceptions-about-evolution</id><content type="html" xml:base="http://skepties.net/p16/typical-misconceptions-about-evolution/">&lt;h2 id=&quot;pbs----&quot;&gt;PBS (미국 교육방송) 기사 요약&lt;/h2&gt;
+<?xml version="1.0" encoding="utf-8"?><?xml-stylesheet type="text/xml" href="http://skepties.net/feed.xslt.xml"?><feed xmlns="http://www.w3.org/2005/Atom"><generator uri="http://jekyllrb.com" version="3.3.0">Jekyll</generator><link href="http://skepties.net/atom.xml" rel="self" type="application/atom+xml" /><link href="http://skepties.net/" rel="alternate" type="text/html" /><updated>2016-11-11T09:21:34+02:00</updated><id>http://skepties.net//</id><title type="html">스켑티즈</title><subtitle>스켑티즈 - 회의주의 허브</subtitle><entry><title type="html">진화에 대한 대표적 오개념들</title><link href="http://skepties.net/p16/typical-misconceptions-about-evolution/" rel="alternate" type="text/html" title="진화에 대한 대표적 오개념들" /><published>2016-11-06T00:00:00+02:00</published><updated>2016-11-06T00:00:00+02:00</updated><id>http://skepties.net/p16/typical-misconceptions-about-evolution</id><content type="html" xml:base="http://skepties.net/p16/typical-misconceptions-about-evolution/">&lt;h2 id=&quot;pbs----&quot;&gt;PBS (미국 교육방송) 기사 요약&lt;/h2&gt;
 
 &lt;p&gt;2015년 5월에 미국의 교육방송인 PBS에서 진화에 대한 오개념들에 대해 정리한 기사. (&lt;a href=&quot;http://www.pbs.org/wgbh/nova/blogs/education/2015/05/biggest-evolution-misconceptions-part-1/&quot;&gt;1부&lt;/a&gt;) (&lt;a href=&quot;http://www.pbs.org/wgbh/nova/blogs/education/2015/05/biggest-evolution-misconceptions-part-2/&quot;&gt;2부&lt;/a&gt;) 창조과학과 지적설계론의 악영향 중에 크게 눈에 띄는 것은 안티과학의 전파이며, 반면 당장 크게 눈에 띄지 않지만 교육계를 서서히 좀먹고 있는 것은 진화에 대한 오개념의 전파이다. 그중 대표적인 오개념은 다음과 같다.&lt;/p&gt;
 
-&lt;p&gt;&lt;br /&gt;&lt;/p&gt;
-&lt;h3 id=&quot;x&quot;&gt;1. “진화”는 “적자생존”과 동의어다. (X)&lt;/h3&gt;
-&lt;blockquote&gt;
-  &lt;p&gt;진화는 단지 ‘적응’ 또는 ‘적자생존’만을 말하는 것이 아니라, 개체군 내에서 유전되는 변이의 축적으로 인해 생기는 모든 변화를 일컫는 말이다.&lt;/p&gt;
-&lt;/blockquote&gt;
+&lt;div class=&quot;bs-callout bs-callout-danger sk-big&quot;&gt;
+&lt;h3&gt; 1. &quot;진화&quot;는 &quot;적자생존&quot;과 동의어다. (X)&lt;/h3&gt;
+&lt;p&gt;진화는 단지 '적응' 또는 '적자생존'만을 말하는 것이 아니라, 개체군 내에서 유전되는 변이의 축적으로 인해 생기는 모든 변화를 일컫는 말이다.&lt;/p&gt;
+&lt;/div&gt;
 
-&lt;p&gt;&lt;br /&gt;&lt;/p&gt;
-&lt;h3 id=&quot;x-1&quot;&gt;2. 모든 형질은 적응에 의해 나타난다. (X)&lt;/h3&gt;
-&lt;blockquote&gt;
-  &lt;p&gt;반드시 그렇지는 않다. 예를 들어, 모든 네발동물의 발가락은 다섯 개지만, 딱히 그것이 네 개나 여섯 개라고 해서 생존에 더 유리하거나 불리하지는 않다. 또한 흔적기관의 경우에도 생존에 유불리가 없음에도 남아있는 경우가 많다.&lt;/p&gt;
-&lt;/blockquote&gt;
+&lt;div class=&quot;bs-callout bs-callout-danger sk-big&quot;&gt;
 
-&lt;p&gt;&lt;br /&gt;&lt;/p&gt;
-&lt;h3 id=&quot;x-2&quot;&gt;3. 진화는 우연에 의해 나타난다. / 진화는 필연적으로 나타난다. (X)&lt;/h3&gt;
-&lt;blockquote&gt;
-  &lt;p&gt;진화는 우연과 필연이 복합적으로 작용하여 발생한다. 진화의 요인 중 돌연변이나 유전자 부동은 대표적인 우연적 요소이며 자연선택은 대표적인 필연적 요소라고 할 수 있다. 진화에 대해 설명할 때 목적론적 논증을 최대한 배제해야 학생들로 하여금 진화에 대한 과학적 개념을 잡게 해주는 데 도움이 된다. 가령, “쥐들은 바뀐 바위색에 적응하기 위해 털의 색을 바꿨다”라기보다는 “쥐들의 바뀐 털 색깔로 인해 바뀐 바위색에 적응하기 유리해졌다”고 하는 것이 옳다.&lt;/p&gt;
-&lt;/blockquote&gt;
+&lt;h3&gt;2. 모든 형질은 적응에 의해 나타난다. (X)&lt;/h3&gt;
+반드시 그렇지는 않다. 예를 들어, 모든 네발동물의 발가락은 다섯 개지만, 딱히 그것이 네 개나 여섯 개라고 해서 생존에 더 유리하거나 불리하지는 않다. 또한 흔적기관의 경우에도 생존에 유불리가 없음에도 남아있는 경우가 많다.
 
-&lt;p&gt;&lt;br /&gt;&lt;/p&gt;
-&lt;h3 id=&quot;x-3&quot;&gt;4. 진화적으로 나중에 나타난 생물들이 그 이전에 나타난 생물들보다 더 우수하거나 발전되었다. (X)&lt;/h3&gt;
-&lt;blockquote&gt;
-  &lt;p&gt;&lt;img src=&quot;//imgur.com/vF5fQfC.jpg&quot; alt=&quot;Understanding Evolution&quot; /&gt;&lt;/p&gt;
+&lt;/div&gt;
 
-  &lt;p&gt;출처: ‘Understanding Evolution’ (2016). University of California Museum of Paleontology.&lt;/p&gt;
-&lt;/blockquote&gt;
+&lt;div class=&quot;bs-callout bs-callout-danger sk-big&quot;&gt;
+&lt;h3&gt;3. 진화는 우연에 의해 나타난다. / 진화는 필연적으로 나타난다. (X)&lt;/h3&gt;
+진화는 우연과 필연이 복합적으로 작용하여 발생한다. 진화의 요인 중 돌연변이나 유전자 부동은 대표적인 우연적 요소이며 자연선택은 대표적인 필연적 요소라고 할 수 있다. 진화에 대해 설명할 때 목적론적 논증을 최대한 배제해야 학생들로 하여금 진화에 대한 과학적 개념을 잡게 해주는 데 도움이 된다. 가령, &quot;쥐들은 바뀐 바위색에 적응하기 위해 털의 색을 바꿨다&quot;라기보다는 &quot;쥐들의 바뀐 털 색깔로 인해 바뀐 바위색에 적응하기 유리해졌다&quot;고 하는 것이 옳다.
+&lt;/div&gt;
 
-&lt;blockquote&gt;
-  &lt;p&gt;현재 살아있는 생물들은 현재의 환경에 ‘충분히 적합하다’고 할 수 있지만, 그것이 그 생물종들이 멸종된 생물종들보다 딱히 더 우수하다고 할 근거가 되지는 못한다. 이런 생각은 고대 그리스에서 유래한 ‘&lt;a href=&quot;https://www.britannica.com/topic/Great-Chain-of-Being&quot;&gt;scala naturae&lt;/a&gt;’ 즉 ‘자연의 계단’이라는 개념에 의한 것인데, 말하자면 인간을 모든 생물종보다 우월한 최상위에 놓고 식물을 가장 하등한 하위에 놓으며 다른 동물들은 그 사이에 위치한다는, 소위 &lt;a href=&quot;https://www.britannica.com/topic/anthropocentrism&quot;&gt;인간중심적&lt;/a&gt;이며 동물우선적 개념이다.&lt;/p&gt;
+&lt;div class=&quot;bs-callout bs-callout-danger sk-big&quot;&gt;
+&lt;h3&gt;4. 진화적으로 나중에 나타난 생물들이 그 이전에 나타난 생물들보다 더 우수하거나 발전되었다. (X)&lt;/h3&gt;
+&lt;br /&gt;
+&lt;center&gt;&lt;figure&gt;
+&lt;img src=&quot;//imgur.com/vF5fQfC.jpg&quot; alter=&quot;Understanding Evolution&quot; /&gt;
+&lt;br /&gt;
+출처: 'Understanding Evolution' (2016). University of California Museum of Paleontology.
+&lt;/figure&gt;
+&lt;/center&gt;
+&lt;br /&gt;
 
-  &lt;p&gt;이 오개념에 대한 정정이 중요한 것이, ‘원숭이가 사람으로 진화했다’ 또는 ‘물고기가 양서류로 진화했다’는 오개념의 근간이  되기 때문이다. 사실은 원숭이와 사람은 ‘공통된 조상’으로부터 분기되어 나왔으며, 물고기와 양서류 또한 마찬가지다. 현생종들은 그러한 ‘공통 조상’으로부터 종분화가 이루어져 동일한 시간 동안 동등하게 진화해왔을 뿐이다.&lt;/p&gt;
-&lt;/blockquote&gt;
+현재 살아있는 생물들은 현재의 환경에 '충분히 적합하다'고 할 수 있지만, 그것이 그 생물종들이 멸종된 생물종들보다 딱히 더 우수하다고 할 근거가 되지는 못한다. 이런 생각은 고대 그리스에서 유래한 '&lt;a href=&quot;https://www.britannica.com/topic/Great-Chain-of-Being&quot;&gt;scala naturae&lt;/a&gt;' 즉 '자연의 계단'이라는 개념에 의한 것인데, 말하자면 인간을 모든 생물종보다 우월한 최상위에 놓고 식물을 가장 하등한 하위에 놓으며 다른 동물들은 그 사이에 위치한다는, 소위 &lt;a href=&quot;https://www.britannica.com/topic/anthropocentrism&quot;&gt;인간중심적&lt;/a&gt;이며 동물우선적 개념이다.
+
+이 오개념에 대한 정정이 중요한 것이, '원숭이가 사람으로 진화했다' 또는 '물고기가 양서류로 진화했다'는 오개념의 근간이  되기 때문이다. 사실은 원숭이와 사람은 '공통된 조상'으로부터 분기되어 나왔으며, 물고기와 양서류 또한 마찬가지다. 현생종들은 그러한 '공통 조상'으로부터 종분화가 이루어져 동일한 시간 동안 동등하게 진화해왔을 뿐이다.
+&lt;/div&gt;
 
 &lt;h2 id=&quot;section&quot;&gt;참고할 만한 링크 (한글)&lt;/h2&gt;
 &lt;ul&gt;
@@ -52,35 +53,36 @@
 2015년 5월에 미국의 교육방송인 PBS에서 진화에 대한 오개념들에 대해 정리한 기사. (1부) (2부) 창조과학과 지적설계론의 악영향 중에 크게 눈에 띄는 것은 안티과학의 전파이며, 반면 당장 크게 눈에 띄지 않지만 교육계를 서서히 좀먹고 있는 것은 진화에 대한 오개념의 전파이다. 그중 대표적인 오개념은 다음과 같다.
 
 
-1. “진화”는 “적자생존”과 동의어다. (X)
+ 1. &quot;진화&quot;는 &quot;적자생존&quot;과 동의어다. (X)
+진화는 단지 '적응' 또는 '적자생존'만을 말하는 것이 아니라, 개체군 내에서 유전되는 변이의 축적으로 인해 생기는 모든 변화를 일컫는 말이다.
 
-  진화는 단지 ‘적응’ 또는 ‘적자생존’만을 말하는 것이 아니라, 개체군 내에서 유전되는 변이의 축적으로 인해 생기는 모든 변화를 일컫는 말이다.
 
 
 
 2. 모든 형질은 적응에 의해 나타난다. (X)
+반드시 그렇지는 않다. 예를 들어, 모든 네발동물의 발가락은 다섯 개지만, 딱히 그것이 네 개나 여섯 개라고 해서 생존에 더 유리하거나 불리하지는 않다. 또한 흔적기관의 경우에도 생존에 유불리가 없음에도 남아있는 경우가 많다.
 
-  반드시 그렇지는 않다. 예를 들어, 모든 네발동물의 발가락은 다섯 개지만, 딱히 그것이 네 개나 여섯 개라고 해서 생존에 더 유리하거나 불리하지는 않다. 또한 흔적기관의 경우에도 생존에 유불리가 없음에도 남아있는 경우가 많다.
 
 
 
 3. 진화는 우연에 의해 나타난다. / 진화는 필연적으로 나타난다. (X)
-
-  진화는 우연과 필연이 복합적으로 작용하여 발생한다. 진화의 요인 중 돌연변이나 유전자 부동은 대표적인 우연적 요소이며 자연선택은 대표적인 필연적 요소라고 할 수 있다. 진화에 대해 설명할 때 목적론적 논증을 최대한 배제해야 학생들로 하여금 진화에 대한 과학적 개념을 잡게 해주는 데 도움이 된다. 가령, “쥐들은 바뀐 바위색에 적응하기 위해 털의 색을 바꿨다”라기보다는 “쥐들의 바뀐 털 색깔로 인해 바뀐 바위색에 적응하기 유리해졌다”고 하는 것이 옳다.
+진화는 우연과 필연이 복합적으로 작용하여 발생한다. 진화의 요인 중 돌연변이나 유전자 부동은 대표적인 우연적 요소이며 자연선택은 대표적인 필연적 요소라고 할 수 있다. 진화에 대해 설명할 때 목적론적 논증을 최대한 배제해야 학생들로 하여금 진화에 대한 과학적 개념을 잡게 해주는 데 도움이 된다. 가령, &quot;쥐들은 바뀐 바위색에 적응하기 위해 털의 색을 바꿨다&quot;라기보다는 &quot;쥐들의 바뀐 털 색깔로 인해 바뀐 바위색에 적응하기 유리해졌다&quot;고 하는 것이 옳다.
 
 
 
 4. 진화적으로 나중에 나타난 생물들이 그 이전에 나타난 생물들보다 더 우수하거나 발전되었다. (X)
 
-  
-
-  출처: ‘Understanding Evolution’ (2016). University of California Museum of Paleontology.
 
 
 
-  현재 살아있는 생물들은 현재의 환경에 ‘충분히 적합하다’고 할 수 있지만, 그것이 그 생물종들이 멸종된 생물종들보다 딱히 더 우수하다고 할 근거가 되지는 못한다. 이런 생각은 고대 그리스에서 유래한 ‘scala naturae’ 즉 ‘자연의 계단’이라는 개념에 의한 것인데, 말하자면 인간을 모든 생물종보다 우월한 최상위에 놓고 식물을 가장 하등한 하위에 놓으며 다른 동물들은 그 사이에 위치한다는, 소위 인간중심적이며 동물우선적 개념이다.
+출처: 'Understanding Evolution' (2016). University of California Museum of Paleontology.
 
-  이 오개념에 대한 정정이 중요한 것이, ‘원숭이가 사람으로 진화했다’ 또는 ‘물고기가 양서류로 진화했다’는 오개념의 근간이  되기 때문이다. 사실은 원숭이와 사람은 ‘공통된 조상’으로부터 분기되어 나왔으며, 물고기와 양서류 또한 마찬가지다. 현생종들은 그러한 ‘공통 조상’으로부터 종분화가 이루어져 동일한 시간 동안 동등하게 진화해왔을 뿐이다.
+
+
+
+현재 살아있는 생물들은 현재의 환경에 '충분히 적합하다'고 할 수 있지만, 그것이 그 생물종들이 멸종된 생물종들보다 딱히 더 우수하다고 할 근거가 되지는 못한다. 이런 생각은 고대 그리스에서 유래한 'scala naturae' 즉 '자연의 계단'이라는 개념에 의한 것인데, 말하자면 인간을 모든 생물종보다 우월한 최상위에 놓고 식물을 가장 하등한 하위에 놓으며 다른 동물들은 그 사이에 위치한다는, 소위 인간중심적이며 동물우선적 개념이다.
+
+이 오개념에 대한 정정이 중요한 것이, '원숭이가 사람으로 진화했다' 또는 '물고기가 양서류로 진화했다'는 오개념의 근간이  되기 때문이다. 사실은 원숭이와 사람은 '공통된 조상'으로부터 분기되어 나왔으며, 물고기와 양서류 또한 마찬가지다. 현생종들은 그러한 '공통 조상'으로부터 종분화가 이루어져 동일한 시간 동안 동등하게 진화해왔을 뿐이다.
 
 
 참고할 만한 링크 (한글)
