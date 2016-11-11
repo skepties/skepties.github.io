@@ -191,7 +191,8 @@ h2 {
   max-width: 100%;
   width: auto; }
 .sk-single-article p {
-  margin-bottom: 5px; }
+  margin-bottom: 10px;
+  text-indent: 10px; }
 .sk-single-article blockquote {
   margin-top: 15px;
   border-left: 5px solid #e64946;
