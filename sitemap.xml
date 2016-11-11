@@ -174,18 +174,25 @@
 </url>
 <url>
 <loc>http://skepties.net/category/</loc>
+<<<<<<< HEAD
 </url>
 <url>
 <loc>http://skepties.net/faq/</loc>
+=======
+>>>>>>> 495ac5c... update site
 </url>
 <url>
-<loc>http://skepties.net/</loc>
+<loc>http://skepties.net/contact/</loc>
 </url>
 <url>
 <loc>http://skepties.net/recent/</loc>
 </url>
 <url>
+<<<<<<< HEAD
 <loc>http://skepties.net/privacy/</loc>
+=======
+<loc>http://skepties.net/</loc>
+>>>>>>> 495ac5c... update site
 </url>
 <url>
 <loc>http://skepties.net/tags/</loc>
