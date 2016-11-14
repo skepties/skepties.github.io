@@ -196,6 +196,8 @@ h2 {
   margin-bottom: 2em; }
   .sk-single-article .sk-img-box .sk-image-caption {
     min-height: 2em; }
+.sk-single-article h3, .sk-single-article h4, .sk-single-article h5, .sk-single-article h6 {
+  line-height: 1.7; }
 .sk-single-article img {
   max-width: 100%;
   width: auto; }
@@ -239,6 +241,12 @@ h2 {
   color: pupple; }
 .sk-single-article b[b-pupple], .sk-single-article b.b-pupple, .sk-single-article i[b-pupple], .sk-single-article i.b-pupple, .sk-single-article p[b-pupple], .sk-single-article p.b-pupple, .sk-single-article span[b-pupple], .sk-single-article span.b-pupple {
   background-color: pupple; }
+.sk-single-article b[big], .sk-single-article b.big, .sk-single-article i[big], .sk-single-article i.big, .sk-single-article p[big], .sk-single-article p.big, .sk-single-article span[big], .sk-single-article span.big {
+  font-size: 120%; }
+.sk-single-article b[bigger], .sk-single-article b.bigger, .sk-single-article i[bigger], .sk-single-article i.bigger, .sk-single-article p[bigger], .sk-single-article p.bigger, .sk-single-article span[bigger], .sk-single-article span.bigger {
+  font-size: 150%; }
+.sk-single-article b[bbig], .sk-single-article b.bbig, .sk-single-article i[bbig], .sk-single-article i.bbig, .sk-single-article p[bbig], .sk-single-article p.bbig, .sk-single-article span[bbig], .sk-single-article span.bbig {
+  font-size: 150%; }
 
 .bs-callout {
   padding: 20px;
