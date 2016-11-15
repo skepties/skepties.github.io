@@ -2,6 +2,7 @@
   "name": "posts-list",
   "fields": {  "title": 0, "url": 1, "author": 2, "o_author": 3, "year": 4, "month": 5, "day": 6, "featured_img": 7 },
   "data": [
+    ["적자생존: 자연 선택과 적응","/p16/the-survival-of-the-fittest-natural-selection-and-adaptation/","paul","2016","11","12","/assets/site/smalllogo.png\n"],
     ["진화에 대한 대표적 오개념들","/p16/typical-misconceptions-about-evolution/","paul","2016","11","06","/assets/site/smalllogo.png\n"],
     ["인터넷 심리테스트, 과연 얼마나 정확할까?","/p/2698/","kenny-suh","2016","07","06","/assets/site/smalllogo.png\n"],
     ["Je pense trop?","/p/2639/","kenny-suh","2016","05","16","/assets/site/smalllogo.png\n"],
