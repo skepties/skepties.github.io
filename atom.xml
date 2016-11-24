@@ -1,19 +1,19 @@
 <?xml version="1.0" encoding="utf-8"?>
 <feed xmlns="http://www.w3.org/2005/Atom">
     <title type="text" xml:lang="ko">Skepties Feed</title>
-    <link type="application/atom+xml" href="http://test5.skepties.net/atom.xml" rel="self"/>
+    <link type="application/atom+xml" href="http://skepties.net/atom.xml" rel="self"/>
     <link type="text/html" href="" rel="alternate"/>
     <updated>2016-11-22T09:10:03+09:00</updated>
     <author>
         <name>Skepties</name>
     </author>
-    <id>http://test5.skepties.net/atom.xml</id>
+    <id>http://skepties.net/atom.xml</id>
             <entry>
         <title>적자생존: 자연 선택과 적응</title>
-        <id>http://test5.skepties.net/p16/the-survival-of-the-fittest-natural-selection-and-adaptation</id>
+        <id>http://skepties.net/p16/the-survival-of-the-fittest-natural-selection-and-adaptation</id>
         <updated>2016-11-22T09:10:03+09:00</updated>
         <published>2016-11-22T09:10:03+09:00</published>
-        <link href="http://test5.skepties.net/p16/the-survival-of-the-fittest-natural-selection-and-adaptation"/>
+        <link href="http://skepties.net/p16/the-survival-of-the-fittest-natural-selection-and-adaptation"/>
                 <category term="진화" label="진화" />
                 <content type="html">
             <![CDATA[
@@ -41,10 +41,10 @@
     </entry>
             <entry>
         <title>진화에 대한 대표적 오개념들</title>
-        <id>http://test5.skepties.net/p16/typical-misconceptions-about-evolution</id>
+        <id>http://skepties.net/p16/typical-misconceptions-about-evolution</id>
         <updated>2016-11-22T09:10:03+09:00</updated>
         <published>2016-11-22T09:10:03+09:00</published>
-        <link href="http://test5.skepties.net/p16/typical-misconceptions-about-evolution"/>
+        <link href="http://skepties.net/p16/typical-misconceptions-about-evolution"/>
                 <category term="진화" label="진화" />
                 <content type="html">
             <![CDATA[
@@ -97,10 +97,10 @@
     </entry>
             <entry>
         <title>인터넷 심리테스트, 과연 얼마나 정확할까?</title>
-        <id>http://test5.skepties.net/p/2698</id>
+        <id>http://skepties.net/p/2698</id>
         <updated>2016-07-06T02:43:00+09:00</updated>
         <published>2016-07-06T02:43:00+09:00</published>
-        <link href="http://test5.skepties.net/p/2698"/>
+        <link href="http://skepties.net/p/2698"/>
                 <category term="회의주의" label="회의주의" />
                 <category term="과학이야기" label="과학이야기" />
                 <content type="html">
@@ -124,10 +124,10 @@
     </entry>
             <entry>
         <title>Je pense trop?</title>
-        <id>http://test5.skepties.net/p/2639</id>
+        <id>http://skepties.net/p/2639</id>
         <updated>2016-05-16T17:40:00+09:00</updated>
         <published>2016-05-16T17:40:00+09:00</published>
-        <link href="http://test5.skepties.net/p/2639"/>
+        <link href="http://skepties.net/p/2639"/>
                 <category term="회의주의" label="회의주의" />
                 <category term="과학이야기" label="과학이야기" />
                 <category term="skepties" label="Skepties" />
@@ -163,10 +163,10 @@
     </entry>
             <entry>
         <title>미디어와 폭력적 성향</title>
-        <id>http://test5.skepties.net/p/2628</id>
+        <id>http://skepties.net/p/2628</id>
         <updated>2016-04-19T14:25:00+09:00</updated>
         <published>2016-04-19T14:25:00+09:00</published>
-        <link href="http://test5.skepties.net/p/2628"/>
+        <link href="http://skepties.net/p/2628"/>
                 <category term="skepties" label="Skepties" />
                 <category term="mythconceptions" label="Mythconceptions" />
                 <content type="html">
@@ -189,10 +189,10 @@
     </entry>
             <entry>
         <title>환공포증이란 무엇인가?</title>
-        <id>http://test5.skepties.net/p/2619</id>
+        <id>http://skepties.net/p/2619</id>
         <updated>2016-04-07T09:43:00+09:00</updated>
         <published>2016-04-07T09:43:00+09:00</published>
-        <link href="http://test5.skepties.net/p/2619"/>
+        <link href="http://skepties.net/p/2619"/>
                 <category term="skepties" label="Skepties" />
                 <category term="의학" label="의학" />
                 <content type="html">
@@ -208,10 +208,10 @@
     </entry>
             <entry>
         <title>누구나 쉽게 빠질 수 있는 양비론의 함정</title>
-        <id>http://test5.skepties.net/p/2602</id>
+        <id>http://skepties.net/p/2602</id>
         <updated>2016-02-26T09:53:00+09:00</updated>
         <published>2016-02-26T09:53:00+09:00</published>
-        <link href="http://test5.skepties.net/p/2602"/>
+        <link href="http://skepties.net/p/2602"/>
                 <category term="회의주의" label="회의주의" />
                 <category term="유사과학" label="유사과학" />
                 <category term="음모론" label="음모론" />
@@ -236,10 +236,10 @@
     </entry>
             <entry>
         <title>상관관계와 인과관계</title>
-        <id>http://test5.skepties.net/p/2596</id>
+        <id>http://skepties.net/p/2596</id>
         <updated>2016-02-17T11:34:00+09:00</updated>
         <published>2016-02-17T11:34:00+09:00</published>
-        <link href="http://test5.skepties.net/p/2596"/>
+        <link href="http://skepties.net/p/2596"/>
                 <category term="회의주의" label="회의주의" />
                 <category term="과학이야기" label="과학이야기" />
                 <content type="html">
@@ -253,10 +253,10 @@
     </entry>
             <entry>
         <title>창조과학이란 무엇인가</title>
-        <id>http://test5.skepties.net/p/2570</id>
+        <id>http://skepties.net/p/2570</id>
         <updated>2016-02-11T05:00:00+09:00</updated>
         <published>2016-02-11T05:00:00+09:00</published>
-        <link href="http://test5.skepties.net/p/2570"/>
+        <link href="http://skepties.net/p/2570"/>
                 <category term="과학이야기" label="과학이야기" />
                 <category term="창조과학" label="창조과학" />
                 <category term="유사과학" label="유사과학" />
@@ -312,10 +312,10 @@
     </entry>
             <entry>
         <title>후성유전학적 암호는 이전에 알려진 것보다 복잡할까?</title>
-        <id>http://test5.skepties.net/p/2574</id>
+        <id>http://skepties.net/p/2574</id>
         <updated>2016-02-09T09:10:00+09:00</updated>
         <published>2016-02-09T09:10:00+09:00</published>
-        <link href="http://test5.skepties.net/p/2574"/>
+        <link href="http://skepties.net/p/2574"/>
                 <category term="과학이야기" label="과학이야기" />
                 <category term="창조과학" label="창조과학" />
                 <category term="유사과학" label="유사과학" />
@@ -337,10 +337,10 @@
     </entry>
             <entry>
         <title>엔켈라두스의 간헐천은 커튼 형태로 분출된다</title>
-        <id>http://test5.skepties.net/p/2357</id>
+        <id>http://skepties.net/p/2357</id>
         <updated>2016-02-08T15:53:00+09:00</updated>
         <published>2016-02-08T15:53:00+09:00</published>
-        <link href="http://test5.skepties.net/p/2357"/>
+        <link href="http://skepties.net/p/2357"/>
                 <category term="창조과학" label="창조과학" />
                 <category term="유사과학" label="유사과학" />
                 <content type="html">
@@ -361,10 +361,10 @@
     </entry>
             <entry>
         <title>논문을 읽는법, 그리고 읽었다는 것의 의미</title>
-        <id>http://test5.skepties.net/p/2542</id>
+        <id>http://skepties.net/p/2542</id>
         <updated>2016-02-08T02:21:00+09:00</updated>
         <published>2016-02-08T02:21:00+09:00</published>
-        <link href="http://test5.skepties.net/p/2542"/>
+        <link href="http://skepties.net/p/2542"/>
                 <category term="과학이야기" label="과학이야기" />
                 <content type="html">
             <![CDATA[
@@ -395,10 +395,10 @@
     </entry>
             <entry>
         <title>생물학적 진화가 사실로 규명되기까지 -발전의 과정-</title>
-        <id>http://test5.skepties.net/p/2524</id>
+        <id>http://skepties.net/p/2524</id>
         <updated>2016-02-07T14:58:00+09:00</updated>
         <published>2016-02-07T14:58:00+09:00</published>
-        <link href="http://test5.skepties.net/p/2524"/>
+        <link href="http://skepties.net/p/2524"/>
                 <category term="과학이야기" label="과학이야기" />
                 <content type="html">
             <![CDATA[
@@ -433,10 +433,10 @@
     </entry>
             <entry>
         <title>진화학을 비롯한 과학에 대해 이야기 하기 위해 필요한 단어의 선택</title>
-        <id>http://test5.skepties.net/p/2483</id>
+        <id>http://skepties.net/p/2483</id>
         <updated>2016-02-05T19:52:00+09:00</updated>
         <published>2016-02-05T19:52:00+09:00</published>
-        <link href="http://test5.skepties.net/p/2483"/>
+        <link href="http://skepties.net/p/2483"/>
                 <category term="회의주의" label="회의주의" />
                 <category term="과학이야기" label="과학이야기" />
                 <category term="창조과학" label="창조과학" />
@@ -522,10 +522,10 @@
     </entry>
             <entry>
         <title>창조론자의 우상인 캔트 호빈드의 학위를 살펴보자!</title>
-        <id>http://test5.skepties.net/p/2429</id>
+        <id>http://skepties.net/p/2429</id>
         <updated>2016-02-03T23:23:00+09:00</updated>
         <published>2016-02-03T23:23:00+09:00</published>
-        <link href="http://test5.skepties.net/p/2429"/>
+        <link href="http://skepties.net/p/2429"/>
                 <category term="창조과학" label="창조과학" />
                 <category term="유사과학" label="유사과학" />
                 <category term="음모론" label="음모론" />
@@ -547,10 +547,10 @@
     </entry>
             <entry>
         <title>잘 모르는 사람들에게 알려주는 진화학과 창조과학에 관한 사실들</title>
-        <id>http://test5.skepties.net/p/2432</id>
+        <id>http://skepties.net/p/2432</id>
         <updated>2016-02-03T02:23:00+09:00</updated>
         <published>2016-02-03T02:23:00+09:00</published>
-        <link href="http://test5.skepties.net/p/2432"/>
+        <link href="http://skepties.net/p/2432"/>
                 <category term="과학이야기" label="과학이야기" />
                 <category term="창조과학" label="창조과학" />
                 <content type="html">
@@ -604,10 +604,10 @@
     </entry>
             <entry>
         <title>동성애 커플과 이성애 커플을 비교할 거면 편견 없이 제대로 하고, 그걸 떠나서 제발 차별 좀 하지 마라</title>
-        <id>http://test5.skepties.net/p/2331</id>
+        <id>http://skepties.net/p/2331</id>
         <updated>2016-02-01T18:52:00+09:00</updated>
         <published>2016-02-01T18:52:00+09:00</published>
-        <link href="http://test5.skepties.net/p/2331"/>
+        <link href="http://skepties.net/p/2331"/>
                 <category term="유사과학" label="유사과학" />
                 <category term="lgbt" label="Lgbt" />
                 <content type="html">
@@ -644,10 +644,10 @@
     </entry>
             <entry>
         <title>논문의 결론과 데이터에 관해서.</title>
-        <id>http://test5.skepties.net/p/2365</id>
+        <id>http://skepties.net/p/2365</id>
         <updated>2016-01-28T19:20:00+09:00</updated>
         <published>2016-01-28T19:20:00+09:00</published>
-        <link href="http://test5.skepties.net/p/2365"/>
+        <link href="http://skepties.net/p/2365"/>
                 <category term="과학이야기" label="과학이야기" />
                 <category term="창조과학" label="창조과학" />
                 <category term="유사과학" label="유사과학" />
@@ -676,10 +676,10 @@
     </entry>
             <entry>
         <title>게이(남성 동성애자)의 변실금 위험? 의학적 근거 없는 낭설에 불과하다</title>
-        <id>http://test5.skepties.net/p/2324</id>
+        <id>http://skepties.net/p/2324</id>
         <updated>2016-01-26T15:23:00+09:00</updated>
         <published>2016-01-26T15:23:00+09:00</published>
-        <link href="http://test5.skepties.net/p/2324"/>
+        <link href="http://skepties.net/p/2324"/>
                 <category term="lgbt" label="Lgbt" />
                 <category term="유사의학" label="유사의학" />
                 <category term="의학" label="의학" />
@@ -708,10 +708,10 @@
     </entry>
             <entry>
         <title>프로이트와 정신분석학, 그리고 심리학과의 애증관계</title>
-        <id>http://test5.skepties.net/p/2313</id>
+        <id>http://skepties.net/p/2313</id>
         <updated>2016-01-21T07:39:00+09:00</updated>
         <published>2016-01-21T07:39:00+09:00</published>
-        <link href="http://test5.skepties.net/p/2313"/>
+        <link href="http://skepties.net/p/2313"/>
                 <category term="회의주의" label="회의주의" />
                 <category term="과학이야기" label="과학이야기" />
                 <category term="skepties" label="Skepties" />
