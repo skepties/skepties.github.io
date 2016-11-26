@@ -103,9 +103,19 @@ h2{ margin-top:2em;margin-bottom:1.4em;}
   margin-left:-15px;
   margin-right:-15px;
   .navbar-nav {
-    &>li>a{
+    &>li a{
       color: $color_on_dark;
       background-color:transparent;
+    }
+    &>li>div {
+      color: $color_on_dark;
+      line-height: 20px;
+      background-color:transparent;
+      position: relative;
+      display: block;
+      padding: 10px 15px;
+      padding-top: 15px;
+      padding-bottom: 15px;
     }
     &>li.active, &>li:hover {
       background-color: $color_emp;

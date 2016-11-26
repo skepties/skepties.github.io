@@ -55,9 +55,18 @@ h2 {
   color: white;
   margin-left: -15px;
   margin-right: -15px; }
-  #sk-main-navbar .navbar-nav > li > a {
+  #sk-main-navbar .navbar-nav > li a {
     color: white;
     background-color: transparent; }
+  #sk-main-navbar .navbar-nav > li > div {
+    color: white;
+    line-height: 20px;
+    background-color: transparent;
+    position: relative;
+    display: block;
+    padding: 10px 15px;
+    padding-top: 15px;
+    padding-bottom: 15px; }
   #sk-main-navbar .navbar-nav > li.active, #sk-main-navbar .navbar-nav > li:hover {
     background-color: #e64946;
     transition: 0.25s ease-out; }
@@ -322,3 +331,5 @@ h2 {
 #disqus_thread #conversation #post #no-post,
 div#no-posts {
   display: none; }
+
+/*# sourceMappingURL=sk-style.css.map */
