@@ -1123,8 +1123,8 @@ Stacktrace:
               Arguments
           </div>
           <div id="frame-code-args-0" class="code-block frame-args">
-              <ol class="linenums"><li><script> Sfdump = window.Sfdump || (function (doc) { var refStyle = doc.createElement('style'), rxEsc = /([.*+?^${}()|\[\]\/\\])/g, idRx = /\bsf-dump-\d+-ref[012]\w+\b/, keyHint = 0 <= navigator.platform.toUpperCase().indexOf('MAC') ? 'Cmd' : 'Ctrl', addEventListener = function (e, n, cb) { e.addEventListener(n, cb, false); }; (doc.documentElement.firstElementChild || doc.documentElement.children[0]).appendChild(refStyle); if (!doc.addEventListener) { addEventListener = function (element, eventName, callback) { element.attachEvent('on' + eventName, function (e) { e.preventDefault = function () {e.returnValue = false;}; e.target = e.srcElement; callback(e); }); }; } function toggle(a, recursive) { var s = a.nextSibling || {}, oldClass = s.className, arrow, newClass; if ('sf-dump-compact' == oldClass) { arrow = '&#9660;'; newClass = 'sf-dump-expanded'; } else if ('sf-dump-expanded' == oldClass) { arrow = '&#9654;'; newClass = 'sf-dump-compact'; } else { return false; } a.lastChild.innerHTML = arrow; s.className = newClass; if (recursive) { try { a = s.querySelectorAll('.'+oldClass); for (s = 0; s < a.length; ++s) { if (a[s].className !== newClass) { a[s].className = newClass; a[s].previousSibling.lastChild.innerHTML = arrow; } } } catch (e) { } } return true; }; return function (root) { root = doc.getElementById(root); function a(e, f) { addEventListener(root, e, function (e) { if ('A' == e.target.tagName) { f(e.target, e); } else if ('A' == e.target.parentNode.tagName) { f(e.target.parentNode, e); } }); }; function isCtrlKey(e) { return e.ctrlKey || e.metaKey; } addEventListener(root, 'mouseover', function (e) { if ('' != refStyle.innerHTML) { refStyle.innerHTML = ''; } }); a('mouseover', function (a) { if (a = idRx.exec(a.className)) { try { refStyle.innerHTML = 'pre.sf-dump .'+a[0]+'{background-color: #B729D9; color: #FFF !important; border-radius: 2px}'; } catch (e) { } } }); a('click', function (a, e) { if (/\bsf-dump-toggle\b/.test(a.className)) { e.preventDefault(); if (!toggle(a, isCtrlKey(e))) { var r = doc.getElementById(a.getAttribute('href').substr(1)), s = r.previousSibling, f = r.parentNode, t = a.parentNode; t.replaceChild(r, a); f.replaceChild(a, s); t.insertBefore(s, r); f = f.firstChild.nodeValue.match(indentRx); t = t.firstChild.nodeValue.match(indentRx); if (f && t && f[0] !== t[0]) { r.innerHTML = r.innerHTML.replace(new RegExp('^'+f[0].replace(rxEsc, '\\$1'), 'mg'), t[0]); } if ('sf-dump-compact' == r.className) { toggle(s, isCtrlKey(e)); } } if (doc.getSelection) { try { doc.getSelection().removeAllRanges(); } catch (e) { doc.getSelection().empty(); } } else { doc.selection.empty(); } } }); var indentRx = new RegExp('^('+(root.getAttribute('data-indent-pad') || ' ').replace(rxEsc, '\\$1')+')+', 'm'), elt = root.getElementsByTagName('A'), len = elt.length, i = 0, t = []; while (i < len) t.push(elt[i++]); elt = root.getElementsByTagName('SAMP'); len = elt.length; i = 0; while (i < len) t.push(elt[i++]); root = t; len = t.length; i = t = 0; while (i < len) { elt = root[i]; if ("SAMP" == elt.tagName) { elt.className = "sf-dump-expanded"; a = elt.previousSibling || {}; if ('A' != a.tagName) { a = doc.createElement('A'); a.className = 'sf-dump-ref'; elt.parentNode.insertBefore(a, elt); } else { a.innerHTML += ' '; } a.title = (a.title ? a.title+'\n[' : '[')+keyHint+'+click] Expand all children'; a.innerHTML += '<span>&#9660;</span>'; a.className += ' sf-dump-toggle'; if ('sf-dump' != elt.parentNode.className) { toggle(a); } } else if ("sf-dump-ref" == elt.className && (a = elt.getAttribute('href'))) { a = a.substr(1); elt.className += ' '+a; if (/[\[{]$/.test(elt.previousSibling.nodeValue)) { a = a != elt.nextSibling.id && doc.getElementById(a); try { t = a.nextSibling; elt.appendChild(a); t.parentNode.insertBefore(a, t); if (/^[@#]/.test(elt.innerHTML)) { elt.innerHTML += ' <span>&#9654;</span>'; } else { elt.innerHTML = '<span>&#9654;</span>'; elt.className = 'sf-dump-ref'; } elt.className += ' sf-dump-toggle'; } catch (e) { if ('&' == elt.innerHTML.charAt(0)) { elt.innerHTML = '&hellip;'; elt.className = 'sf-dump-ref'; } } } } ++i; } }; })(document); </script><style> pre.sf-dump { display: block; white-space: pre; padding: 5px; } pre.sf-dump span { display: inline; } pre.sf-dump .sf-dump-compact { display: none; } pre.sf-dump abbr { text-decoration: none; border: none; cursor: help; } pre.sf-dump a { text-decoration: none; cursor: pointer; border: 0; outline: none; }pre.sf-dump{color:#FFFFFF; line-height:normal; font:12px "Inconsolata", "Fira Mono", "Source Code Pro", Monaco, Consolas, "Lucida Console", monospace !important; word-wrap: break-word; white-space: pre-wrap; position:relative; z-index:99999; word-break: normal}pre.sf-dump .sf-dump-num{color:#BCD42A}pre.sf-dump .sf-dump-const{color: #4bb1b1;}pre.sf-dump .sf-dump-str{color:#BCD42A}pre.sf-dump .sf-dump-note{color:#ef7c61}pre.sf-dump .sf-dump-ref{color:#A0A0A0}pre.sf-dump .sf-dump-public{color:#FFFFFF}pre.sf-dump .sf-dump-protected{color:#FFFFFF}pre.sf-dump .sf-dump-private{color:#FFFFFF}pre.sf-dump .sf-dump-meta{color:#FFFFFF}pre.sf-dump .sf-dump-key{color:#BCD42A}pre.sf-dump .sf-dump-index{color:#ef7c61}</style><pre class=sf-dump id=sf-dump-1510220888 data-indent-pad="  ">"<span class=sf-dump-str title="141 characters">An exception has been thrown during the rendering of a template (&quot;Illegal offset type in isset or empty&quot;) in &quot;w/license.html.twig&quot; at line 9.</span>"
-</pre><script>Sfdump("sf-dump-1510220888")</script>
+              <ol class="linenums"><li><script> Sfdump = window.Sfdump || (function (doc) { var refStyle = doc.createElement('style'), rxEsc = /([.*+?^${}()|\[\]\/\\])/g, idRx = /\bsf-dump-\d+-ref[012]\w+\b/, keyHint = 0 <= navigator.platform.toUpperCase().indexOf('MAC') ? 'Cmd' : 'Ctrl', addEventListener = function (e, n, cb) { e.addEventListener(n, cb, false); }; (doc.documentElement.firstElementChild || doc.documentElement.children[0]).appendChild(refStyle); if (!doc.addEventListener) { addEventListener = function (element, eventName, callback) { element.attachEvent('on' + eventName, function (e) { e.preventDefault = function () {e.returnValue = false;}; e.target = e.srcElement; callback(e); }); }; } function toggle(a, recursive) { var s = a.nextSibling || {}, oldClass = s.className, arrow, newClass; if ('sf-dump-compact' == oldClass) { arrow = '&#9660;'; newClass = 'sf-dump-expanded'; } else if ('sf-dump-expanded' == oldClass) { arrow = '&#9654;'; newClass = 'sf-dump-compact'; } else { return false; } a.lastChild.innerHTML = arrow; s.className = newClass; if (recursive) { try { a = s.querySelectorAll('.'+oldClass); for (s = 0; s < a.length; ++s) { if (a[s].className !== newClass) { a[s].className = newClass; a[s].previousSibling.lastChild.innerHTML = arrow; } } } catch (e) { } } return true; }; return function (root) { root = doc.getElementById(root); function a(e, f) { addEventListener(root, e, function (e) { if ('A' == e.target.tagName) { f(e.target, e); } else if ('A' == e.target.parentNode.tagName) { f(e.target.parentNode, e); } }); }; function isCtrlKey(e) { return e.ctrlKey || e.metaKey; } addEventListener(root, 'mouseover', function (e) { if ('' != refStyle.innerHTML) { refStyle.innerHTML = ''; } }); a('mouseover', function (a) { if (a = idRx.exec(a.className)) { try { refStyle.innerHTML = 'pre.sf-dump .'+a[0]+'{background-color: #B729D9; color: #FFF !important; border-radius: 2px}'; } catch (e) { } } }); a('click', function (a, e) { if (/\bsf-dump-toggle\b/.test(a.className)) { e.preventDefault(); if (!toggle(a, isCtrlKey(e))) { var r = doc.getElementById(a.getAttribute('href').substr(1)), s = r.previousSibling, f = r.parentNode, t = a.parentNode; t.replaceChild(r, a); f.replaceChild(a, s); t.insertBefore(s, r); f = f.firstChild.nodeValue.match(indentRx); t = t.firstChild.nodeValue.match(indentRx); if (f && t && f[0] !== t[0]) { r.innerHTML = r.innerHTML.replace(new RegExp('^'+f[0].replace(rxEsc, '\\$1'), 'mg'), t[0]); } if ('sf-dump-compact' == r.className) { toggle(s, isCtrlKey(e)); } } if (doc.getSelection) { try { doc.getSelection().removeAllRanges(); } catch (e) { doc.getSelection().empty(); } } else { doc.selection.empty(); } } }); var indentRx = new RegExp('^('+(root.getAttribute('data-indent-pad') || ' ').replace(rxEsc, '\\$1')+')+', 'm'), elt = root.getElementsByTagName('A'), len = elt.length, i = 0, t = []; while (i < len) t.push(elt[i++]); elt = root.getElementsByTagName('SAMP'); len = elt.length; i = 0; while (i < len) t.push(elt[i++]); root = t; len = t.length; i = t = 0; while (i < len) { elt = root[i]; if ("SAMP" == elt.tagName) { elt.className = "sf-dump-expanded"; a = elt.previousSibling || {}; if ('A' != a.tagName) { a = doc.createElement('A'); a.className = 'sf-dump-ref'; elt.parentNode.insertBefore(a, elt); } else { a.innerHTML += ' '; } a.title = (a.title ? a.title+'\n[' : '[')+keyHint+'+click] Expand all children'; a.innerHTML += '<span>&#9660;</span>'; a.className += ' sf-dump-toggle'; if ('sf-dump' != elt.parentNode.className) { toggle(a); } } else if ("sf-dump-ref" == elt.className && (a = elt.getAttribute('href'))) { a = a.substr(1); elt.className += ' '+a; if (/[\[{]$/.test(elt.previousSibling.nodeValue)) { a = a != elt.nextSibling.id && doc.getElementById(a); try { t = a.nextSibling; elt.appendChild(a); t.parentNode.insertBefore(a, t); if (/^[@#]/.test(elt.innerHTML)) { elt.innerHTML += ' <span>&#9654;</span>'; } else { elt.innerHTML = '<span>&#9654;</span>'; elt.className = 'sf-dump-ref'; } elt.className += ' sf-dump-toggle'; } catch (e) { if ('&' == elt.innerHTML.charAt(0)) { elt.innerHTML = '&hellip;'; elt.className = 'sf-dump-ref'; } } } } ++i; } }; })(document); </script><style> pre.sf-dump { display: block; white-space: pre; padding: 5px; } pre.sf-dump span { display: inline; } pre.sf-dump .sf-dump-compact { display: none; } pre.sf-dump abbr { text-decoration: none; border: none; cursor: help; } pre.sf-dump a { text-decoration: none; cursor: pointer; border: 0; outline: none; }pre.sf-dump{color:#FFFFFF; line-height:normal; font:12px "Inconsolata", "Fira Mono", "Source Code Pro", Monaco, Consolas, "Lucida Console", monospace !important; word-wrap: break-word; white-space: pre-wrap; position:relative; z-index:99999; word-break: normal}pre.sf-dump .sf-dump-num{color:#BCD42A}pre.sf-dump .sf-dump-const{color: #4bb1b1;}pre.sf-dump .sf-dump-str{color:#BCD42A}pre.sf-dump .sf-dump-note{color:#ef7c61}pre.sf-dump .sf-dump-ref{color:#A0A0A0}pre.sf-dump .sf-dump-public{color:#FFFFFF}pre.sf-dump .sf-dump-protected{color:#FFFFFF}pre.sf-dump .sf-dump-private{color:#FFFFFF}pre.sf-dump .sf-dump-meta{color:#FFFFFF}pre.sf-dump .sf-dump-key{color:#BCD42A}pre.sf-dump .sf-dump-index{color:#ef7c61}</style><pre class=sf-dump id=sf-dump-1158268138 data-indent-pad="  ">"<span class=sf-dump-str title="141 characters">An exception has been thrown during the rendering of a template (&quot;Illegal offset type in isset or empty&quot;) in &quot;w/license.html.twig&quot; at line 9.</span>"
+</pre><script>Sfdump("sf-dump-1158268138")</script>
 </li></ol>          </div>
         
                 <div class="frame-comments empty">
@@ -1181,8 +1181,8 @@ Stacktrace:
               Arguments
           </div>
           <div id="frame-code-args-1" class="code-block frame-args">
-              <ol class="linenums"><li><pre class=sf-dump id=sf-dump-1215928427 data-indent-pad="  ">"<span class=sf-dump-str title="37 characters">Illegal offset type in isset or empty</span>"
-</pre><script>Sfdump("sf-dump-1215928427")</script>
+              <ol class="linenums"><li><pre class=sf-dump id=sf-dump-23423740 data-indent-pad="  ">"<span class=sf-dump-str title="37 characters">Illegal offset type in isset or empty</span>"
+</pre><script>Sfdump("sf-dump-23423740")</script>
 </li></ol>          </div>
         
                 <div class="frame-comments ">
@@ -1242,15 +1242,15 @@ Stacktrace:
               Arguments
           </div>
           <div id="frame-code-args-2" class="code-block frame-args">
-              <ol class="linenums"><li><pre class=sf-dump id=sf-dump-1468912765 data-indent-pad="  "><span class=sf-dump-num>2</span>
-</pre><script>Sfdump("sf-dump-1468912765")</script>
-</li><li><pre class=sf-dump id=sf-dump-419321591 data-indent-pad="  ">"<span class=sf-dump-str title="37 characters">Illegal offset type in isset or empty</span>"
-</pre><script>Sfdump("sf-dump-419321591")</script>
-</li><li><pre class=sf-dump id=sf-dump-468766190 data-indent-pad="  ">"<span class=sf-dump-str title="72 characters">/home/grav/www/skepties-site-grav/vendor/twig/twig/lib/Twig/Template.php</span>"
-</pre><script>Sfdump("sf-dump-468766190")</script>
-</li><li><pre class=sf-dump id=sf-dump-364843264 data-indent-pad="  "><span class=sf-dump-num>511</span>
-</pre><script>Sfdump("sf-dump-364843264")</script>
-</li><li><pre class=sf-dump id=sf-dump-22084664 data-indent-pad="  "><span class=sf-dump-note>array:7</span> [<samp>
+              <ol class="linenums"><li><pre class=sf-dump id=sf-dump-588516127 data-indent-pad="  "><span class=sf-dump-num>2</span>
+</pre><script>Sfdump("sf-dump-588516127")</script>
+</li><li><pre class=sf-dump id=sf-dump-647646616 data-indent-pad="  ">"<span class=sf-dump-str title="37 characters">Illegal offset type in isset or empty</span>"
+</pre><script>Sfdump("sf-dump-647646616")</script>
+</li><li><pre class=sf-dump id=sf-dump-283215562 data-indent-pad="  ">"<span class=sf-dump-str title="72 characters">/home/grav/www/skepties-site-grav/vendor/twig/twig/lib/Twig/Template.php</span>"
+</pre><script>Sfdump("sf-dump-283215562")</script>
+</li><li><pre class=sf-dump id=sf-dump-1552071090 data-indent-pad="  "><span class=sf-dump-num>511</span>
+</pre><script>Sfdump("sf-dump-1552071090")</script>
+</li><li><pre class=sf-dump id=sf-dump-933877760 data-indent-pad="  "><span class=sf-dump-note>array:7</span> [<samp>
   "<span class=sf-dump-key>object</span>" => <span class=sf-dump-note>array:4</span> [<samp>
     "<span class=sf-dump-key>none</span>" => <span class=sf-dump-const>null</span>
     "<span class=sf-dump-key>default</span>" => "<span class=sf-dump-str title="8 characters">CCBYSA40</span>"
@@ -1278,7 +1278,7 @@ Stacktrace:
     <span class=sf-dump-index>0</span> => "<span class=sf-dump-str title="6 characters">&#53580;&#49828;&#53944;&#51200;&#51089;&#44428;</span>"
   </samp>]
 </samp>]
-</pre><script>Sfdump("sf-dump-22084664")</script>
+</pre><script>Sfdump("sf-dump-933877760")</script>
 </li></ol>          </div>
         
                 <div class="frame-comments empty">
@@ -1335,7 +1335,7 @@ Stacktrace:
               Arguments
           </div>
           <div id="frame-code-args-3" class="code-block frame-args">
-              <ol class="linenums"><li><pre class=sf-dump id=sf-dump-2074790130 data-indent-pad="  "><span class=sf-dump-note>array:4</span> [<samp>
+              <ol class="linenums"><li><pre class=sf-dump id=sf-dump-145826615 data-indent-pad="  "><span class=sf-dump-note>array:4</span> [<samp>
   "<span class=sf-dump-key>none</span>" => <span class=sf-dump-const>null</span>
   "<span class=sf-dump-key>default</span>" => "<span class=sf-dump-str title="8 characters">CCBYSA40</span>"
   "<span class=sf-dump-key>follow_source</span>" => <span class=sf-dump-note>array:2</span> [<samp>
@@ -1351,15 +1351,15 @@ Stacktrace:
     "<span class=sf-dump-key>button_big</span>" => "<span class=sf-dump-str title="25 characters">/img/license/cc-by-sa.png</span>"
   </samp>]
 </samp>]
-</pre><script>Sfdump("sf-dump-2074790130")</script>
-</li><li><pre class=sf-dump id=sf-dump-1412507097 data-indent-pad="  "><span class=sf-dump-note>array:1</span> [<samp>
+</pre><script>Sfdump("sf-dump-145826615")</script>
+</li><li><pre class=sf-dump id=sf-dump-77943685 data-indent-pad="  "><span class=sf-dump-note>array:1</span> [<samp>
   <span class=sf-dump-index>0</span> => "<span class=sf-dump-str title="6 characters">&#53580;&#49828;&#53944;&#51200;&#51089;&#44428;</span>"
 </samp>]
-</pre><script>Sfdump("sf-dump-1412507097")</script>
-</li><li><pre class=sf-dump id=sf-dump-657262670 data-indent-pad="  ">[]
-</pre><script>Sfdump("sf-dump-657262670")</script>
-</li><li><pre class=sf-dump id=sf-dump-1038359908 data-indent-pad="  ">"<span class=sf-dump-str title="5 characters">array</span>"
-</pre><script>Sfdump("sf-dump-1038359908")</script>
+</pre><script>Sfdump("sf-dump-77943685")</script>
+</li><li><pre class=sf-dump id=sf-dump-1208022000 data-indent-pad="  ">[]
+</pre><script>Sfdump("sf-dump-1208022000")</script>
+</li><li><pre class=sf-dump id=sf-dump-1299507855 data-indent-pad="  ">"<span class=sf-dump-str title="5 characters">array</span>"
+</pre><script>Sfdump("sf-dump-1299507855")</script>
 </li></ol>          </div>
         
                 <div class="frame-comments empty">
@@ -1416,7 +1416,7 @@ Stacktrace:
               Arguments
           </div>
           <div id="frame-code-args-4" class="code-block frame-args">
-              <ol class="linenums"><li><pre class=sf-dump id=sf-dump-705576939 data-indent-pad="  "><span class=sf-dump-note>array:26</span> [<samp>
+              <ol class="linenums"><li><pre class=sf-dump id=sf-dump-1617938891 data-indent-pad="  "><span class=sf-dump-note>array:26</span> [<samp>
   "<span class=sf-dump-key>config</span>" => <abbr title="Grav\Common\Config\Config" class=sf-dump-note>Config</abbr> {}
   "<span class=sf-dump-key>uri</span>" => <abbr title="Grav\Common\Uri" class=sf-dump-note>Uri</abbr> {}
   "<span class=sf-dump-key>base_dir</span>" => "<span class=sf-dump-str title="33 characters">/home/grav/www/skepties-site-grav</span>"
@@ -1485,9 +1485,9 @@ Stacktrace:
     <span class=sf-dump-index>0</span> => "<span class=sf-dump-str title="6 characters">&#53580;&#49828;&#53944;&#51200;&#51089;&#44428;</span>"
   </samp>]
 </samp>]
-</pre><script>Sfdump("sf-dump-705576939")</script>
-</li><li><pre class=sf-dump id=sf-dump-679238151 data-indent-pad="  ">[]
-</pre><script>Sfdump("sf-dump-679238151")</script>
+</pre><script>Sfdump("sf-dump-1617938891")</script>
+</li><li><pre class=sf-dump id=sf-dump-1304260316 data-indent-pad="  ">[]
+</pre><script>Sfdump("sf-dump-1304260316")</script>
 </li></ol>          </div>
         
                 <div class="frame-comments empty">
@@ -1544,7 +1544,7 @@ Stacktrace:
               Arguments
           </div>
           <div id="frame-code-args-5" class="code-block frame-args">
-              <ol class="linenums"><li><pre class=sf-dump id=sf-dump-1801844617 data-indent-pad="  "><span class=sf-dump-note>array:25</span> [<samp>
+              <ol class="linenums"><li><pre class=sf-dump id=sf-dump-444293095 data-indent-pad="  "><span class=sf-dump-note>array:25</span> [<samp>
   "<span class=sf-dump-key>config</span>" => <abbr title="Grav\Common\Config\Config" class=sf-dump-note>Config</abbr> {}
   "<span class=sf-dump-key>uri</span>" => <abbr title="Grav\Common\Uri" class=sf-dump-note>Uri</abbr> {}
   "<span class=sf-dump-key>base_dir</span>" => "<span class=sf-dump-str title="33 characters">/home/grav/www/skepties-site-grav</span>"
@@ -1610,9 +1610,9 @@ Stacktrace:
     </samp>]
   </samp>]
 </samp>]
-</pre><script>Sfdump("sf-dump-1801844617")</script>
-</li><li><pre class=sf-dump id=sf-dump-2101635564 data-indent-pad="  ">[]
-</pre><script>Sfdump("sf-dump-2101635564")</script>
+</pre><script>Sfdump("sf-dump-444293095")</script>
+</li><li><pre class=sf-dump id=sf-dump-822554601 data-indent-pad="  ">[]
+</pre><script>Sfdump("sf-dump-822554601")</script>
 </li></ol>          </div>
         
                 <div class="frame-comments empty">
@@ -1669,7 +1669,7 @@ Stacktrace:
               Arguments
           </div>
           <div id="frame-code-args-6" class="code-block frame-args">
-              <ol class="linenums"><li><pre class=sf-dump id=sf-dump-1935640392 data-indent-pad="  "><span class=sf-dump-note>array:25</span> [<samp>
+              <ol class="linenums"><li><pre class=sf-dump id=sf-dump-1436619751 data-indent-pad="  "><span class=sf-dump-note>array:25</span> [<samp>
   "<span class=sf-dump-key>config</span>" => <abbr title="Grav\Common\Config\Config" class=sf-dump-note>Config</abbr> {}
   "<span class=sf-dump-key>uri</span>" => <abbr title="Grav\Common\Uri" class=sf-dump-note>Uri</abbr> {}
   "<span class=sf-dump-key>base_dir</span>" => "<span class=sf-dump-str title="33 characters">/home/grav/www/skepties-site-grav</span>"
@@ -1735,7 +1735,7 @@ Stacktrace:
     </samp>]
   </samp>]
 </samp>]
-</pre><script>Sfdump("sf-dump-1935640392")</script>
+</pre><script>Sfdump("sf-dump-1436619751")</script>
 </li></ol>          </div>
         
                 <div class="frame-comments empty">
@@ -1792,7 +1792,7 @@ Stacktrace:
               Arguments
           </div>
           <div id="frame-code-args-7" class="code-block frame-args">
-              <ol class="linenums"><li><pre class=sf-dump id=sf-dump-892042020 data-indent-pad="  "><span class=sf-dump-note>array:25</span> [<samp>
+              <ol class="linenums"><li><pre class=sf-dump id=sf-dump-854837859 data-indent-pad="  "><span class=sf-dump-note>array:25</span> [<samp>
   "<span class=sf-dump-key>config</span>" => <abbr title="Grav\Common\Config\Config" class=sf-dump-note>Config</abbr> {}
   "<span class=sf-dump-key>uri</span>" => <abbr title="Grav\Common\Uri" class=sf-dump-note>Uri</abbr> {}
   "<span class=sf-dump-key>base_dir</span>" => "<span class=sf-dump-str title="33 characters">/home/grav/www/skepties-site-grav</span>"
@@ -1858,30 +1858,30 @@ Stacktrace:
     </samp>]
   </samp>]
 </samp>]
-</pre><script>Sfdump("sf-dump-892042020")</script>
-</li><li><pre class=sf-dump id=sf-dump-833531804 data-indent-pad="  "><span class=sf-dump-note>array:9</span> [<samp>
+</pre><script>Sfdump("sf-dump-854837859")</script>
+</li><li><pre class=sf-dump id=sf-dump-1275406664 data-indent-pad="  "><span class=sf-dump-note>array:9</span> [<samp>
   "<span class=sf-dump-key>head</span>" => <span class=sf-dump-note>array:2</span> [<samp>
-    <span class=sf-dump-index>0</span> => <span class=sf-dump-note>__TwigTemplate_a7ac3356878da80528943c73adbccef7ae989a51c0b00f4b97dd4ab4db851844</span> {<a class=sf-dump-ref href=#sf-dump-833531804-ref21 title="8 occurrences">#1</a>}
+    <span class=sf-dump-index>0</span> => <span class=sf-dump-note>__TwigTemplate_a7ac3356878da80528943c73adbccef7ae989a51c0b00f4b97dd4ab4db851844</span> {<a class=sf-dump-ref href=#sf-dump-1275406664-ref21 title="8 occurrences">#1</a>}
     <span class=sf-dump-index>1</span> => "<span class=sf-dump-str title="10 characters">block_head</span>"
   </samp>]
   "<span class=sf-dump-key>stylesheets</span>" => <span class=sf-dump-note>array:2</span> [<samp>
-    <span class=sf-dump-index>0</span> => <span class=sf-dump-note>__TwigTemplate_a7ac3356878da80528943c73adbccef7ae989a51c0b00f4b97dd4ab4db851844</span> {<a class=sf-dump-ref href=#sf-dump-833531804-ref21 title="8 occurrences">#1</a>}
+    <span class=sf-dump-index>0</span> => <span class=sf-dump-note>__TwigTemplate_a7ac3356878da80528943c73adbccef7ae989a51c0b00f4b97dd4ab4db851844</span> {<a class=sf-dump-ref href=#sf-dump-1275406664-ref21 title="8 occurrences">#1</a>}
     <span class=sf-dump-index>1</span> => "<span class=sf-dump-str title="17 characters">block_stylesheets</span>"
   </samp>]
   "<span class=sf-dump-key>javascripts</span>" => <span class=sf-dump-note>array:2</span> [<samp>
-    <span class=sf-dump-index>0</span> => <span class=sf-dump-note>__TwigTemplate_a7ac3356878da80528943c73adbccef7ae989a51c0b00f4b97dd4ab4db851844</span> {<a class=sf-dump-ref href=#sf-dump-833531804-ref21 title="8 occurrences">#1</a>}
+    <span class=sf-dump-index>0</span> => <span class=sf-dump-note>__TwigTemplate_a7ac3356878da80528943c73adbccef7ae989a51c0b00f4b97dd4ab4db851844</span> {<a class=sf-dump-ref href=#sf-dump-1275406664-ref21 title="8 occurrences">#1</a>}
     <span class=sf-dump-index>1</span> => "<span class=sf-dump-str title="17 characters">block_javascripts</span>"
   </samp>]
   "<span class=sf-dump-key>javascripts_bottom</span>" => <span class=sf-dump-note>array:2</span> [<samp>
-    <span class=sf-dump-index>0</span> => <span class=sf-dump-note>__TwigTemplate_a7ac3356878da80528943c73adbccef7ae989a51c0b00f4b97dd4ab4db851844</span> {<a class=sf-dump-ref href=#sf-dump-833531804-ref21 title="8 occurrences">#1</a>}
+    <span class=sf-dump-index>0</span> => <span class=sf-dump-note>__TwigTemplate_a7ac3356878da80528943c73adbccef7ae989a51c0b00f4b97dd4ab4db851844</span> {<a class=sf-dump-ref href=#sf-dump-1275406664-ref21 title="8 occurrences">#1</a>}
     <span class=sf-dump-index>1</span> => "<span class=sf-dump-str title="24 characters">block_javascripts_bottom</span>"
   </samp>]
   "<span class=sf-dump-key>header</span>" => <span class=sf-dump-note>array:2</span> [<samp>
-    <span class=sf-dump-index>0</span> => <span class=sf-dump-note>__TwigTemplate_a7ac3356878da80528943c73adbccef7ae989a51c0b00f4b97dd4ab4db851844</span> {<a class=sf-dump-ref href=#sf-dump-833531804-ref21 title="8 occurrences">#1</a>}
+    <span class=sf-dump-index>0</span> => <span class=sf-dump-note>__TwigTemplate_a7ac3356878da80528943c73adbccef7ae989a51c0b00f4b97dd4ab4db851844</span> {<a class=sf-dump-ref href=#sf-dump-1275406664-ref21 title="8 occurrences">#1</a>}
     <span class=sf-dump-index>1</span> => "<span class=sf-dump-str title="12 characters">block_header</span>"
   </samp>]
   "<span class=sf-dump-key>body</span>" => <span class=sf-dump-note>array:2</span> [<samp>
-    <span class=sf-dump-index>0</span> => <span class=sf-dump-note>__TwigTemplate_a7ac3356878da80528943c73adbccef7ae989a51c0b00f4b97dd4ab4db851844</span> {<a class=sf-dump-ref href=#sf-dump-833531804-ref21 title="8 occurrences">#1</a>}
+    <span class=sf-dump-index>0</span> => <span class=sf-dump-note>__TwigTemplate_a7ac3356878da80528943c73adbccef7ae989a51c0b00f4b97dd4ab4db851844</span> {<a class=sf-dump-ref href=#sf-dump-1275406664-ref21 title="8 occurrences">#1</a>}
     <span class=sf-dump-index>1</span> => "<span class=sf-dump-str title="10 characters">block_body</span>"
   </samp>]
   "<span class=sf-dump-key>content</span>" => <span class=sf-dump-note>array:2</span> [<samp>
@@ -1889,15 +1889,15 @@ Stacktrace:
     <span class=sf-dump-index>1</span> => "<span class=sf-dump-str title="13 characters">block_content</span>"
   </samp>]
   "<span class=sf-dump-key>footer</span>" => <span class=sf-dump-note>array:2</span> [<samp>
-    <span class=sf-dump-index>0</span> => <span class=sf-dump-note>__TwigTemplate_a7ac3356878da80528943c73adbccef7ae989a51c0b00f4b97dd4ab4db851844</span> {<a class=sf-dump-ref href=#sf-dump-833531804-ref21 title="8 occurrences">#1</a>}
+    <span class=sf-dump-index>0</span> => <span class=sf-dump-note>__TwigTemplate_a7ac3356878da80528943c73adbccef7ae989a51c0b00f4b97dd4ab4db851844</span> {<a class=sf-dump-ref href=#sf-dump-1275406664-ref21 title="8 occurrences">#1</a>}
     <span class=sf-dump-index>1</span> => "<span class=sf-dump-str title="12 characters">block_footer</span>"
   </samp>]
   "<span class=sf-dump-key>bottom</span>" => <span class=sf-dump-note>array:2</span> [<samp>
-    <span class=sf-dump-index>0</span> => <span class=sf-dump-note>__TwigTemplate_a7ac3356878da80528943c73adbccef7ae989a51c0b00f4b97dd4ab4db851844</span> {<a class=sf-dump-ref href=#sf-dump-833531804-ref21 title="8 occurrences">#1</a>}
+    <span class=sf-dump-index>0</span> => <span class=sf-dump-note>__TwigTemplate_a7ac3356878da80528943c73adbccef7ae989a51c0b00f4b97dd4ab4db851844</span> {<a class=sf-dump-ref href=#sf-dump-1275406664-ref21 title="8 occurrences">#1</a>}
     <span class=sf-dump-index>1</span> => "<span class=sf-dump-str title="12 characters">block_bottom</span>"
   </samp>]
 </samp>]
-</pre><script>Sfdump("sf-dump-833531804")</script>
+</pre><script>Sfdump("sf-dump-1275406664")</script>
 </li></ol>          </div>
         
                 <div class="frame-comments empty">
@@ -1954,9 +1954,9 @@ Stacktrace:
               Arguments
           </div>
           <div id="frame-code-args-8" class="code-block frame-args">
-              <ol class="linenums"><li><pre class=sf-dump id=sf-dump-865270031 data-indent-pad="  ">"<span class=sf-dump-str title="7 characters">content</span>"
-</pre><script>Sfdump("sf-dump-865270031")</script>
-</li><li><pre class=sf-dump id=sf-dump-2139184865 data-indent-pad="  "><span class=sf-dump-note>array:25</span> [<samp>
+              <ol class="linenums"><li><pre class=sf-dump id=sf-dump-1148954694 data-indent-pad="  ">"<span class=sf-dump-str title="7 characters">content</span>"
+</pre><script>Sfdump("sf-dump-1148954694")</script>
+</li><li><pre class=sf-dump id=sf-dump-31221852 data-indent-pad="  "><span class=sf-dump-note>array:25</span> [<samp>
   "<span class=sf-dump-key>config</span>" => <abbr title="Grav\Common\Config\Config" class=sf-dump-note>Config</abbr> {}
   "<span class=sf-dump-key>uri</span>" => <abbr title="Grav\Common\Uri" class=sf-dump-note>Uri</abbr> {}
   "<span class=sf-dump-key>base_dir</span>" => "<span class=sf-dump-str title="33 characters">/home/grav/www/skepties-site-grav</span>"
@@ -2022,30 +2022,30 @@ Stacktrace:
     </samp>]
   </samp>]
 </samp>]
-</pre><script>Sfdump("sf-dump-2139184865")</script>
-</li><li><pre class=sf-dump id=sf-dump-1655502064 data-indent-pad="  "><span class=sf-dump-note>array:9</span> [<samp>
+</pre><script>Sfdump("sf-dump-31221852")</script>
+</li><li><pre class=sf-dump id=sf-dump-922648929 data-indent-pad="  "><span class=sf-dump-note>array:9</span> [<samp>
   "<span class=sf-dump-key>head</span>" => <span class=sf-dump-note>array:2</span> [<samp>
-    <span class=sf-dump-index>0</span> => <span class=sf-dump-note>__TwigTemplate_a7ac3356878da80528943c73adbccef7ae989a51c0b00f4b97dd4ab4db851844</span> {<a class=sf-dump-ref href=#sf-dump-1655502064-ref21 title="8 occurrences">#1</a>}
+    <span class=sf-dump-index>0</span> => <span class=sf-dump-note>__TwigTemplate_a7ac3356878da80528943c73adbccef7ae989a51c0b00f4b97dd4ab4db851844</span> {<a class=sf-dump-ref href=#sf-dump-922648929-ref21 title="8 occurrences">#1</a>}
     <span class=sf-dump-index>1</span> => "<span class=sf-dump-str title="10 characters">block_head</span>"
   </samp>]
   "<span class=sf-dump-key>stylesheets</span>" => <span class=sf-dump-note>array:2</span> [<samp>
-    <span class=sf-dump-index>0</span> => <span class=sf-dump-note>__TwigTemplate_a7ac3356878da80528943c73adbccef7ae989a51c0b00f4b97dd4ab4db851844</span> {<a class=sf-dump-ref href=#sf-dump-1655502064-ref21 title="8 occurrences">#1</a>}
+    <span class=sf-dump-index>0</span> => <span class=sf-dump-note>__TwigTemplate_a7ac3356878da80528943c73adbccef7ae989a51c0b00f4b97dd4ab4db851844</span> {<a class=sf-dump-ref href=#sf-dump-922648929-ref21 title="8 occurrences">#1</a>}
     <span class=sf-dump-index>1</span> => "<span class=sf-dump-str title="17 characters">block_stylesheets</span>"
   </samp>]
   "<span class=sf-dump-key>javascripts</span>" => <span class=sf-dump-note>array:2</span> [<samp>
-    <span class=sf-dump-index>0</span> => <span class=sf-dump-note>__TwigTemplate_a7ac3356878da80528943c73adbccef7ae989a51c0b00f4b97dd4ab4db851844</span> {<a class=sf-dump-ref href=#sf-dump-1655502064-ref21 title="8 occurrences">#1</a>}
+    <span class=sf-dump-index>0</span> => <span class=sf-dump-note>__TwigTemplate_a7ac3356878da80528943c73adbccef7ae989a51c0b00f4b97dd4ab4db851844</span> {<a class=sf-dump-ref href=#sf-dump-922648929-ref21 title="8 occurrences">#1</a>}
     <span class=sf-dump-index>1</span> => "<span class=sf-dump-str title="17 characters">block_javascripts</span>"
   </samp>]
   "<span class=sf-dump-key>javascripts_bottom</span>" => <span class=sf-dump-note>array:2</span> [<samp>
-    <span class=sf-dump-index>0</span> => <span class=sf-dump-note>__TwigTemplate_a7ac3356878da80528943c73adbccef7ae989a51c0b00f4b97dd4ab4db851844</span> {<a class=sf-dump-ref href=#sf-dump-1655502064-ref21 title="8 occurrences">#1</a>}
+    <span class=sf-dump-index>0</span> => <span class=sf-dump-note>__TwigTemplate_a7ac3356878da80528943c73adbccef7ae989a51c0b00f4b97dd4ab4db851844</span> {<a class=sf-dump-ref href=#sf-dump-922648929-ref21 title="8 occurrences">#1</a>}
     <span class=sf-dump-index>1</span> => "<span class=sf-dump-str title="24 characters">block_javascripts_bottom</span>"
   </samp>]
   "<span class=sf-dump-key>header</span>" => <span class=sf-dump-note>array:2</span> [<samp>
-    <span class=sf-dump-index>0</span> => <span class=sf-dump-note>__TwigTemplate_a7ac3356878da80528943c73adbccef7ae989a51c0b00f4b97dd4ab4db851844</span> {<a class=sf-dump-ref href=#sf-dump-1655502064-ref21 title="8 occurrences">#1</a>}
+    <span class=sf-dump-index>0</span> => <span class=sf-dump-note>__TwigTemplate_a7ac3356878da80528943c73adbccef7ae989a51c0b00f4b97dd4ab4db851844</span> {<a class=sf-dump-ref href=#sf-dump-922648929-ref21 title="8 occurrences">#1</a>}
     <span class=sf-dump-index>1</span> => "<span class=sf-dump-str title="12 characters">block_header</span>"
   </samp>]
   "<span class=sf-dump-key>body</span>" => <span class=sf-dump-note>array:2</span> [<samp>
-    <span class=sf-dump-index>0</span> => <span class=sf-dump-note>__TwigTemplate_a7ac3356878da80528943c73adbccef7ae989a51c0b00f4b97dd4ab4db851844</span> {<a class=sf-dump-ref href=#sf-dump-1655502064-ref21 title="8 occurrences">#1</a>}
+    <span class=sf-dump-index>0</span> => <span class=sf-dump-note>__TwigTemplate_a7ac3356878da80528943c73adbccef7ae989a51c0b00f4b97dd4ab4db851844</span> {<a class=sf-dump-ref href=#sf-dump-922648929-ref21 title="8 occurrences">#1</a>}
     <span class=sf-dump-index>1</span> => "<span class=sf-dump-str title="10 characters">block_body</span>"
   </samp>]
   "<span class=sf-dump-key>content</span>" => <span class=sf-dump-note>array:2</span> [<samp>
@@ -2053,15 +2053,15 @@ Stacktrace:
     <span class=sf-dump-index>1</span> => "<span class=sf-dump-str title="13 characters">block_content</span>"
   </samp>]
   "<span class=sf-dump-key>footer</span>" => <span class=sf-dump-note>array:2</span> [<samp>
-    <span class=sf-dump-index>0</span> => <span class=sf-dump-note>__TwigTemplate_a7ac3356878da80528943c73adbccef7ae989a51c0b00f4b97dd4ab4db851844</span> {<a class=sf-dump-ref href=#sf-dump-1655502064-ref21 title="8 occurrences">#1</a>}
+    <span class=sf-dump-index>0</span> => <span class=sf-dump-note>__TwigTemplate_a7ac3356878da80528943c73adbccef7ae989a51c0b00f4b97dd4ab4db851844</span> {<a class=sf-dump-ref href=#sf-dump-922648929-ref21 title="8 occurrences">#1</a>}
     <span class=sf-dump-index>1</span> => "<span class=sf-dump-str title="12 characters">block_footer</span>"
   </samp>]
   "<span class=sf-dump-key>bottom</span>" => <span class=sf-dump-note>array:2</span> [<samp>
-    <span class=sf-dump-index>0</span> => <span class=sf-dump-note>__TwigTemplate_a7ac3356878da80528943c73adbccef7ae989a51c0b00f4b97dd4ab4db851844</span> {<a class=sf-dump-ref href=#sf-dump-1655502064-ref21 title="8 occurrences">#1</a>}
+    <span class=sf-dump-index>0</span> => <span class=sf-dump-note>__TwigTemplate_a7ac3356878da80528943c73adbccef7ae989a51c0b00f4b97dd4ab4db851844</span> {<a class=sf-dump-ref href=#sf-dump-922648929-ref21 title="8 occurrences">#1</a>}
     <span class=sf-dump-index>1</span> => "<span class=sf-dump-str title="12 characters">block_bottom</span>"
   </samp>]
 </samp>]
-</pre><script>Sfdump("sf-dump-1655502064")</script>
+</pre><script>Sfdump("sf-dump-922648929")</script>
 </li></ol>          </div>
         
                 <div class="frame-comments empty">
@@ -2118,7 +2118,7 @@ Stacktrace:
               Arguments
           </div>
           <div id="frame-code-args-9" class="code-block frame-args">
-              <ol class="linenums"><li><pre class=sf-dump id=sf-dump-160886931 data-indent-pad="  "><span class=sf-dump-note>array:25</span> [<samp>
+              <ol class="linenums"><li><pre class=sf-dump id=sf-dump-1521585462 data-indent-pad="  "><span class=sf-dump-note>array:25</span> [<samp>
   "<span class=sf-dump-key>config</span>" => <abbr title="Grav\Common\Config\Config" class=sf-dump-note>Config</abbr> {}
   "<span class=sf-dump-key>uri</span>" => <abbr title="Grav\Common\Uri" class=sf-dump-note>Uri</abbr> {}
   "<span class=sf-dump-key>base_dir</span>" => "<span class=sf-dump-str title="33 characters">/home/grav/www/skepties-site-grav</span>"
@@ -2184,30 +2184,30 @@ Stacktrace:
     </samp>]
   </samp>]
 </samp>]
-</pre><script>Sfdump("sf-dump-160886931")</script>
-</li><li><pre class=sf-dump id=sf-dump-1667110593 data-indent-pad="  "><span class=sf-dump-note>array:9</span> [<samp>
+</pre><script>Sfdump("sf-dump-1521585462")</script>
+</li><li><pre class=sf-dump id=sf-dump-1486307798 data-indent-pad="  "><span class=sf-dump-note>array:9</span> [<samp>
   "<span class=sf-dump-key>head</span>" => <span class=sf-dump-note>array:2</span> [<samp>
-    <span class=sf-dump-index>0</span> => <span class=sf-dump-note>__TwigTemplate_a7ac3356878da80528943c73adbccef7ae989a51c0b00f4b97dd4ab4db851844</span> {<a class=sf-dump-ref href=#sf-dump-1667110593-ref21 title="8 occurrences">#1</a>}
+    <span class=sf-dump-index>0</span> => <span class=sf-dump-note>__TwigTemplate_a7ac3356878da80528943c73adbccef7ae989a51c0b00f4b97dd4ab4db851844</span> {<a class=sf-dump-ref href=#sf-dump-1486307798-ref21 title="8 occurrences">#1</a>}
     <span class=sf-dump-index>1</span> => "<span class=sf-dump-str title="10 characters">block_head</span>"
   </samp>]
   "<span class=sf-dump-key>stylesheets</span>" => <span class=sf-dump-note>array:2</span> [<samp>
-    <span class=sf-dump-index>0</span> => <span class=sf-dump-note>__TwigTemplate_a7ac3356878da80528943c73adbccef7ae989a51c0b00f4b97dd4ab4db851844</span> {<a class=sf-dump-ref href=#sf-dump-1667110593-ref21 title="8 occurrences">#1</a>}
+    <span class=sf-dump-index>0</span> => <span class=sf-dump-note>__TwigTemplate_a7ac3356878da80528943c73adbccef7ae989a51c0b00f4b97dd4ab4db851844</span> {<a class=sf-dump-ref href=#sf-dump-1486307798-ref21 title="8 occurrences">#1</a>}
     <span class=sf-dump-index>1</span> => "<span class=sf-dump-str title="17 characters">block_stylesheets</span>"
   </samp>]
   "<span class=sf-dump-key>javascripts</span>" => <span class=sf-dump-note>array:2</span> [<samp>
-    <span class=sf-dump-index>0</span> => <span class=sf-dump-note>__TwigTemplate_a7ac3356878da80528943c73adbccef7ae989a51c0b00f4b97dd4ab4db851844</span> {<a class=sf-dump-ref href=#sf-dump-1667110593-ref21 title="8 occurrences">#1</a>}
+    <span class=sf-dump-index>0</span> => <span class=sf-dump-note>__TwigTemplate_a7ac3356878da80528943c73adbccef7ae989a51c0b00f4b97dd4ab4db851844</span> {<a class=sf-dump-ref href=#sf-dump-1486307798-ref21 title="8 occurrences">#1</a>}
     <span class=sf-dump-index>1</span> => "<span class=sf-dump-str title="17 characters">block_javascripts</span>"
   </samp>]
   "<span class=sf-dump-key>javascripts_bottom</span>" => <span class=sf-dump-note>array:2</span> [<samp>
-    <span class=sf-dump-index>0</span> => <span class=sf-dump-note>__TwigTemplate_a7ac3356878da80528943c73adbccef7ae989a51c0b00f4b97dd4ab4db851844</span> {<a class=sf-dump-ref href=#sf-dump-1667110593-ref21 title="8 occurrences">#1</a>}
+    <span class=sf-dump-index>0</span> => <span class=sf-dump-note>__TwigTemplate_a7ac3356878da80528943c73adbccef7ae989a51c0b00f4b97dd4ab4db851844</span> {<a class=sf-dump-ref href=#sf-dump-1486307798-ref21 title="8 occurrences">#1</a>}
     <span class=sf-dump-index>1</span> => "<span class=sf-dump-str title="24 characters">block_javascripts_bottom</span>"
   </samp>]
   "<span class=sf-dump-key>header</span>" => <span class=sf-dump-note>array:2</span> [<samp>
-    <span class=sf-dump-index>0</span> => <span class=sf-dump-note>__TwigTemplate_a7ac3356878da80528943c73adbccef7ae989a51c0b00f4b97dd4ab4db851844</span> {<a class=sf-dump-ref href=#sf-dump-1667110593-ref21 title="8 occurrences">#1</a>}
+    <span class=sf-dump-index>0</span> => <span class=sf-dump-note>__TwigTemplate_a7ac3356878da80528943c73adbccef7ae989a51c0b00f4b97dd4ab4db851844</span> {<a class=sf-dump-ref href=#sf-dump-1486307798-ref21 title="8 occurrences">#1</a>}
     <span class=sf-dump-index>1</span> => "<span class=sf-dump-str title="12 characters">block_header</span>"
   </samp>]
   "<span class=sf-dump-key>body</span>" => <span class=sf-dump-note>array:2</span> [<samp>
-    <span class=sf-dump-index>0</span> => <span class=sf-dump-note>__TwigTemplate_a7ac3356878da80528943c73adbccef7ae989a51c0b00f4b97dd4ab4db851844</span> {<a class=sf-dump-ref href=#sf-dump-1667110593-ref21 title="8 occurrences">#1</a>}
+    <span class=sf-dump-index>0</span> => <span class=sf-dump-note>__TwigTemplate_a7ac3356878da80528943c73adbccef7ae989a51c0b00f4b97dd4ab4db851844</span> {<a class=sf-dump-ref href=#sf-dump-1486307798-ref21 title="8 occurrences">#1</a>}
     <span class=sf-dump-index>1</span> => "<span class=sf-dump-str title="10 characters">block_body</span>"
   </samp>]
   "<span class=sf-dump-key>content</span>" => <span class=sf-dump-note>array:2</span> [<samp>
@@ -2215,15 +2215,15 @@ Stacktrace:
     <span class=sf-dump-index>1</span> => "<span class=sf-dump-str title="13 characters">block_content</span>"
   </samp>]
   "<span class=sf-dump-key>footer</span>" => <span class=sf-dump-note>array:2</span> [<samp>
-    <span class=sf-dump-index>0</span> => <span class=sf-dump-note>__TwigTemplate_a7ac3356878da80528943c73adbccef7ae989a51c0b00f4b97dd4ab4db851844</span> {<a class=sf-dump-ref href=#sf-dump-1667110593-ref21 title="8 occurrences">#1</a>}
+    <span class=sf-dump-index>0</span> => <span class=sf-dump-note>__TwigTemplate_a7ac3356878da80528943c73adbccef7ae989a51c0b00f4b97dd4ab4db851844</span> {<a class=sf-dump-ref href=#sf-dump-1486307798-ref21 title="8 occurrences">#1</a>}
     <span class=sf-dump-index>1</span> => "<span class=sf-dump-str title="12 characters">block_footer</span>"
   </samp>]
   "<span class=sf-dump-key>bottom</span>" => <span class=sf-dump-note>array:2</span> [<samp>
-    <span class=sf-dump-index>0</span> => <span class=sf-dump-note>__TwigTemplate_a7ac3356878da80528943c73adbccef7ae989a51c0b00f4b97dd4ab4db851844</span> {<a class=sf-dump-ref href=#sf-dump-1667110593-ref21 title="8 occurrences">#1</a>}
+    <span class=sf-dump-index>0</span> => <span class=sf-dump-note>__TwigTemplate_a7ac3356878da80528943c73adbccef7ae989a51c0b00f4b97dd4ab4db851844</span> {<a class=sf-dump-ref href=#sf-dump-1486307798-ref21 title="8 occurrences">#1</a>}
     <span class=sf-dump-index>1</span> => "<span class=sf-dump-str title="12 characters">block_bottom</span>"
   </samp>]
 </samp>]
-</pre><script>Sfdump("sf-dump-1667110593")</script>
+</pre><script>Sfdump("sf-dump-1486307798")</script>
 </li></ol>          </div>
         
                 <div class="frame-comments empty">
@@ -2280,9 +2280,9 @@ Stacktrace:
               Arguments
           </div>
           <div id="frame-code-args-10" class="code-block frame-args">
-              <ol class="linenums"><li><pre class=sf-dump id=sf-dump-254834941 data-indent-pad="  ">"<span class=sf-dump-str title="4 characters">body</span>"
-</pre><script>Sfdump("sf-dump-254834941")</script>
-</li><li><pre class=sf-dump id=sf-dump-1151487142 data-indent-pad="  "><span class=sf-dump-note>array:25</span> [<samp>
+              <ol class="linenums"><li><pre class=sf-dump id=sf-dump-164053876 data-indent-pad="  ">"<span class=sf-dump-str title="4 characters">body</span>"
+</pre><script>Sfdump("sf-dump-164053876")</script>
+</li><li><pre class=sf-dump id=sf-dump-157510550 data-indent-pad="  "><span class=sf-dump-note>array:25</span> [<samp>
   "<span class=sf-dump-key>config</span>" => <abbr title="Grav\Common\Config\Config" class=sf-dump-note>Config</abbr> {}
   "<span class=sf-dump-key>uri</span>" => <abbr title="Grav\Common\Uri" class=sf-dump-note>Uri</abbr> {}
   "<span class=sf-dump-key>base_dir</span>" => "<span class=sf-dump-str title="33 characters">/home/grav/www/skepties-site-grav</span>"
@@ -2348,30 +2348,30 @@ Stacktrace:
     </samp>]
   </samp>]
 </samp>]
-</pre><script>Sfdump("sf-dump-1151487142")</script>
-</li><li><pre class=sf-dump id=sf-dump-1939740169 data-indent-pad="  "><span class=sf-dump-note>array:9</span> [<samp>
+</pre><script>Sfdump("sf-dump-157510550")</script>
+</li><li><pre class=sf-dump id=sf-dump-1157266290 data-indent-pad="  "><span class=sf-dump-note>array:9</span> [<samp>
   "<span class=sf-dump-key>head</span>" => <span class=sf-dump-note>array:2</span> [<samp>
-    <span class=sf-dump-index>0</span> => <span class=sf-dump-note>__TwigTemplate_a7ac3356878da80528943c73adbccef7ae989a51c0b00f4b97dd4ab4db851844</span> {<a class=sf-dump-ref href=#sf-dump-1939740169-ref21 title="8 occurrences">#1</a>}
+    <span class=sf-dump-index>0</span> => <span class=sf-dump-note>__TwigTemplate_a7ac3356878da80528943c73adbccef7ae989a51c0b00f4b97dd4ab4db851844</span> {<a class=sf-dump-ref href=#sf-dump-1157266290-ref21 title="8 occurrences">#1</a>}
     <span class=sf-dump-index>1</span> => "<span class=sf-dump-str title="10 characters">block_head</span>"
   </samp>]
   "<span class=sf-dump-key>stylesheets</span>" => <span class=sf-dump-note>array:2</span> [<samp>
-    <span class=sf-dump-index>0</span> => <span class=sf-dump-note>__TwigTemplate_a7ac3356878da80528943c73adbccef7ae989a51c0b00f4b97dd4ab4db851844</span> {<a class=sf-dump-ref href=#sf-dump-1939740169-ref21 title="8 occurrences">#1</a>}
+    <span class=sf-dump-index>0</span> => <span class=sf-dump-note>__TwigTemplate_a7ac3356878da80528943c73adbccef7ae989a51c0b00f4b97dd4ab4db851844</span> {<a class=sf-dump-ref href=#sf-dump-1157266290-ref21 title="8 occurrences">#1</a>}
     <span class=sf-dump-index>1</span> => "<span class=sf-dump-str title="17 characters">block_stylesheets</span>"
   </samp>]
   "<span class=sf-dump-key>javascripts</span>" => <span class=sf-dump-note>array:2</span> [<samp>
-    <span class=sf-dump-index>0</span> => <span class=sf-dump-note>__TwigTemplate_a7ac3356878da80528943c73adbccef7ae989a51c0b00f4b97dd4ab4db851844</span> {<a class=sf-dump-ref href=#sf-dump-1939740169-ref21 title="8 occurrences">#1</a>}
+    <span class=sf-dump-index>0</span> => <span class=sf-dump-note>__TwigTemplate_a7ac3356878da80528943c73adbccef7ae989a51c0b00f4b97dd4ab4db851844</span> {<a class=sf-dump-ref href=#sf-dump-1157266290-ref21 title="8 occurrences">#1</a>}
     <span class=sf-dump-index>1</span> => "<span class=sf-dump-str title="17 characters">block_javascripts</span>"
   </samp>]
   "<span class=sf-dump-key>javascripts_bottom</span>" => <span class=sf-dump-note>array:2</span> [<samp>
-    <span class=sf-dump-index>0</span> => <span class=sf-dump-note>__TwigTemplate_a7ac3356878da80528943c73adbccef7ae989a51c0b00f4b97dd4ab4db851844</span> {<a class=sf-dump-ref href=#sf-dump-1939740169-ref21 title="8 occurrences">#1</a>}
+    <span class=sf-dump-index>0</span> => <span class=sf-dump-note>__TwigTemplate_a7ac3356878da80528943c73adbccef7ae989a51c0b00f4b97dd4ab4db851844</span> {<a class=sf-dump-ref href=#sf-dump-1157266290-ref21 title="8 occurrences">#1</a>}
     <span class=sf-dump-index>1</span> => "<span class=sf-dump-str title="24 characters">block_javascripts_bottom</span>"
   </samp>]
   "<span class=sf-dump-key>header</span>" => <span class=sf-dump-note>array:2</span> [<samp>
-    <span class=sf-dump-index>0</span> => <span class=sf-dump-note>__TwigTemplate_a7ac3356878da80528943c73adbccef7ae989a51c0b00f4b97dd4ab4db851844</span> {<a class=sf-dump-ref href=#sf-dump-1939740169-ref21 title="8 occurrences">#1</a>}
+    <span class=sf-dump-index>0</span> => <span class=sf-dump-note>__TwigTemplate_a7ac3356878da80528943c73adbccef7ae989a51c0b00f4b97dd4ab4db851844</span> {<a class=sf-dump-ref href=#sf-dump-1157266290-ref21 title="8 occurrences">#1</a>}
     <span class=sf-dump-index>1</span> => "<span class=sf-dump-str title="12 characters">block_header</span>"
   </samp>]
   "<span class=sf-dump-key>body</span>" => <span class=sf-dump-note>array:2</span> [<samp>
-    <span class=sf-dump-index>0</span> => <span class=sf-dump-note>__TwigTemplate_a7ac3356878da80528943c73adbccef7ae989a51c0b00f4b97dd4ab4db851844</span> {<a class=sf-dump-ref href=#sf-dump-1939740169-ref21 title="8 occurrences">#1</a>}
+    <span class=sf-dump-index>0</span> => <span class=sf-dump-note>__TwigTemplate_a7ac3356878da80528943c73adbccef7ae989a51c0b00f4b97dd4ab4db851844</span> {<a class=sf-dump-ref href=#sf-dump-1157266290-ref21 title="8 occurrences">#1</a>}
     <span class=sf-dump-index>1</span> => "<span class=sf-dump-str title="10 characters">block_body</span>"
   </samp>]
   "<span class=sf-dump-key>content</span>" => <span class=sf-dump-note>array:2</span> [<samp>
@@ -2379,15 +2379,15 @@ Stacktrace:
     <span class=sf-dump-index>1</span> => "<span class=sf-dump-str title="13 characters">block_content</span>"
   </samp>]
   "<span class=sf-dump-key>footer</span>" => <span class=sf-dump-note>array:2</span> [<samp>
-    <span class=sf-dump-index>0</span> => <span class=sf-dump-note>__TwigTemplate_a7ac3356878da80528943c73adbccef7ae989a51c0b00f4b97dd4ab4db851844</span> {<a class=sf-dump-ref href=#sf-dump-1939740169-ref21 title="8 occurrences">#1</a>}
+    <span class=sf-dump-index>0</span> => <span class=sf-dump-note>__TwigTemplate_a7ac3356878da80528943c73adbccef7ae989a51c0b00f4b97dd4ab4db851844</span> {<a class=sf-dump-ref href=#sf-dump-1157266290-ref21 title="8 occurrences">#1</a>}
     <span class=sf-dump-index>1</span> => "<span class=sf-dump-str title="12 characters">block_footer</span>"
   </samp>]
   "<span class=sf-dump-key>bottom</span>" => <span class=sf-dump-note>array:2</span> [<samp>
-    <span class=sf-dump-index>0</span> => <span class=sf-dump-note>__TwigTemplate_a7ac3356878da80528943c73adbccef7ae989a51c0b00f4b97dd4ab4db851844</span> {<a class=sf-dump-ref href=#sf-dump-1939740169-ref21 title="8 occurrences">#1</a>}
+    <span class=sf-dump-index>0</span> => <span class=sf-dump-note>__TwigTemplate_a7ac3356878da80528943c73adbccef7ae989a51c0b00f4b97dd4ab4db851844</span> {<a class=sf-dump-ref href=#sf-dump-1157266290-ref21 title="8 occurrences">#1</a>}
     <span class=sf-dump-index>1</span> => "<span class=sf-dump-str title="12 characters">block_bottom</span>"
   </samp>]
 </samp>]
-</pre><script>Sfdump("sf-dump-1939740169")</script>
+</pre><script>Sfdump("sf-dump-1157266290")</script>
 </li></ol>          </div>
         
                 <div class="frame-comments empty">
@@ -2444,7 +2444,7 @@ Stacktrace:
               Arguments
           </div>
           <div id="frame-code-args-11" class="code-block frame-args">
-              <ol class="linenums"><li><pre class=sf-dump id=sf-dump-1236487232 data-indent-pad="  "><span class=sf-dump-note>array:25</span> [<samp>
+              <ol class="linenums"><li><pre class=sf-dump id=sf-dump-1670771285 data-indent-pad="  "><span class=sf-dump-note>array:25</span> [<samp>
   "<span class=sf-dump-key>config</span>" => <abbr title="Grav\Common\Config\Config" class=sf-dump-note>Config</abbr> {}
   "<span class=sf-dump-key>uri</span>" => <abbr title="Grav\Common\Uri" class=sf-dump-note>Uri</abbr> {}
   "<span class=sf-dump-key>base_dir</span>" => "<span class=sf-dump-str title="33 characters">/home/grav/www/skepties-site-grav</span>"
@@ -2510,30 +2510,30 @@ Stacktrace:
     </samp>]
   </samp>]
 </samp>]
-</pre><script>Sfdump("sf-dump-1236487232")</script>
-</li><li><pre class=sf-dump id=sf-dump-361766093 data-indent-pad="  "><span class=sf-dump-note>array:9</span> [<samp>
+</pre><script>Sfdump("sf-dump-1670771285")</script>
+</li><li><pre class=sf-dump id=sf-dump-1072529200 data-indent-pad="  "><span class=sf-dump-note>array:9</span> [<samp>
   "<span class=sf-dump-key>head</span>" => <span class=sf-dump-note>array:2</span> [<samp>
-    <span class=sf-dump-index>0</span> => <span class=sf-dump-note>__TwigTemplate_a7ac3356878da80528943c73adbccef7ae989a51c0b00f4b97dd4ab4db851844</span> {<a class=sf-dump-ref href=#sf-dump-361766093-ref21 title="8 occurrences">#1</a>}
+    <span class=sf-dump-index>0</span> => <span class=sf-dump-note>__TwigTemplate_a7ac3356878da80528943c73adbccef7ae989a51c0b00f4b97dd4ab4db851844</span> {<a class=sf-dump-ref href=#sf-dump-1072529200-ref21 title="8 occurrences">#1</a>}
     <span class=sf-dump-index>1</span> => "<span class=sf-dump-str title="10 characters">block_head</span>"
   </samp>]
   "<span class=sf-dump-key>stylesheets</span>" => <span class=sf-dump-note>array:2</span> [<samp>
-    <span class=sf-dump-index>0</span> => <span class=sf-dump-note>__TwigTemplate_a7ac3356878da80528943c73adbccef7ae989a51c0b00f4b97dd4ab4db851844</span> {<a class=sf-dump-ref href=#sf-dump-361766093-ref21 title="8 occurrences">#1</a>}
+    <span class=sf-dump-index>0</span> => <span class=sf-dump-note>__TwigTemplate_a7ac3356878da80528943c73adbccef7ae989a51c0b00f4b97dd4ab4db851844</span> {<a class=sf-dump-ref href=#sf-dump-1072529200-ref21 title="8 occurrences">#1</a>}
     <span class=sf-dump-index>1</span> => "<span class=sf-dump-str title="17 characters">block_stylesheets</span>"
   </samp>]
   "<span class=sf-dump-key>javascripts</span>" => <span class=sf-dump-note>array:2</span> [<samp>
-    <span class=sf-dump-index>0</span> => <span class=sf-dump-note>__TwigTemplate_a7ac3356878da80528943c73adbccef7ae989a51c0b00f4b97dd4ab4db851844</span> {<a class=sf-dump-ref href=#sf-dump-361766093-ref21 title="8 occurrences">#1</a>}
+    <span class=sf-dump-index>0</span> => <span class=sf-dump-note>__TwigTemplate_a7ac3356878da80528943c73adbccef7ae989a51c0b00f4b97dd4ab4db851844</span> {<a class=sf-dump-ref href=#sf-dump-1072529200-ref21 title="8 occurrences">#1</a>}
     <span class=sf-dump-index>1</span> => "<span class=sf-dump-str title="17 characters">block_javascripts</span>"
   </samp>]
   "<span class=sf-dump-key>javascripts_bottom</span>" => <span class=sf-dump-note>array:2</span> [<samp>
-    <span class=sf-dump-index>0</span> => <span class=sf-dump-note>__TwigTemplate_a7ac3356878da80528943c73adbccef7ae989a51c0b00f4b97dd4ab4db851844</span> {<a class=sf-dump-ref href=#sf-dump-361766093-ref21 title="8 occurrences">#1</a>}
+    <span class=sf-dump-index>0</span> => <span class=sf-dump-note>__TwigTemplate_a7ac3356878da80528943c73adbccef7ae989a51c0b00f4b97dd4ab4db851844</span> {<a class=sf-dump-ref href=#sf-dump-1072529200-ref21 title="8 occurrences">#1</a>}
     <span class=sf-dump-index>1</span> => "<span class=sf-dump-str title="24 characters">block_javascripts_bottom</span>"
   </samp>]
   "<span class=sf-dump-key>header</span>" => <span class=sf-dump-note>array:2</span> [<samp>
-    <span class=sf-dump-index>0</span> => <span class=sf-dump-note>__TwigTemplate_a7ac3356878da80528943c73adbccef7ae989a51c0b00f4b97dd4ab4db851844</span> {<a class=sf-dump-ref href=#sf-dump-361766093-ref21 title="8 occurrences">#1</a>}
+    <span class=sf-dump-index>0</span> => <span class=sf-dump-note>__TwigTemplate_a7ac3356878da80528943c73adbccef7ae989a51c0b00f4b97dd4ab4db851844</span> {<a class=sf-dump-ref href=#sf-dump-1072529200-ref21 title="8 occurrences">#1</a>}
     <span class=sf-dump-index>1</span> => "<span class=sf-dump-str title="12 characters">block_header</span>"
   </samp>]
   "<span class=sf-dump-key>body</span>" => <span class=sf-dump-note>array:2</span> [<samp>
-    <span class=sf-dump-index>0</span> => <span class=sf-dump-note>__TwigTemplate_a7ac3356878da80528943c73adbccef7ae989a51c0b00f4b97dd4ab4db851844</span> {<a class=sf-dump-ref href=#sf-dump-361766093-ref21 title="8 occurrences">#1</a>}
+    <span class=sf-dump-index>0</span> => <span class=sf-dump-note>__TwigTemplate_a7ac3356878da80528943c73adbccef7ae989a51c0b00f4b97dd4ab4db851844</span> {<a class=sf-dump-ref href=#sf-dump-1072529200-ref21 title="8 occurrences">#1</a>}
     <span class=sf-dump-index>1</span> => "<span class=sf-dump-str title="10 characters">block_body</span>"
   </samp>]
   "<span class=sf-dump-key>content</span>" => <span class=sf-dump-note>array:2</span> [<samp>
@@ -2541,15 +2541,15 @@ Stacktrace:
     <span class=sf-dump-index>1</span> => "<span class=sf-dump-str title="13 characters">block_content</span>"
   </samp>]
   "<span class=sf-dump-key>footer</span>" => <span class=sf-dump-note>array:2</span> [<samp>
-    <span class=sf-dump-index>0</span> => <span class=sf-dump-note>__TwigTemplate_a7ac3356878da80528943c73adbccef7ae989a51c0b00f4b97dd4ab4db851844</span> {<a class=sf-dump-ref href=#sf-dump-361766093-ref21 title="8 occurrences">#1</a>}
+    <span class=sf-dump-index>0</span> => <span class=sf-dump-note>__TwigTemplate_a7ac3356878da80528943c73adbccef7ae989a51c0b00f4b97dd4ab4db851844</span> {<a class=sf-dump-ref href=#sf-dump-1072529200-ref21 title="8 occurrences">#1</a>}
     <span class=sf-dump-index>1</span> => "<span class=sf-dump-str title="12 characters">block_footer</span>"
   </samp>]
   "<span class=sf-dump-key>bottom</span>" => <span class=sf-dump-note>array:2</span> [<samp>
-    <span class=sf-dump-index>0</span> => <span class=sf-dump-note>__TwigTemplate_a7ac3356878da80528943c73adbccef7ae989a51c0b00f4b97dd4ab4db851844</span> {<a class=sf-dump-ref href=#sf-dump-361766093-ref21 title="8 occurrences">#1</a>}
+    <span class=sf-dump-index>0</span> => <span class=sf-dump-note>__TwigTemplate_a7ac3356878da80528943c73adbccef7ae989a51c0b00f4b97dd4ab4db851844</span> {<a class=sf-dump-ref href=#sf-dump-1072529200-ref21 title="8 occurrences">#1</a>}
     <span class=sf-dump-index>1</span> => "<span class=sf-dump-str title="12 characters">block_bottom</span>"
   </samp>]
 </samp>]
-</pre><script>Sfdump("sf-dump-361766093")</script>
+</pre><script>Sfdump("sf-dump-1072529200")</script>
 </li></ol>          </div>
         
                 <div class="frame-comments empty">
@@ -2606,7 +2606,7 @@ Stacktrace:
               Arguments
           </div>
           <div id="frame-code-args-12" class="code-block frame-args">
-              <ol class="linenums"><li><pre class=sf-dump id=sf-dump-1172183618 data-indent-pad="  "><span class=sf-dump-note>array:24</span> [<samp>
+              <ol class="linenums"><li><pre class=sf-dump id=sf-dump-319690885 data-indent-pad="  "><span class=sf-dump-note>array:24</span> [<samp>
   "<span class=sf-dump-key>config</span>" => <abbr title="Grav\Common\Config\Config" class=sf-dump-note>Config</abbr> {}
   "<span class=sf-dump-key>uri</span>" => <abbr title="Grav\Common\Uri" class=sf-dump-note>Uri</abbr> {}
   "<span class=sf-dump-key>base_dir</span>" => "<span class=sf-dump-str title="33 characters">/home/grav/www/skepties-site-grav</span>"
@@ -2666,30 +2666,30 @@ Stacktrace:
   "<span class=sf-dump-key>content</span>" => ""
   "<span class=sf-dump-key>grav</span>" => <abbr title="Grav\Common\Grav" class=sf-dump-note>Grav</abbr> {}
 </samp>]
-</pre><script>Sfdump("sf-dump-1172183618")</script>
-</li><li><pre class=sf-dump id=sf-dump-1282570332 data-indent-pad="  "><span class=sf-dump-note>array:9</span> [<samp>
+</pre><script>Sfdump("sf-dump-319690885")</script>
+</li><li><pre class=sf-dump id=sf-dump-1841298699 data-indent-pad="  "><span class=sf-dump-note>array:9</span> [<samp>
   "<span class=sf-dump-key>head</span>" => <span class=sf-dump-note>array:2</span> [<samp>
-    <span class=sf-dump-index>0</span> => <span class=sf-dump-note>__TwigTemplate_a7ac3356878da80528943c73adbccef7ae989a51c0b00f4b97dd4ab4db851844</span> {<a class=sf-dump-ref href=#sf-dump-1282570332-ref21 title="8 occurrences">#1</a>}
+    <span class=sf-dump-index>0</span> => <span class=sf-dump-note>__TwigTemplate_a7ac3356878da80528943c73adbccef7ae989a51c0b00f4b97dd4ab4db851844</span> {<a class=sf-dump-ref href=#sf-dump-1841298699-ref21 title="8 occurrences">#1</a>}
     <span class=sf-dump-index>1</span> => "<span class=sf-dump-str title="10 characters">block_head</span>"
   </samp>]
   "<span class=sf-dump-key>stylesheets</span>" => <span class=sf-dump-note>array:2</span> [<samp>
-    <span class=sf-dump-index>0</span> => <span class=sf-dump-note>__TwigTemplate_a7ac3356878da80528943c73adbccef7ae989a51c0b00f4b97dd4ab4db851844</span> {<a class=sf-dump-ref href=#sf-dump-1282570332-ref21 title="8 occurrences">#1</a>}
+    <span class=sf-dump-index>0</span> => <span class=sf-dump-note>__TwigTemplate_a7ac3356878da80528943c73adbccef7ae989a51c0b00f4b97dd4ab4db851844</span> {<a class=sf-dump-ref href=#sf-dump-1841298699-ref21 title="8 occurrences">#1</a>}
     <span class=sf-dump-index>1</span> => "<span class=sf-dump-str title="17 characters">block_stylesheets</span>"
   </samp>]
   "<span class=sf-dump-key>javascripts</span>" => <span class=sf-dump-note>array:2</span> [<samp>
-    <span class=sf-dump-index>0</span> => <span class=sf-dump-note>__TwigTemplate_a7ac3356878da80528943c73adbccef7ae989a51c0b00f4b97dd4ab4db851844</span> {<a class=sf-dump-ref href=#sf-dump-1282570332-ref21 title="8 occurrences">#1</a>}
+    <span class=sf-dump-index>0</span> => <span class=sf-dump-note>__TwigTemplate_a7ac3356878da80528943c73adbccef7ae989a51c0b00f4b97dd4ab4db851844</span> {<a class=sf-dump-ref href=#sf-dump-1841298699-ref21 title="8 occurrences">#1</a>}
     <span class=sf-dump-index>1</span> => "<span class=sf-dump-str title="17 characters">block_javascripts</span>"
   </samp>]
   "<span class=sf-dump-key>javascripts_bottom</span>" => <span class=sf-dump-note>array:2</span> [<samp>
-    <span class=sf-dump-index>0</span> => <span class=sf-dump-note>__TwigTemplate_a7ac3356878da80528943c73adbccef7ae989a51c0b00f4b97dd4ab4db851844</span> {<a class=sf-dump-ref href=#sf-dump-1282570332-ref21 title="8 occurrences">#1</a>}
+    <span class=sf-dump-index>0</span> => <span class=sf-dump-note>__TwigTemplate_a7ac3356878da80528943c73adbccef7ae989a51c0b00f4b97dd4ab4db851844</span> {<a class=sf-dump-ref href=#sf-dump-1841298699-ref21 title="8 occurrences">#1</a>}
     <span class=sf-dump-index>1</span> => "<span class=sf-dump-str title="24 characters">block_javascripts_bottom</span>"
   </samp>]
   "<span class=sf-dump-key>header</span>" => <span class=sf-dump-note>array:2</span> [<samp>
-    <span class=sf-dump-index>0</span> => <span class=sf-dump-note>__TwigTemplate_a7ac3356878da80528943c73adbccef7ae989a51c0b00f4b97dd4ab4db851844</span> {<a class=sf-dump-ref href=#sf-dump-1282570332-ref21 title="8 occurrences">#1</a>}
+    <span class=sf-dump-index>0</span> => <span class=sf-dump-note>__TwigTemplate_a7ac3356878da80528943c73adbccef7ae989a51c0b00f4b97dd4ab4db851844</span> {<a class=sf-dump-ref href=#sf-dump-1841298699-ref21 title="8 occurrences">#1</a>}
     <span class=sf-dump-index>1</span> => "<span class=sf-dump-str title="12 characters">block_header</span>"
   </samp>]
   "<span class=sf-dump-key>body</span>" => <span class=sf-dump-note>array:2</span> [<samp>
-    <span class=sf-dump-index>0</span> => <span class=sf-dump-note>__TwigTemplate_a7ac3356878da80528943c73adbccef7ae989a51c0b00f4b97dd4ab4db851844</span> {<a class=sf-dump-ref href=#sf-dump-1282570332-ref21 title="8 occurrences">#1</a>}
+    <span class=sf-dump-index>0</span> => <span class=sf-dump-note>__TwigTemplate_a7ac3356878da80528943c73adbccef7ae989a51c0b00f4b97dd4ab4db851844</span> {<a class=sf-dump-ref href=#sf-dump-1841298699-ref21 title="8 occurrences">#1</a>}
     <span class=sf-dump-index>1</span> => "<span class=sf-dump-str title="10 characters">block_body</span>"
   </samp>]
   "<span class=sf-dump-key>content</span>" => <span class=sf-dump-note>array:2</span> [<samp>
@@ -2697,15 +2697,15 @@ Stacktrace:
     <span class=sf-dump-index>1</span> => "<span class=sf-dump-str title="13 characters">block_content</span>"
   </samp>]
   "<span class=sf-dump-key>footer</span>" => <span class=sf-dump-note>array:2</span> [<samp>
-    <span class=sf-dump-index>0</span> => <span class=sf-dump-note>__TwigTemplate_a7ac3356878da80528943c73adbccef7ae989a51c0b00f4b97dd4ab4db851844</span> {<a class=sf-dump-ref href=#sf-dump-1282570332-ref21 title="8 occurrences">#1</a>}
+    <span class=sf-dump-index>0</span> => <span class=sf-dump-note>__TwigTemplate_a7ac3356878da80528943c73adbccef7ae989a51c0b00f4b97dd4ab4db851844</span> {<a class=sf-dump-ref href=#sf-dump-1841298699-ref21 title="8 occurrences">#1</a>}
     <span class=sf-dump-index>1</span> => "<span class=sf-dump-str title="12 characters">block_footer</span>"
   </samp>]
   "<span class=sf-dump-key>bottom</span>" => <span class=sf-dump-note>array:2</span> [<samp>
-    <span class=sf-dump-index>0</span> => <span class=sf-dump-note>__TwigTemplate_a7ac3356878da80528943c73adbccef7ae989a51c0b00f4b97dd4ab4db851844</span> {<a class=sf-dump-ref href=#sf-dump-1282570332-ref21 title="8 occurrences">#1</a>}
+    <span class=sf-dump-index>0</span> => <span class=sf-dump-note>__TwigTemplate_a7ac3356878da80528943c73adbccef7ae989a51c0b00f4b97dd4ab4db851844</span> {<a class=sf-dump-ref href=#sf-dump-1841298699-ref21 title="8 occurrences">#1</a>}
     <span class=sf-dump-index>1</span> => "<span class=sf-dump-str title="12 characters">block_bottom</span>"
   </samp>]
 </samp>]
-</pre><script>Sfdump("sf-dump-1282570332")</script>
+</pre><script>Sfdump("sf-dump-1841298699")</script>
 </li></ol>          </div>
         
                 <div class="frame-comments empty">
@@ -2762,7 +2762,7 @@ Stacktrace:
               Arguments
           </div>
           <div id="frame-code-args-13" class="code-block frame-args">
-              <ol class="linenums"><li><pre class=sf-dump id=sf-dump-637705097 data-indent-pad="  "><span class=sf-dump-note>array:24</span> [<samp>
+              <ol class="linenums"><li><pre class=sf-dump id=sf-dump-209890007 data-indent-pad="  "><span class=sf-dump-note>array:24</span> [<samp>
   "<span class=sf-dump-key>config</span>" => <abbr title="Grav\Common\Config\Config" class=sf-dump-note>Config</abbr> {}
   "<span class=sf-dump-key>uri</span>" => <abbr title="Grav\Common\Uri" class=sf-dump-note>Uri</abbr> {}
   "<span class=sf-dump-key>base_dir</span>" => "<span class=sf-dump-str title="33 characters">/home/grav/www/skepties-site-grav</span>"
@@ -2822,14 +2822,14 @@ Stacktrace:
   "<span class=sf-dump-key>content</span>" => ""
   "<span class=sf-dump-key>grav</span>" => <abbr title="Grav\Common\Grav" class=sf-dump-note>Grav</abbr> {}
 </samp>]
-</pre><script>Sfdump("sf-dump-637705097")</script>
-</li><li><pre class=sf-dump id=sf-dump-671700584 data-indent-pad="  "><span class=sf-dump-note>array:1</span> [<samp>
+</pre><script>Sfdump("sf-dump-209890007")</script>
+</li><li><pre class=sf-dump id=sf-dump-1561883161 data-indent-pad="  "><span class=sf-dump-note>array:1</span> [<samp>
   "<span class=sf-dump-key>content</span>" => <span class=sf-dump-note>array:2</span> [<samp>
     <span class=sf-dump-index>0</span> => <span class=sf-dump-note>__TwigTemplate_b967c7fc33a32c104e4e2a61e59805caa64bda556aed823477b0524aba26c3e9</span> {}
     <span class=sf-dump-index>1</span> => "<span class=sf-dump-str title="13 characters">block_content</span>"
   </samp>]
 </samp>]
-</pre><script>Sfdump("sf-dump-671700584")</script>
+</pre><script>Sfdump("sf-dump-1561883161")</script>
 </li></ol>          </div>
         
                 <div class="frame-comments empty">
@@ -2886,7 +2886,7 @@ Stacktrace:
               Arguments
           </div>
           <div id="frame-code-args-14" class="code-block frame-args">
-              <ol class="linenums"><li><pre class=sf-dump id=sf-dump-38527280 data-indent-pad="  "><span class=sf-dump-note>array:24</span> [<samp>
+              <ol class="linenums"><li><pre class=sf-dump id=sf-dump-555949645 data-indent-pad="  "><span class=sf-dump-note>array:24</span> [<samp>
   "<span class=sf-dump-key>config</span>" => <abbr title="Grav\Common\Config\Config" class=sf-dump-note>Config</abbr> {}
   "<span class=sf-dump-key>uri</span>" => <abbr title="Grav\Common\Uri" class=sf-dump-note>Uri</abbr> {}
   "<span class=sf-dump-key>base_dir</span>" => "<span class=sf-dump-str title="33 characters">/home/grav/www/skepties-site-grav</span>"
@@ -2946,14 +2946,14 @@ Stacktrace:
   "<span class=sf-dump-key>content</span>" => ""
   "<span class=sf-dump-key>grav</span>" => <abbr title="Grav\Common\Grav" class=sf-dump-note>Grav</abbr> {}
 </samp>]
-</pre><script>Sfdump("sf-dump-38527280")</script>
-</li><li><pre class=sf-dump id=sf-dump-2128143207 data-indent-pad="  "><span class=sf-dump-note>array:1</span> [<samp>
+</pre><script>Sfdump("sf-dump-555949645")</script>
+</li><li><pre class=sf-dump id=sf-dump-1756029212 data-indent-pad="  "><span class=sf-dump-note>array:1</span> [<samp>
   "<span class=sf-dump-key>content</span>" => <span class=sf-dump-note>array:2</span> [<samp>
     <span class=sf-dump-index>0</span> => <span class=sf-dump-note>__TwigTemplate_b967c7fc33a32c104e4e2a61e59805caa64bda556aed823477b0524aba26c3e9</span> {}
     <span class=sf-dump-index>1</span> => "<span class=sf-dump-str title="13 characters">block_content</span>"
   </samp>]
 </samp>]
-</pre><script>Sfdump("sf-dump-2128143207")</script>
+</pre><script>Sfdump("sf-dump-1756029212")</script>
 </li></ol>          </div>
         
                 <div class="frame-comments empty">
@@ -3010,7 +3010,7 @@ Stacktrace:
               Arguments
           </div>
           <div id="frame-code-args-15" class="code-block frame-args">
-              <ol class="linenums"><li><pre class=sf-dump id=sf-dump-56252539 data-indent-pad="  "><span class=sf-dump-note>array:24</span> [<samp>
+              <ol class="linenums"><li><pre class=sf-dump id=sf-dump-1436389183 data-indent-pad="  "><span class=sf-dump-note>array:24</span> [<samp>
   "<span class=sf-dump-key>config</span>" => <abbr title="Grav\Common\Config\Config" class=sf-dump-note>Config</abbr> {}
   "<span class=sf-dump-key>uri</span>" => <abbr title="Grav\Common\Uri" class=sf-dump-note>Uri</abbr> {}
   "<span class=sf-dump-key>base_dir</span>" => "<span class=sf-dump-str title="33 characters">/home/grav/www/skepties-site-grav</span>"
@@ -3070,14 +3070,14 @@ Stacktrace:
   "<span class=sf-dump-key>content</span>" => ""
   "<span class=sf-dump-key>grav</span>" => <abbr title="Grav\Common\Grav" class=sf-dump-note>Grav</abbr> {}
 </samp>]
-</pre><script>Sfdump("sf-dump-56252539")</script>
-</li><li><pre class=sf-dump id=sf-dump-502742364 data-indent-pad="  "><span class=sf-dump-note>array:1</span> [<samp>
+</pre><script>Sfdump("sf-dump-1436389183")</script>
+</li><li><pre class=sf-dump id=sf-dump-1462502793 data-indent-pad="  "><span class=sf-dump-note>array:1</span> [<samp>
   "<span class=sf-dump-key>content</span>" => <span class=sf-dump-note>array:2</span> [<samp>
     <span class=sf-dump-index>0</span> => <span class=sf-dump-note>__TwigTemplate_b967c7fc33a32c104e4e2a61e59805caa64bda556aed823477b0524aba26c3e9</span> {}
     <span class=sf-dump-index>1</span> => "<span class=sf-dump-str title="13 characters">block_content</span>"
   </samp>]
 </samp>]
-</pre><script>Sfdump("sf-dump-502742364")</script>
+</pre><script>Sfdump("sf-dump-1462502793")</script>
 </li></ol>          </div>
         
                 <div class="frame-comments empty">
@@ -3134,7 +3134,7 @@ Stacktrace:
               Arguments
           </div>
           <div id="frame-code-args-16" class="code-block frame-args">
-              <ol class="linenums"><li><pre class=sf-dump id=sf-dump-1641705327 data-indent-pad="  "><span class=sf-dump-note>array:23</span> [<samp>
+              <ol class="linenums"><li><pre class=sf-dump id=sf-dump-937962712 data-indent-pad="  "><span class=sf-dump-note>array:23</span> [<samp>
   "<span class=sf-dump-key>config</span>" => <abbr title="Grav\Common\Config\Config" class=sf-dump-note>Config</abbr> {}
   "<span class=sf-dump-key>uri</span>" => <abbr title="Grav\Common\Uri" class=sf-dump-note>Uri</abbr> {}
   "<span class=sf-dump-key>base_dir</span>" => "<span class=sf-dump-str title="33 characters">/home/grav/www/skepties-site-grav</span>"
@@ -3193,7 +3193,7 @@ Stacktrace:
   "<span class=sf-dump-key>media</span>" => <abbr title="Grav\Common\Page\Media" class=sf-dump-note>Media</abbr> {}
   "<span class=sf-dump-key>content</span>" => ""
 </samp>]
-</pre><script>Sfdump("sf-dump-1641705327")</script>
+</pre><script>Sfdump("sf-dump-937962712")</script>
 </li></ol>          </div>
         
                 <div class="frame-comments empty">
@@ -3250,7 +3250,7 @@ Stacktrace:
               Arguments
           </div>
           <div id="frame-code-args-17" class="code-block frame-args">
-              <ol class="linenums"><li><pre class=sf-dump id=sf-dump-1377990915 data-indent-pad="  "><span class=sf-dump-note>array:23</span> [<samp>
+              <ol class="linenums"><li><pre class=sf-dump id=sf-dump-1832563841 data-indent-pad="  "><span class=sf-dump-note>array:23</span> [<samp>
   "<span class=sf-dump-key>config</span>" => <abbr title="Grav\Common\Config\Config" class=sf-dump-note>Config</abbr> {}
   "<span class=sf-dump-key>uri</span>" => <abbr title="Grav\Common\Uri" class=sf-dump-note>Uri</abbr> {}
   "<span class=sf-dump-key>base_dir</span>" => "<span class=sf-dump-str title="33 characters">/home/grav/www/skepties-site-grav</span>"
@@ -3309,7 +3309,7 @@ Stacktrace:
   "<span class=sf-dump-key>media</span>" => <abbr title="Grav\Common\Page\Media" class=sf-dump-note>Media</abbr> {}
   "<span class=sf-dump-key>content</span>" => ""
 </samp>]
-</pre><script>Sfdump("sf-dump-1377990915")</script>
+</pre><script>Sfdump("sf-dump-1832563841")</script>
 </li></ol>          </div>
         
                 <div class="frame-comments empty">
@@ -3366,9 +3366,9 @@ Stacktrace:
               Arguments
           </div>
           <div id="frame-code-args-18" class="code-block frame-args">
-              <ol class="linenums"><li><pre class=sf-dump id=sf-dump-1731394396 data-indent-pad="  ">"<span class=sf-dump-str title="14 characters">post.html.twig</span>"
-</pre><script>Sfdump("sf-dump-1731394396")</script>
-</li><li><pre class=sf-dump id=sf-dump-1534045261 data-indent-pad="  "><span class=sf-dump-note>array:23</span> [<samp>
+              <ol class="linenums"><li><pre class=sf-dump id=sf-dump-1109031043 data-indent-pad="  ">"<span class=sf-dump-str title="14 characters">post.html.twig</span>"
+</pre><script>Sfdump("sf-dump-1109031043")</script>
+</li><li><pre class=sf-dump id=sf-dump-1791253727 data-indent-pad="  "><span class=sf-dump-note>array:23</span> [<samp>
   "<span class=sf-dump-key>config</span>" => <abbr title="Grav\Common\Config\Config" class=sf-dump-note>Config</abbr> {}
   "<span class=sf-dump-key>uri</span>" => <abbr title="Grav\Common\Uri" class=sf-dump-note>Uri</abbr> {}
   "<span class=sf-dump-key>base_dir</span>" => "<span class=sf-dump-str title="33 characters">/home/grav/www/skepties-site-grav</span>"
@@ -3427,7 +3427,7 @@ Stacktrace:
   "<span class=sf-dump-key>media</span>" => <abbr title="Grav\Common\Page\Media" class=sf-dump-note>Media</abbr> {}
   "<span class=sf-dump-key>content</span>" => ""
 </samp>]
-</pre><script>Sfdump("sf-dump-1534045261")</script>
+</pre><script>Sfdump("sf-dump-1791253727")</script>
 </li></ol>          </div>
         
                 <div class="frame-comments empty">
@@ -3466,8 +3466,8 @@ class OutputServiceProvider implements ServiceProviderInterface
               Arguments
           </div>
           <div id="frame-code-args-19" class="code-block frame-args">
-              <ol class="linenums"><li><pre class=sf-dump id=sf-dump-2057752184 data-indent-pad="  "><span class=sf-dump-const>null</span>
-</pre><script>Sfdump("sf-dump-2057752184")</script>
+              <ol class="linenums"><li><pre class=sf-dump id=sf-dump-1194804153 data-indent-pad="  "><span class=sf-dump-const>null</span>
+</pre><script>Sfdump("sf-dump-1194804153")</script>
 </li></ol>          </div>
         
                 <div class="frame-comments empty">
@@ -3524,8 +3524,8 @@ class OutputServiceProvider implements ServiceProviderInterface
               Arguments
           </div>
           <div id="frame-code-args-20" class="code-block frame-args">
-              <ol class="linenums"><li><pre class=sf-dump id=sf-dump-1697468680 data-indent-pad="  "><abbr title="Grav\Common\Grav" class=sf-dump-note>Grav</abbr> {}
-</pre><script>Sfdump("sf-dump-1697468680")</script>
+              <ol class="linenums"><li><pre class=sf-dump id=sf-dump-2123421229 data-indent-pad="  "><abbr title="Grav\Common\Grav" class=sf-dump-note>Grav</abbr> {}
+</pre><script>Sfdump("sf-dump-2123421229")</script>
 </li></ol>          </div>
         
                 <div class="frame-comments empty">
@@ -3564,8 +3564,8 @@ class RenderProcessor extends ProcessorBase implements ProcessorInterface {
               Arguments
           </div>
           <div id="frame-code-args-21" class="code-block frame-args">
-              <ol class="linenums"><li><pre class=sf-dump id=sf-dump-780628123 data-indent-pad="  ">"<span class=sf-dump-str title="6 characters">output</span>"
-</pre><script>Sfdump("sf-dump-780628123")</script>
+              <ol class="linenums"><li><pre class=sf-dump id=sf-dump-1171226344 data-indent-pad="  ">"<span class=sf-dump-str title="6 characters">output</span>"
+</pre><script>Sfdump("sf-dump-1171226344")</script>
 </li></ol>          </div>
         
                 <div class="frame-comments empty">
@@ -3724,11 +3724,11 @@ class RenderProcessor extends ProcessorBase implements ProcessorInterface {
               Arguments
           </div>
           <div id="frame-code-args-24" class="code-block frame-args">
-              <ol class="linenums"><li><pre class=sf-dump id=sf-dump-207396925 data-indent-pad="  ">"<span class=sf-dump-str title="6 characters">render</span>"
-</pre><script>Sfdump("sf-dump-207396925")</script>
-</li><li><pre class=sf-dump id=sf-dump-147571377 data-indent-pad="  ">"<span class=sf-dump-str title="6 characters">Render</span>"
-</pre><script>Sfdump("sf-dump-147571377")</script>
-</li><li><pre class=sf-dump id=sf-dump-1709232584 data-indent-pad="  "><span class=sf-dump-note>Closure</span> {<samp>
+              <ol class="linenums"><li><pre class=sf-dump id=sf-dump-1761785876 data-indent-pad="  ">"<span class=sf-dump-str title="6 characters">render</span>"
+</pre><script>Sfdump("sf-dump-1761785876")</script>
+</li><li><pre class=sf-dump id=sf-dump-382621955 data-indent-pad="  ">"<span class=sf-dump-str title="6 characters">Render</span>"
+</pre><script>Sfdump("sf-dump-382621955")</script>
+</li><li><pre class=sf-dump id=sf-dump-871016068 data-indent-pad="  "><span class=sf-dump-note>Closure</span> {<samp>
   <span class=sf-dump-meta>class</span>: "<span class=sf-dump-str title="16 characters">Grav\Common\Grav</span>"
   <span class=sf-dump-meta>this</span>: <abbr title="Grav\Common\Grav" class=sf-dump-note>Grav</abbr> { &hellip;}
   <span class=sf-dump-meta>use</span>: {<samp>
@@ -3737,7 +3737,7 @@ class RenderProcessor extends ProcessorBase implements ProcessorInterface {
   <span class=sf-dump-meta>file</span>: "<span class=sf-dump-str title="65 characters">/home/grav/www/skepties-site-grav/system/src/Grav/Common/Grav.php</span>"
   <span class=sf-dump-meta>line</span>: "<span class=sf-dump-str title="10 characters">120 to 122</span>"
 </samp>}
-</pre><script>Sfdump("sf-dump-1709232584")</script>
+</pre><script>Sfdump("sf-dump-871016068")</script>
 </li></ol>          </div>
         
                 <div class="frame-comments empty">
@@ -3794,7 +3794,7 @@ class RenderProcessor extends ProcessorBase implements ProcessorInterface {
               Arguments
           </div>
           <div id="frame-code-args-25" class="code-block frame-args">
-              <ol class="linenums"><li><pre class=sf-dump id=sf-dump-1130666746 data-indent-pad="  "><span class=sf-dump-note>Closure</span> {<samp>
+              <ol class="linenums"><li><pre class=sf-dump id=sf-dump-1164285899 data-indent-pad="  "><span class=sf-dump-note>Closure</span> {<samp>
   <span class=sf-dump-meta>class</span>: "<span class=sf-dump-str title="16 characters">Grav\Common\Grav</span>"
   <span class=sf-dump-meta>parameters</span>: {<samp>
     <span class=sf-dump-meta>$timerId</span>: {}
@@ -3807,8 +3807,8 @@ class RenderProcessor extends ProcessorBase implements ProcessorInterface {
   <span class=sf-dump-meta>file</span>: "<span class=sf-dump-str title="65 characters">/home/grav/www/skepties-site-grav/system/src/Grav/Common/Grav.php</span>"
   <span class=sf-dump-meta>line</span>: "<span class=sf-dump-str title="10 characters">356 to 360</span>"
 </samp>}
-</pre><script>Sfdump("sf-dump-1130666746")</script>
-</li><li><pre class=sf-dump id=sf-dump-398418780 data-indent-pad="  "><span class=sf-dump-note>array:3</span> [<samp>
+</pre><script>Sfdump("sf-dump-1164285899")</script>
+</li><li><pre class=sf-dump id=sf-dump-77348865 data-indent-pad="  "><span class=sf-dump-note>array:3</span> [<samp>
   <span class=sf-dump-index>0</span> => "<span class=sf-dump-str title="6 characters">render</span>"
   <span class=sf-dump-index>1</span> => "<span class=sf-dump-str title="6 characters">Render</span>"
   <span class=sf-dump-index>2</span> => <span class=sf-dump-note>Closure</span> {<samp>
@@ -3821,7 +3821,7 @@ class RenderProcessor extends ProcessorBase implements ProcessorInterface {
     <span class=sf-dump-meta>line</span>: "<span class=sf-dump-str title="10 characters">120 to 122</span>"
   </samp>}
 </samp>]
-</pre><script>Sfdump("sf-dump-398418780")</script>
+</pre><script>Sfdump("sf-dump-77348865")</script>
 </li></ol>          </div>
         
                 <div class="frame-comments empty">
@@ -3878,9 +3878,9 @@ class RenderProcessor extends ProcessorBase implements ProcessorInterface {
               Arguments
           </div>
           <div id="frame-code-args-26" class="code-block frame-args">
-              <ol class="linenums"><li><pre class=sf-dump id=sf-dump-99805294 data-indent-pad="  ">"<span class=sf-dump-str title="11 characters">measureTime</span>"
-</pre><script>Sfdump("sf-dump-99805294")</script>
-</li><li><pre class=sf-dump id=sf-dump-2017137661 data-indent-pad="  "><span class=sf-dump-note>array:3</span> [<samp>
+              <ol class="linenums"><li><pre class=sf-dump id=sf-dump-2024224189 data-indent-pad="  ">"<span class=sf-dump-str title="11 characters">measureTime</span>"
+</pre><script>Sfdump("sf-dump-2024224189")</script>
+</li><li><pre class=sf-dump id=sf-dump-393925583 data-indent-pad="  "><span class=sf-dump-note>array:3</span> [<samp>
   <span class=sf-dump-index>0</span> => "<span class=sf-dump-str title="6 characters">render</span>"
   <span class=sf-dump-index>1</span> => "<span class=sf-dump-str title="6 characters">Render</span>"
   <span class=sf-dump-index>2</span> => <span class=sf-dump-note>Closure</span> {<samp>
@@ -3893,7 +3893,7 @@ class RenderProcessor extends ProcessorBase implements ProcessorInterface {
     <span class=sf-dump-meta>line</span>: "<span class=sf-dump-str title="10 characters">120 to 122</span>"
   </samp>}
 </samp>]
-</pre><script>Sfdump("sf-dump-2017137661")</script>
+</pre><script>Sfdump("sf-dump-393925583")</script>
 </li></ol>          </div>
         
                 <div class="frame-comments empty">
@@ -3952,8 +3952,8 @@ try {
               </thead>
                           <tr>
                 <td>_url</td>
-                <td><pre class=sf-dump id=sf-dump-1170930390 data-indent-pad="  ">"<span class=sf-dump-str title="4 characters">/p/1</span>"
-</pre><script>Sfdump("sf-dump-1170930390")</script>
+                <td><pre class=sf-dump id=sf-dump-416177313 data-indent-pad="  ">"<span class=sf-dump-str title="4 characters">/p/1</span>"
+</pre><script>Sfdump("sf-dump-416177313")</script>
 </td>
               </tr>
                         </table>
@@ -3977,8 +3977,8 @@ try {
               </thead>
                           <tr>
                 <td>skepties-draft-grav-0117f8d</td>
-                <td><pre class=sf-dump id=sf-dump-958586800 data-indent-pad="  ">"<span class=sf-dump-str title="26 characters">h6eto1i9o9bnsmha3iqf4daae1</span>"
-</pre><script>Sfdump("sf-dump-958586800")</script>
+                <td><pre class=sf-dump id=sf-dump-65264462 data-indent-pad="  ">"<span class=sf-dump-str title="26 characters">9ee2ou2h4k0aoca0ikags874l5</span>"
+</pre><script>Sfdump("sf-dump-65264462")</script>
 </td>
               </tr>
                         </table>
@@ -3994,14 +3994,14 @@ try {
               </thead>
                           <tr>
                 <td>user</td>
-                <td><pre class=sf-dump id=sf-dump-1603691615 data-indent-pad="  "><abbr title="Grav\Common\User\User" class=sf-dump-note>User</abbr> {}
-</pre><script>Sfdump("sf-dump-1603691615")</script>
+                <td><pre class=sf-dump id=sf-dump-1766712937 data-indent-pad="  "><abbr title="Grav\Common\User\User" class=sf-dump-note>User</abbr> {}
+</pre><script>Sfdump("sf-dump-1766712937")</script>
 </td>
               </tr>
                           <tr>
                 <td>files-upload</td>
-                <td><pre class=sf-dump id=sf-dump-1133633687 data-indent-pad="  "><span class=sf-dump-const>null</span>
-</pre><script>Sfdump("sf-dump-1133633687")</script>
+                <td><pre class=sf-dump id=sf-dump-1786379761 data-indent-pad="  "><span class=sf-dump-const>null</span>
+</pre><script>Sfdump("sf-dump-1786379761")</script>
 </td>
               </tr>
                         </table>
@@ -4017,200 +4017,200 @@ try {
               </thead>
                           <tr>
                 <td>USER</td>
-                <td><pre class=sf-dump id=sf-dump-1035747102 data-indent-pad="  ">"<span class=sf-dump-str title="4 characters">grav</span>"
-</pre><script>Sfdump("sf-dump-1035747102")</script>
+                <td><pre class=sf-dump id=sf-dump-720370184 data-indent-pad="  ">"<span class=sf-dump-str title="4 characters">grav</span>"
+</pre><script>Sfdump("sf-dump-720370184")</script>
 </td>
               </tr>
                           <tr>
                 <td>HOME</td>
-                <td><pre class=sf-dump id=sf-dump-755533070 data-indent-pad="  ">"<span class=sf-dump-str title="10 characters">/home/grav</span>"
-</pre><script>Sfdump("sf-dump-755533070")</script>
-</td>
-              </tr>
-                          <tr>
-                <td>HTTP_CONTENT_LENGTH</td>
-                <td><pre class=sf-dump id=sf-dump-1586722953 data-indent-pad="  ">"<span class=sf-dump-str>0</span>"
-</pre><script>Sfdump("sf-dump-1586722953")</script>
+                <td><pre class=sf-dump id=sf-dump-917815555 data-indent-pad="  ">"<span class=sf-dump-str title="10 characters">/home/grav</span>"
+</pre><script>Sfdump("sf-dump-917815555")</script>
 </td>
               </tr>
                           <tr>
                 <td>HTTP_AUTHORIZATION</td>
-                <td><pre class=sf-dump id=sf-dump-20703529 data-indent-pad="  ">"<span class=sf-dump-str title="38 characters">Basic cHVibGlzaGVyOlhKOGhhVUNISlY5dQ==</span>"
-</pre><script>Sfdump("sf-dump-20703529")</script>
-</td>
-              </tr>
-                          <tr>
-                <td>HTTP_COOKIE</td>
-                <td><pre class=sf-dump id=sf-dump-648213971 data-indent-pad="  ">"<span class=sf-dump-str title="54 characters">skepties-draft-grav-0117f8d=h6eto1i9o9bnsmha3iqf4daae1</span>"
-</pre><script>Sfdump("sf-dump-648213971")</script>
-</td>
-              </tr>
-                          <tr>
-                <td>HTTP_HOST</td>
-                <td><pre class=sf-dump id=sf-dump-988306502 data-indent-pad="  ">"<span class=sf-dump-str title="9 characters">skepties.net</span>"
-</pre><script>Sfdump("sf-dump-988306502")</script>
+                <td><pre class=sf-dump id=sf-dump-2133235494 data-indent-pad="  ">"<span class=sf-dump-str title="38 characters">Basic cHVibGlzaGVyOlhKOGhhVUNISlY5dQ==</span>"
+</pre><script>Sfdump("sf-dump-2133235494")</script>
 </td>
               </tr>
                           <tr>
                 <td>HTTP_USER_AGENT</td>
-                <td><pre class=sf-dump id=sf-dump-1361325293 data-indent-pad="  ">"<span class=sf-dump-str title="18 characters">Mojolicious (Perl)</span>"
-</pre><script>Sfdump("sf-dump-1361325293")</script>
+                <td><pre class=sf-dump id=sf-dump-2019295511 data-indent-pad="  ">"<span class=sf-dump-str title="18 characters">Mojolicious (Perl)</span>"
+</pre><script>Sfdump("sf-dump-2019295511")</script>
+</td>
+              </tr>
+                          <tr>
+                <td>HTTP_COOKIE</td>
+                <td><pre class=sf-dump id=sf-dump-1393287097 data-indent-pad="  ">"<span class=sf-dump-str title="54 characters">skepties-draft-grav-0117f8d=9ee2ou2h4k0aoca0ikags874l5</span>"
+</pre><script>Sfdump("sf-dump-1393287097")</script>
+</td>
+              </tr>
+                          <tr>
+                <td>HTTP_CONTENT_LENGTH</td>
+                <td><pre class=sf-dump id=sf-dump-407730555 data-indent-pad="  ">"<span class=sf-dump-str>0</span>"
+</pre><script>Sfdump("sf-dump-407730555")</script>
+</td>
+              </tr>
+                          <tr>
+                <td>HTTP_HOST</td>
+                <td><pre class=sf-dump id=sf-dump-1934356283 data-indent-pad="  ">"<span class=sf-dump-str title="9 characters">skepties.net</span>"
+</pre><script>Sfdump("sf-dump-1934356283")</script>
 </td>
               </tr>
                           <tr>
                 <td>HTTP_ACCEPT_ENCODING</td>
-                <td><pre class=sf-dump id=sf-dump-636332550 data-indent-pad="  ">"<span class=sf-dump-str title="4 characters">gzip</span>"
-</pre><script>Sfdump("sf-dump-636332550")</script>
+                <td><pre class=sf-dump id=sf-dump-1160054492 data-indent-pad="  ">"<span class=sf-dump-str title="4 characters">gzip</span>"
+</pre><script>Sfdump("sf-dump-1160054492")</script>
 </td>
               </tr>
                           <tr>
                 <td>SCRIPT_FILENAME</td>
-                <td><pre class=sf-dump id=sf-dump-1683994241 data-indent-pad="  ">"<span class=sf-dump-str title="44 characters">/home/grav/www/skepties-site-grav//index.php</span>"
-</pre><script>Sfdump("sf-dump-1683994241")</script>
+                <td><pre class=sf-dump id=sf-dump-941652225 data-indent-pad="  ">"<span class=sf-dump-str title="44 characters">/home/grav/www/skepties-site-grav//index.php</span>"
+</pre><script>Sfdump("sf-dump-941652225")</script>
 </td>
               </tr>
                           <tr>
                 <td>REDIRECT_STATUS</td>
-                <td><pre class=sf-dump id=sf-dump-2072464693 data-indent-pad="  ">"<span class=sf-dump-str title="3 characters">200</span>"
-</pre><script>Sfdump("sf-dump-2072464693")</script>
+                <td><pre class=sf-dump id=sf-dump-434166922 data-indent-pad="  ">"<span class=sf-dump-str title="3 characters">200</span>"
+</pre><script>Sfdump("sf-dump-434166922")</script>
 </td>
               </tr>
                           <tr>
                 <td>SERVER_NAME</td>
-                <td><pre class=sf-dump id=sf-dump-1723647677 data-indent-pad="  ">"<span class=sf-dump-str title="18 characters">draft.skepties.net</span>"
-</pre><script>Sfdump("sf-dump-1723647677")</script>
+                <td><pre class=sf-dump id=sf-dump-1462563701 data-indent-pad="  ">"<span class=sf-dump-str title="18 characters">draft.skepties.net</span>"
+</pre><script>Sfdump("sf-dump-1462563701")</script>
 </td>
               </tr>
                           <tr>
                 <td>SERVER_PORT</td>
-                <td><pre class=sf-dump id=sf-dump-1951623315 data-indent-pad="  ">"<span class=sf-dump-str title="2 characters">80</span>"
-</pre><script>Sfdump("sf-dump-1951623315")</script>
+                <td><pre class=sf-dump id=sf-dump-1187780249 data-indent-pad="  ">"<span class=sf-dump-str title="2 characters">80</span>"
+</pre><script>Sfdump("sf-dump-1187780249")</script>
 </td>
               </tr>
                           <tr>
                 <td>SERVER_ADDR</td>
-                <td><pre class=sf-dump id=sf-dump-1173136442 data-indent-pad="  ">"<span class=sf-dump-str title="9 characters">127.0.0.1</span>"
-</pre><script>Sfdump("sf-dump-1173136442")</script>
+                <td><pre class=sf-dump id=sf-dump-1422026954 data-indent-pad="  ">"<span class=sf-dump-str title="9 characters">127.0.0.1</span>"
+</pre><script>Sfdump("sf-dump-1422026954")</script>
 </td>
               </tr>
                           <tr>
                 <td>REMOTE_PORT</td>
-                <td><pre class=sf-dump id=sf-dump-1834214700 data-indent-pad="  ">"<span class=sf-dump-str title="5 characters">60026</span>"
-</pre><script>Sfdump("sf-dump-1834214700")</script>
+                <td><pre class=sf-dump id=sf-dump-46891468 data-indent-pad="  ">"<span class=sf-dump-str title="5 characters">60038</span>"
+</pre><script>Sfdump("sf-dump-46891468")</script>
 </td>
               </tr>
                           <tr>
                 <td>REMOTE_ADDR</td>
-                <td><pre class=sf-dump id=sf-dump-1182787383 data-indent-pad="  ">"<span class=sf-dump-str title="9 characters">127.0.0.1</span>"
-</pre><script>Sfdump("sf-dump-1182787383")</script>
+                <td><pre class=sf-dump id=sf-dump-1608821077 data-indent-pad="  ">"<span class=sf-dump-str title="9 characters">127.0.0.1</span>"
+</pre><script>Sfdump("sf-dump-1608821077")</script>
 </td>
               </tr>
                           <tr>
                 <td>SERVER_SOFTWARE</td>
-                <td><pre class=sf-dump id=sf-dump-1625690082 data-indent-pad="  ">"<span class=sf-dump-str title="12 characters">nginx/1.10.0</span>"
-</pre><script>Sfdump("sf-dump-1625690082")</script>
+                <td><pre class=sf-dump id=sf-dump-1162164829 data-indent-pad="  ">"<span class=sf-dump-str title="12 characters">nginx/1.10.0</span>"
+</pre><script>Sfdump("sf-dump-1162164829")</script>
 </td>
               </tr>
                           <tr>
                 <td>GATEWAY_INTERFACE</td>
-                <td><pre class=sf-dump id=sf-dump-593202087 data-indent-pad="  ">"<span class=sf-dump-str title="7 characters">CGI/1.1</span>"
-</pre><script>Sfdump("sf-dump-593202087")</script>
+                <td><pre class=sf-dump id=sf-dump-1576169722 data-indent-pad="  ">"<span class=sf-dump-str title="7 characters">CGI/1.1</span>"
+</pre><script>Sfdump("sf-dump-1576169722")</script>
 </td>
               </tr>
                           <tr>
                 <td>REQUEST_SCHEME</td>
-                <td><pre class=sf-dump id=sf-dump-1847473110 data-indent-pad="  ">"<span class=sf-dump-str title="4 characters">http</span>"
-</pre><script>Sfdump("sf-dump-1847473110")</script>
+                <td><pre class=sf-dump id=sf-dump-633980044 data-indent-pad="  ">"<span class=sf-dump-str title="4 characters">http</span>"
+</pre><script>Sfdump("sf-dump-633980044")</script>
 </td>
               </tr>
                           <tr>
                 <td>SERVER_PROTOCOL</td>
-                <td><pre class=sf-dump id=sf-dump-725460862 data-indent-pad="  ">"<span class=sf-dump-str title="8 characters">HTTP/1.1</span>"
-</pre><script>Sfdump("sf-dump-725460862")</script>
+                <td><pre class=sf-dump id=sf-dump-1585472670 data-indent-pad="  ">"<span class=sf-dump-str title="8 characters">HTTP/1.1</span>"
+</pre><script>Sfdump("sf-dump-1585472670")</script>
 </td>
               </tr>
                           <tr>
                 <td>DOCUMENT_ROOT</td>
-                <td><pre class=sf-dump id=sf-dump-1722436247 data-indent-pad="  ">"<span class=sf-dump-str title="33 characters">/home/grav/www/skepties-site-grav</span>"
-</pre><script>Sfdump("sf-dump-1722436247")</script>
+                <td><pre class=sf-dump id=sf-dump-694146313 data-indent-pad="  ">"<span class=sf-dump-str title="33 characters">/home/grav/www/skepties-site-grav</span>"
+</pre><script>Sfdump("sf-dump-694146313")</script>
 </td>
               </tr>
                           <tr>
                 <td>DOCUMENT_URI</td>
-                <td><pre class=sf-dump id=sf-dump-1499044114 data-indent-pad="  ">"<span class=sf-dump-str title="10 characters">/index.php</span>"
-</pre><script>Sfdump("sf-dump-1499044114")</script>
+                <td><pre class=sf-dump id=sf-dump-667167602 data-indent-pad="  ">"<span class=sf-dump-str title="10 characters">/index.php</span>"
+</pre><script>Sfdump("sf-dump-667167602")</script>
 </td>
               </tr>
                           <tr>
                 <td>REQUEST_URI</td>
-                <td><pre class=sf-dump id=sf-dump-1491402810 data-indent-pad="  ">"<span class=sf-dump-str title="4 characters">/p/1</span>"
-</pre><script>Sfdump("sf-dump-1491402810")</script>
+                <td><pre class=sf-dump id=sf-dump-1944177152 data-indent-pad="  ">"<span class=sf-dump-str title="4 characters">/p/1</span>"
+</pre><script>Sfdump("sf-dump-1944177152")</script>
 </td>
               </tr>
                           <tr>
                 <td>SCRIPT_NAME</td>
-                <td><pre class=sf-dump id=sf-dump-986891171 data-indent-pad="  ">"<span class=sf-dump-str title="10 characters">/index.php</span>"
-</pre><script>Sfdump("sf-dump-986891171")</script>
+                <td><pre class=sf-dump id=sf-dump-1075289444 data-indent-pad="  ">"<span class=sf-dump-str title="10 characters">/index.php</span>"
+</pre><script>Sfdump("sf-dump-1075289444")</script>
 </td>
               </tr>
                           <tr>
                 <td>CONTENT_LENGTH</td>
-                <td><pre class=sf-dump id=sf-dump-963892161 data-indent-pad="  ">"<span class=sf-dump-str>0</span>"
-</pre><script>Sfdump("sf-dump-963892161")</script>
+                <td><pre class=sf-dump id=sf-dump-284768583 data-indent-pad="  ">"<span class=sf-dump-str>0</span>"
+</pre><script>Sfdump("sf-dump-284768583")</script>
 </td>
               </tr>
                           <tr>
                 <td>CONTENT_TYPE</td>
-                <td><pre class=sf-dump id=sf-dump-1516813528 data-indent-pad="  ">""
-</pre><script>Sfdump("sf-dump-1516813528")</script>
+                <td><pre class=sf-dump id=sf-dump-177044664 data-indent-pad="  ">""
+</pre><script>Sfdump("sf-dump-177044664")</script>
 </td>
               </tr>
                           <tr>
                 <td>REQUEST_METHOD</td>
-                <td><pre class=sf-dump id=sf-dump-1033025940 data-indent-pad="  ">"<span class=sf-dump-str title="3 characters">GET</span>"
-</pre><script>Sfdump("sf-dump-1033025940")</script>
+                <td><pre class=sf-dump id=sf-dump-854515841 data-indent-pad="  ">"<span class=sf-dump-str title="3 characters">GET</span>"
+</pre><script>Sfdump("sf-dump-854515841")</script>
 </td>
               </tr>
                           <tr>
                 <td>QUERY_STRING</td>
-                <td><pre class=sf-dump id=sf-dump-1635992190 data-indent-pad="  ">"<span class=sf-dump-str title="9 characters">_url=/p/1</span>"
-</pre><script>Sfdump("sf-dump-1635992190")</script>
+                <td><pre class=sf-dump id=sf-dump-428044874 data-indent-pad="  ">"<span class=sf-dump-str title="9 characters">_url=/p/1</span>"
+</pre><script>Sfdump("sf-dump-428044874")</script>
 </td>
               </tr>
                           <tr>
                 <td>FCGI_ROLE</td>
-                <td><pre class=sf-dump id=sf-dump-272132123 data-indent-pad="  ">"<span class=sf-dump-str title="9 characters">RESPONDER</span>"
-</pre><script>Sfdump("sf-dump-272132123")</script>
+                <td><pre class=sf-dump id=sf-dump-1566647101 data-indent-pad="  ">"<span class=sf-dump-str title="9 characters">RESPONDER</span>"
+</pre><script>Sfdump("sf-dump-1566647101")</script>
 </td>
               </tr>
                           <tr>
                 <td>PHP_SELF</td>
-                <td><pre class=sf-dump id=sf-dump-2143271613 data-indent-pad="  ">"<span class=sf-dump-str title="10 characters">/index.php</span>"
-</pre><script>Sfdump("sf-dump-2143271613")</script>
+                <td><pre class=sf-dump id=sf-dump-633196153 data-indent-pad="  ">"<span class=sf-dump-str title="10 characters">/index.php</span>"
+</pre><script>Sfdump("sf-dump-633196153")</script>
 </td>
               </tr>
                           <tr>
                 <td>PHP_AUTH_USER</td>
-                <td><pre class=sf-dump id=sf-dump-1059197343 data-indent-pad="  ">"<span class=sf-dump-str title="9 characters">publisher</span>"
-</pre><script>Sfdump("sf-dump-1059197343")</script>
+                <td><pre class=sf-dump id=sf-dump-112733292 data-indent-pad="  ">"<span class=sf-dump-str title="9 characters">publisher</span>"
+</pre><script>Sfdump("sf-dump-112733292")</script>
 </td>
               </tr>
                           <tr>
                 <td>PHP_AUTH_PW</td>
-                <td><pre class=sf-dump id=sf-dump-424641478 data-indent-pad="  ">"<span class=sf-dump-str title="12 characters">XJ8haUCHJV9u</span>"
-</pre><script>Sfdump("sf-dump-424641478")</script>
+                <td><pre class=sf-dump id=sf-dump-3628471 data-indent-pad="  ">"<span class=sf-dump-str title="12 characters">XJ8haUCHJV9u</span>"
+</pre><script>Sfdump("sf-dump-3628471")</script>
 </td>
               </tr>
                           <tr>
                 <td>REQUEST_TIME_FLOAT</td>
-                <td><pre class=sf-dump id=sf-dump-397585716 data-indent-pad="  "><span class=sf-dump-num>1480245204.7052</span>
-</pre><script>Sfdump("sf-dump-397585716")</script>
+                <td><pre class=sf-dump id=sf-dump-2041928616 data-indent-pad="  "><span class=sf-dump-num>1480247950.6221</span>
+</pre><script>Sfdump("sf-dump-2041928616")</script>
 </td>
               </tr>
                           <tr>
                 <td>REQUEST_TIME</td>
-                <td><pre class=sf-dump id=sf-dump-1358236596 data-indent-pad="  "><span class=sf-dump-num>1480245204</span>
-</pre><script>Sfdump("sf-dump-1358236596")</script>
+                <td><pre class=sf-dump id=sf-dump-123199478 data-indent-pad="  "><span class=sf-dump-num>1480247950</span>
+</pre><script>Sfdump("sf-dump-123199478")</script>
 </td>
               </tr>
                         </table>
