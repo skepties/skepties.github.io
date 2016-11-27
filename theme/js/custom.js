@@ -7,37 +7,6 @@ var global_json = {};
 
 (function($) {
 
-  function with_ajax_json( name, url, callback_first, callback_next ){
-    if( !global_json[name] ){
-      $.getJSON( url, function(result){
-        global_json[name] = result;
-        callback_first(result);
-        callback_next(result);
-      });
-    }else{
-      callback_next(global_json[name]);
-    }
-  }
-
-  function with_popular_posts( callback ){
-    with_ajax_json( 'popular_posts', base_url+'/api/v1/posts/popular-post-ids.json',
-        function(result){ popular_posts_info = result; },
-        function(r){ callback(r); });
-  }
-
-  function with_site_info( callback ){
-    with_ajax_json( 'site_info' , base_url+'/api/v1/site/info.json',
-        function(result){ site_info = result;baseurl=site_info['data']['baseurl']; },
-        function(r){ callback(r); });
-  }
-
-  function with_posts_ex( callback ){
-    with_ajax_json( 'posts_ex', base_url+'/api/v1/posts/list-excerpt.json',
-        function(r){ posts_ex=r;},
-        function(r){ callback(r) }
-        );
-  }
-
   function replace_posts( tag, _get_posts ){
     $(tag).each( function(){
       var anchor = $(this);
@@ -82,25 +51,17 @@ var global_json = {};
     });
   }
 
-  //  $.getJSON('/api/v1/site/info.json', function(site_info){
-  //    $.getJSON('/api/v1/posts/list-excerpt.json',function(posts_ex){
-  //      $.getJSON('
-  //with_site_info( function(site_info){
-  with_posts_ex( function(_post_ex){
-    //with_popular_posts( function( popular_posts_info ){
-    var sorted_posts = _.sortBy( posts_ex['data'], function(x){return +x[posts_ex['fields']['popular']];} );
-    //var i=0 ;
-    //_.each(sorted_posts, function(x){console.log(x[0]+"\t"+x[posts_ex['fields']['popular']]+"\t"+i++);});
-    replace_posts('.random_posts', function(nposts, cb){
+  post_ex = sk_base_data['list_post'];
+  sorted_posts = _.sortBy( sk_base_data['list_post'] function(x){
+      return +x[posts_ex['fields']['popular']];
+  });
+  replace_posts('.random_posts', function(nposts, cb){
       cb(_.sample( posts_ex['data'], nposts ));
-    });
-    console.log("BEGIN popular_posts");
-    replace_posts('.popular_posts', function(nposts, cb){
+  });
+  console.log("BEGIN popular_posts");
+  replace_posts('.popular_posts', function(nposts, cb){
       console.log("### nposts = "+nposts);
       cb( _.last( sorted_posts, nposts ) );
-    });
-    //});
   });
-  //});
 
 })(jQuery);

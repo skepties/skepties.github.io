@@ -2,22 +2,28 @@
 <html lang="" class="fullbg js">
 <head>
 <meta charset="utf-8" />
-<title>스켑티즈를 소개합니다 ( FAQ ) | 스켑티즈</title>
+<title>Page not Found | 스켑티즈</title>
 <meta http-equiv="X-UA-Compatible" content="IE=edge">
 <meta name="viewport" content="width=device-width, initial-scale=1">
-
+<!--PRODUCTION
 <script src="//load.sumome.com/" data-sumo-site-id="9181207dec6a51829e71ccf4c88322294fbffe3ae0e8390f458dba4156a154d8" async="async"></script>
-
+PRODUCTION-->
 
 <meta name="generator" content="GravCMS" />
 <meta name="description" content="스켑티즈 : 회의주의 허브" />
 
-<link rel="icon" type="image/png" href="/theme/images/logo.png" />
-<link rel="canonical" href="http://skepties.net/faq" />
+<link rel="icon" type="image/png" href="/user/themes/skepties-theme/images/logo.png" />
+<link rel="canonical" href="http://localhost" />
 
 <link href="//cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/3.3.7/css/bootstrap.min.css" type="text/css" rel="stylesheet" />
-<link href="/theme/css/font-awesome.min.css" type="text/css" rel="stylesheet" />
-<link href="/theme/css/sk-style.css" type="text/css" rel="stylesheet" />
+<link href="/user/themes/skepties-theme/css/font-awesome.min.css" type="text/css" rel="stylesheet" />
+<link href="/user/themes/skepties-theme/css/sk-style.css" type="text/css" rel="stylesheet" />
+<link href="/user/plugins/markdown-notices/assets/notices.css" type="text/css" rel="stylesheet" />
+<link href="/user/plugins/login-oauth/css/login-oauth.css" type="text/css" rel="stylesheet" />
+<link href="/user/plugins/form/assets/form-styles.css" type="text/css" rel="stylesheet" />
+<link href="/user/plugins/login/css/login.css" type="text/css" rel="stylesheet" />
+
+
 <script>
   var base_url = '';
 </script>
@@ -217,7 +223,7 @@ console.log("EST");
 <div class="row sk-top-header">
   <a href="http://skepties.net/" title="스켑티즈" rel="home">
     <div class="sk-site-logo" role="banner">
-      <img class="sk-header-image" src="/theme/images/smalllogo.png" height="100" width="266" alt="스켑티즈"/>
+      <img class="sk-header-image" src="/user/themes/skepties-theme/images/smalllogo.png" height="100" width="266" alt="스켑티즈"/>
       <div class="sk-header-text">
         <h1 class="sk-header-title">스켑티즈</h1>
         <h2 class="sk-header-tagline">지식의 가장 큰 적은 무지가 아니라 지식에 대한 망상이다 - 스티븐 호킹</h2>
@@ -225,7 +231,12 @@ console.log("EST");
     </div>
   </a>
 </div>
-
+<develope>
+<center>
+  <h1 style="color:red;weight:bold;">관리용 임시사이트입니다.</h1>
+  <h4> 메인 사이트 :  <a href="http://skepties.net">http://skepties.het</a></h4>
+</center>
+  </develope>
 <div class="sk-main-navbar-outer">
   <nav id="sk-main-navbar" class="navbar navbar-default sk-main-navbar" style="/*padding:0;margin:0;*/">
   <div class="navbar-header">
@@ -244,7 +255,12 @@ console.log("EST");
                                       <li class="" style="font-weight:bold;"><a href="/category/#회의주의">회의주의</a></li>
                                 </ul>
     <ul class="nav navbar-nav navbar-right">
-    
+    <!--develope_begin-->
+    <li><div><i class="fa fa-lock"></i> <span class="login-status">
+            Welcome <strong>publisher</strong>, <a class="logout" href="api/v1/baseset.js/task:login.logout/logout-nonce:0be41169032d0b8c5eb8c488f4204ce3">Logout</a>
+    </span>
+</div></li>
+    <!--develope_end-->
       <li><a href="/search/">
           <span id="searchGlyph" class="glyphicon glyphicon-search"></span> <span class="hidden-sm hidden-md hidden-lg">Search</span>
         </a></li>
@@ -253,131 +269,10 @@ console.log("EST");
   </nav>
 </div>
             <div class="sk-main-body row">
-                    <div class="sk-single-article sk-content col-lg-10 col-lg-offset-1">
-    <! -- SINGLE POST -->
-    <article>
-    <header class="sk-header">
-    <h1 class="sk-title"> 스켑티즈를 소개합니다 ( FAQ )</h1>
-    <p class="sk-meta">
-    <span class="sk-date"><i class="fa fa-clock-o"></i>2016-11-23</span>
-    <span class="sk-author"><i class="fa fa-user"></i></span>
-    </header>
-
-    <!-- Contents -->
-    <h2>스켑티즈 ( Skepties ) 는 무슨 뜻인가요?</h2>
-<p>가볍고 부담 없는 과학적 회의주의를 실천하는 사람들의 모임이며 그 구성원을 나타내는 신조어 스켑티 (Skepty)! 그리고 스켑티즈는 스켑티의 복수형이면서 동시에 스켑티의 모임을 의미합니다.. </p>
-<h2>과학적 회의주의는 무엇인가요?</h2>
-<p>스켑티즈가 다른 회의주의의 논의를 거부하는 것은 아니지만, 우리는 우선적으로 과학자들이 사용하는 각종 도구(실증주의, 자기 반성, 동료평가)를 사용하여 어떤 주장을 비판적으로 들여다 봅니다. 과학적 회의주의는 어떤 현상의 가능한 설명 중에서 보다 단순하면서도 합리적인 설명을 찾고, 비범한 주장에는 비범한 증거를 요구하며, 이론의 반대증거를 검토하고, 사고의 결함이 없는지 검토합니다.
-과학적 회의주의에 대한 자세한 설명은 다른 글들로 대신하겠습니다.[^과학적회의주의링크]</p>
-<p>[^과학적회의주의링크]: </p>
-<ul>
-<li><a href="https://ko.wikipedia.org/wiki/과학적_회의주의">과학적 회의주의(위키피디아)</a> </li>
-<li><a href="https://namu.wiki/w/과학적 회의주의">과학적 회의주의(나무위키)</a> </li>
-<li><a href="http://skepties.net/p/1796">skepties.net이 발행을 시작합니다.</a></li>
-</ul>
-<h2>스켑티는 기존의 과학적 회의주의자와 무엇이 다른가요?</h2>
-<p>스켑티즈의 방법은 기존의 과학적 회의주의자의 것과 같습니다.  다만, 우리는 독단과 반성 없는 이데올로기, 초자연만 제거한 이성의 종교가 되는 것을 경계합니다. 왜냐하면 과학적 회의주의 역시 '-주의'로 표현되기에 그 자체에 매몰되기 쉽기 때문입니다. 스켑티즈는 회의주의 자체가 모든 것이 아님을, 단지 생각하고 주장하기 위한 방법론의 하나임을 염두에 두고 실생활과 자기 자신에 대해서 실천하자는 운동입니다.</p>
-<h2>스켑티는 어떻게 될 수 있나요?</h2>
-<p>스켑티가 사용하는 과학적 회의주의는 과학적 방법론을 알고 있다면 그리 어렵지 않습니다. 자신의 생각과 관점을 돌이켜 보는 자기 검증, 더 나아가 자기 반성이 중요합니다. 동료들의 생각 역시 과학적 비판의 대상이 되고, 나의 생각 역시 다양한 동료들의 비판의 대상이 됩니다. 다른 사람들의 주장 역시 마찬가지입니다.</p>
-<p>물론 이것이 완벽할 수는 없습니다. 비판의 기준은 일정하지 않고 상황에 따라 변합니다. 주장이 황당할 수록 엄격한 검증을 거치는 것인데, 황당함과 엄격함의 기준은 어느 정도 자의적일 수밖에 없습니다. 따라서 기준 선정의 엄밀함보다 중요한 것은 스스로의 마음가짐과 태도입니다.</p>
-<p>과학적 실증주의도 스켑티즈가 주장하는 회의주의에서 빼놓을 수 없습니다. 이것이 모든 것을 설명할 수는 없지만, 우리의 목적에 유용한 하나의 기준으로 쓸 수 있습니다.</p>
-<h2>스켑티즈는 어떻게 운영되나요?</h2>
-<p>현재 스켑티즈는 <a href="http://skepties.net">스켑티즈 허브(본진)</a>, <a href="http://wiki.skepties.net">위키</a>, <a href="http://discuss.skepties.net">포럼</a>, <a href="https://www.facebook.com/skepties9/">페이스북 페이지</a>, <a href="http://blog.naver.com/skepties">네이버 블로그</a> 로 구성되어 있습니다.</p>
-<p>스켑티즈 사이트들의 목적은 앞서 설명했던 스켑티즈 회의주의 운동입니다.
-아직 작은 움직임이지만 꾸준히 천천히 나아갈 생각입니다.</p>
-<h3><a href="http://skepties.net">스켑티즈 허브(본진)</a></h3>
-<ul>
-<li><a href="http://skepties.net"><a href="http://skepties.net">http://skepties.net</a></a></li>
-</ul>
-<p>스켑티즈 허브는 주로 좋은 글들이나 뉴스를 소개하는 역할을 합니다. 지금은 수명의 집필진이 본인의 글을 올리거나, 다른 글들을 가져와서 소개합니다. 집필에 참여하시거나 좋은 글들을 소개하시거나 자신의 글을 올리고 싶으신 분들이 더 많이 참여하셨으면 좋겠습니다.</p>
-<h3><a href="http://wiki.skepties.net">위키</a></h3>
-<ul>
-<li><a href="http://wiki.skepties.net"><a href="http://wiki.skepties.net">http://wiki.skepties.net</a></a></li>
-</ul>
-<p>스켑티즈 위키는 아직 완전히 오픈되어 있지 않고 로그인 사용자만 편집할 수 있습니다. 많은 좋은 위키들이 있기 때문에 스켑티즈 위키는 다른 위키들 처럼 엄격한 룰을 적용하지는 않고 실질적으로 도움이 되는 정보 저장용으로 쓸 계획입니다.
-예를 들어 <a href="http://wiki.skepties.net/추방-허용_되지_않는_지성"><a href="http://wiki.skepties.net/추방-허용_되지_않는_지성">http://wiki.skepties.net/추방-허용_되지_않는_지성</a></a> 처럼 단순히 해당 주제에 대한 링크를 모으는 것만으로도 좋습니다.
-물론 좋은 글들이 생기면 더욱 좋겠지요.</p>
-<p>위키에 참여하고 싶으신 분들은, 자유롭게 가입하실 수도 있고, 위키가 특정 목적과 방향성을 가진 만큼, 당분간은 운영진에 의해서 등급을 조정할 계획입니다.</p>
-<h3><a href="http://discuss.skepties.net">포럼</a></h3>
-<ul>
-<li><a href="http://discuss.skepties.net"><a href="http://discuss.skepties.net">http://discuss.skepties.net</a></a></li>
-</ul>
-<p>포럼은 회의주의 전반에 걸쳐 다양한 주제에 대해서 자유롭게 토론할 수 있는 공간입니다. 꼭 회의주의에 대한 것이 아니더라도 다양한 주제로 토론하실 수 있습니다. 다만 앞으로 주제에 따라서 카테고리가 적절하게 지속적으로 나눠지고 관리될 것이고, 카테고리 주제를 존중해 주시면 됩니다.</p>
-<p>포럼은 직접 가입하시거나 페이스북 계정으로 로그인 하실 수 있습니다.</p>
-<p>또한 대부분의 스켑티즈 허브에서 발행되는 글들은 자동으로 포럼에 주제로 등록됩니다.</p>
-<h3><a href="https://www.facebook.com/skepties9/">페이스북 페이지</a>, <a href="http://blog.naver.com/skepties">네이버 블로그</a></h3>
-<ul>
-<li><a href="https://www.facebook.com/skepties9"><a href="https://www.facebook.com/skepties9">https://www.facebook.com/skepties9</a></a></li>
-<li><a href="http://blog.naver.com/skepties"><a href="http://blog.naver.com/skepties">http://blog.naver.com/skepties</a></a></li>
-</ul>
-<p>현재 페이스북 페이지와 네이버 블로그는 스켑티즈에 관심을 가진 분들께 소식을 빠르게 전해드리기 위해 만들어졌습니다.
-또다른 소통의 장소가 될 수 있기를 바라고 있습니다.</p>
-<h1>스켑티즈에 어떻게 참여하나요?</h1>
-<p>스켑티즈의 커뮤니티로서의 공간은 포럼입니다. </p>
-<p>그 밖에 스켑티즈 허브, 위키, 포럼의 운영에 도움을 주실 분들이 필요하고, 스켑티즈 허브에 발행될 글들을 써주실 분들, 다른 글들, 기존의 글들을 소개해 주실 분들, 혹은 "제보"해 주실 분들이 많이 참여하셨으면 좋겠습니다.
-예를 들어 "내가 3년전에 쓴 이러이러한 글을 발행하고 싶다" 거나 "웹서핑 중에 이런 좋은 글을 발견했습니다"라고 제보만 해주셔도 큰 도움이 됩니다. 물론 직접 참여하셔서 발행까지 해주시면 더욱 좋겠지요 :)</p>
-<p>스켑티즈 도메인과 서버 운영비용에 대한 기부나, 디자인, 홈페이지 등에 대한 재능 기부도 환영합니다.</p>
-<h1>스켑티즈 허브나 위키, 포럼에 쓸 수 있는 글의 주제는 무엇인가요?</h1>
-<p>포럼은 카테고리를 존중하는 한도 내에서 어떤 주제라도 상관없습니다.
-허브와 위키는 기본적으로는 스켑티즈의 정신을 바탕으로 쓴 모든 주제를 포용할 수 있지만 실제 범위에 대해서는 운영진과 회원들의 의견을 바탕으로 제한하거나 확대해 나가도록 하겠습니다. 현재 글의 주제는 회의중, 과학이야기, 반창조과학, 미신, 유사과학, 유사의학, 잘못 알려진 상식들, 종교, 근본주의 등이며, 여러분의 제안에 의해 확장됩니다.</p>
-<h1>스켑티즈에 발행되는 글들의 저작권은 어떻게 되나요?</h1>
-<p>스켑티즈 허브, 위키, 포럼에 발행되는 글들은 기본적으로 <a href="https://creativecommons.org/licenses/by-sa/4.0/deed.ko">CC BY-SA 4.0</a> 즉, 원 저작자와 출처를 표시하고 CC BY-SA 4.0 저작권을 유지한다면 자유로운 복제, 변경, 배포가 가능합니다.</p>
-<p>위키와 포럼의 글은 특별한 사유가 있지 않은 한 CC BY-SA 4.0 이 일괄 적용되므로 이 저작권이 적용될 수 없는 문서는 링크만 가능합니다. </p>
-<p>스켑티즈 허브는 기본적으로 CC BY-SA 4.0 저작권을 권유하지만 저자, 원저자의 결정에 따라 다양한 저작권이 적용될 수 있고 해당 저작권이 해당 기사의 하단에 표시됩니다. 따라서 저작권이 표시되지 않은 글을 이용하려면 저자나 원저자에게 직접 저작권을 문의해야 합니다.</p>
-    </article>
-    <!-- Information BOXes -->
-    <div class="alert alert-warning" role="alert">
-                                <center>
-         <img src="/img/license/cc-by-sa.png">  
-                            <a class="alert-link" href="https://creativecommons.org/licenses/by-sa/4.0/deed.ko">Creative Commons 저작자표시-동일조건변경허락 4.0 국제 (CC BY-SA 4.0)</a>
-                </center>
-</div>
-
-            <div class="alert alert-success" role="alert" style="position:relative;">
-    skepties
-            <div>저자 : 
-      skepties
+                      <div class="lead text-center">
+        <h1>Error!</h1>
+        <p>Woops. Looks like this page doesn't exist.</p>
     </div>
-      </div>
-      
-    <!-- COMMENTS -->
-    <div class="panel-group" id="sk-comments-group">
-    <div class="panel panel-default sk-comment-box">
-      <div class="panel-heading" data-toggle="collapse" data-target="#facebook-comment-body" role="btn" style="cursor:pointer;">
-          <h5 class="panel-title">페이스북 댓글</h5>
-      </div>
-      <div id="facebook-comment-body" class="panel-collapse collapse in">
-        <div  class="panel-body">
-        <div id="fb-root"></div>
-        <div class="fb-comments" data-href="http://skepties.net/faq" data-colorscheme="light" data-numposts="" data-width="100%" data-order-by="social"></div>
-      </div>
-    </div>
-</div>
-    <div class="panel panel-default" id="sk-comments-1">
-      <div class="panel-heading" data-toggle="collapse" data-target="#disqus-comment-body" role="btn" style="cursor:pointer;">
-        <h5 class="panel-title">
-        디스커스 댓글
-        </h5>
-      </div>
-      <div id="disqus-comment-body" class="panel-collapse collapse in">
-        <div class="panel-body">
-          <div id="disqus_thread"></div>
-          <noscript>Please enable JavaScript to view the <a href="https://disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript>
-        </div>
-      </div>
-    </div>
-</div>
-<style type='text/css'>
-.panel-heading h5:after {
-  font-family:'Glyphicons Halflings';
-  content:"\e114";
-  float: right;
-}
-.panel-heading.collapsed h5:after {
-  content:"\e080";
-}
-</style>
-  </div>
                   </div>
         <div class="sk-main-footer row">
                       <footer class="sk-footer container-fluid">
@@ -388,7 +283,7 @@ console.log("EST");
                 <article class="row">
     <div class="sk-main-img col-xs-4">
         <a href="/post/2016/distortion-of-time-by-ghogun" class="article-url">
-                                                                                                    <img src="/posts/2016/Distortion-of-Time-by-GhoGun/GoM3Yyv.jpg" class="article-image img-responsive">
+                                                                                                    <img src="/user/pages/03.posts/2016/Distortion-of-Time-by-GhoGun/GoM3Yyv.jpg" class="article-image img-responsive">
                     </a>
     </div>
     <div class="sk-content col-xs-8">
@@ -442,50 +337,49 @@ console.log("EST");
     <div class="sk-body random_posts" nposts="3">
             <article class="row">
     <div class="sk-main-img col-xs-4">
-        <a href="/p/2602" class="article-url">
-                                                                                <img src="/img/2016/balance_1455784542.png" class="article-image img-responsive">
+        <a href="/p/2596" class="article-url">
+                                                                                <img src="/img/2016/positive-correlation.png" class="article-image img-responsive">
                     </a>
     </div>
     <div class="sk-content col-xs-8">
-        <h3 class="sk-title"><a href="/p/2602" class="article-url article-title">누구나 쉽게 빠질 수 있는 양비론의 함정</a></h3>
+        <h3 class="sk-title"><a href="/p/2596" class="article-url article-title">상관관계와 인과관계</a></h3>
         <div class="sk-meta article-updated">
-            2016-02-26. | By: neurosum
+            2016-02-17. | By: Kenny Suh
         </div>
         <div class="sk-excerpt article-excerpt">
-            때때로 사람들은 양비론적인 입장을 취하게 됩니다. 자기도 모르고 나도 모르니 뭐 두가지의 의견을 다 들어봐야 하는 것은 아닌가? 하는 주장입니다&hellip;
+            과학 부문 기사를 쭉 읽다보면 “암을 정복할 열쇠”같은 마치 세상의 모든 비밀을 다 풀어버린 듯한 제목의 기사가 무슨 월간지마냥 쏟아져 나옵니다&hellip;
         </div>
     </div>
 </article>
             <article class="row">
     <div class="sk-main-img col-xs-4">
-        <a href="/p/2264" class="article-url">
-                                                                                <img src="/img/2016/ba1.jpg" class="article-image img-responsive">
+        <a href="/p/2432" class="article-url">
+                                                                                <img src="/img/2016/coyne_why_evolution_is_true-1.jpg" class="article-image img-responsive">
                     </a>
     </div>
     <div class="sk-content col-xs-8">
-        <h3 class="sk-title"><a href="/p/2264" class="article-url article-title">미정신의학회(APA)가 정신병 목록에서 동성애를 삭제한 배경과 이유, 그리고 음모론</a></h3>
+        <h3 class="sk-title"><a href="/p/2432" class="article-url article-title">잘 모르는 사람들에게 알려주는 진화학과 창조과학에 관한 사실들</a></h3>
         <div class="sk-meta article-updated">
-            2016-01-19. | By: 헌터
+            2016-02-03. | By: neurosum
         </div>
         <div class="sk-excerpt article-excerpt">
-            주장: 미정신의학회(American Psychiatric Association)는 1973년 동성애를 DSM-Ⅲ의 정신질환 목록에서 삭제했다. &hellip;
+            과학은 일반적으로 대중들이 이해하기 힘든 부분들이 많습니다. 진화론 혹은 진화학 역시도 과학의 한 부분이기에 일반인에게 설명해주는 것이 쉽지는 &hellip;
         </div>
     </div>
 </article>
             <article class="row">
     <div class="sk-main-img col-xs-4">
-        <a href="/p/1881" class="article-url">
-                                                                                <img src="/img/2016/Dainel_Craig.jpg" class="article-image img-responsive">
+        <a href="/p/2294" class="article-url">
+                                                                                <img src="/img/2016/pill_1453199723.jpg" class="article-image img-responsive">
                     </a>
     </div>
     <div class="sk-content col-xs-8">
-        <h3 class="sk-title"><a href="/p/1881" class="article-url article-title">크레이그의 명언 1 : 우주의 나이</a></h3>
+        <h3 class="sk-title"><a href="/p/2294" class="article-url article-title">천연 엽산 줄까? 합성 엽산 줄까?</a></h3>
         <div class="sk-meta article-updated">
-            2016-01-10. | By: qgpaul
+            2016-01-20. | By: d_yoon
         </div>
         <div class="sk-excerpt article-excerpt">
-            윌리엄(다니엘 아님) 크레이그의 명언 1 : 우주의 나이   
-  Over 50% of evangelical pastors believe tha&hellip;
+            한두 달 전 '천연 엽산'이 네이버 인기검색어에 올라온 적이 있었다. 그런데 검색 결과의 블로그 글 대부분은 은근슬쩍 특정 제품을 광고하는 것처&hellip;
         </div>
     </div>
 </article>
@@ -517,9 +411,9 @@ Copyright © 2016 by Skepties | <a href="/tos">이용약관</a> | <a href="/priv
 <script src="//cdnjs.cloudflare.com/ajax/libs/underscore.js/1.8.3/underscore-min.js" type="text/javascript" ></script>
 <script src="//cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/3.3.7/js/bootstrap.min.js" type="text/javascript" ></script>
 <script src="//cdnjs.cloudflare.com/ajax/libs/wordcloud2.js/1.0.5/wordcloud2.min.js" type="text/javascript" ></script>
-<script src="/theme/js/d3.v3.min.js" type="text/javascript" ></script>
-<script src="/theme/js/d3.layout.cloud.js" type="text/javascript" ></script>
-<script src="/theme/js/custom.js" type="text/javascript" ></script>
+<script src="/user/themes/skepties-theme/js/d3.v3.min.js" type="text/javascript" ></script>
+<script src="/user/themes/skepties-theme/js/d3.layout.cloud.js" type="text/javascript" ></script>
+<script src="/user/themes/skepties-theme/js/custom.js" type="text/javascript" ></script>
 
           <script>
   //$('body').scrollspy({ target: '.sk-main-navbar' })
@@ -615,12 +509,12 @@ Copyright © 2016 by Skepties | <a href="/tos">이용약관</a> | <a href="/priv
   });
 </script>
 
-
+<!--PRODUCTION
 
   <script>
     var disqus_config = function () {
-    this.page.url = 'http://skepties.net/faq';  // Replace PAGE_URL with your page's canonical URL variable
-    this.page.identifier = '/faq'; // Replace PAGE_IDENTIFIER with your page's unique identifier variable
+    this.page.url = 'http://skepties.net/';  // Replace PAGE_URL with your page's canonical URL variable
+    this.page.identifier = '/'; // Replace PAGE_IDENTIFIER with your page's unique identifier variable
     };
     (function() { // DON'T EDIT BELOW THIS LINE
     var d = document, s = d.createElement('script');
@@ -652,7 +546,7 @@ Copyright © 2016 by Skepties | <a href="/tos">이용약관</a> | <a href="/priv
     ga('send', 'pageview');
 
   </script>
-
+PRODUCTION-->
               </div>
     </div>
   </body>

@@ -6,6 +6,10 @@
         <lastmod>2016-11-24</lastmod>
                     </url>
         <url>
+        <loc>http://skepties.net/api/v1/baseset.js</loc>
+        <lastmod>2016-11-26</lastmod>
+                    </url>
+        <url>
         <loc>http://skepties.net/api/v1/posts</loc>
         <lastmod>2016-11-23</lastmod>
                     </url>
@@ -212,6 +216,14 @@
         <url>
         <loc>http://skepties.net/post/2016</loc>
         <lastmod>2016-11-21</lastmod>
+                    </url>
+        <url>
+        <loc>http://skepties.net/post/2016/distortion-of-time-by-ghogun</loc>
+        <lastmod>2016-11-27</lastmod>
+                    </url>
+        <url>
+        <loc>http://skepties.net/post/2016/misconceptions-about-the-chance-in-evolution</loc>
+        <lastmod>2016-11-27</lastmod>
                     </url>
         <url>
         <loc>http://skepties.net/privacy</loc>
