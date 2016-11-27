@@ -257,7 +257,7 @@ console.log("EST");
     <ul class="nav navbar-nav navbar-right">
     <!--develope_begin-->
     <li><div><i class="fa fa-lock"></i> <span class="login-status">
-            Welcome <strong>publisher</strong>, <a class="logout" href="api/v1/baseset.js/task:login.logout/logout-nonce:0be41169032d0b8c5eb8c488f4204ce3">Logout</a>
+            Welcome <strong>publisher</strong>, <a class="logout" href="api/v1/baseset.js/task:login.logout/logout-nonce:efbb1a522954869011395d80f860c2ee">Logout</a>
     </span>
 </div></li>
     <!--develope_end-->
@@ -337,49 +337,49 @@ console.log("EST");
     <div class="sk-body random_posts" nposts="3">
             <article class="row">
     <div class="sk-main-img col-xs-4">
-        <a href="/p/2596" class="article-url">
-                                                                                <img src="/img/2016/positive-correlation.png" class="article-image img-responsive">
+        <a href="/p/2542" class="article-url">
+                                                                                <img src="/img/2016/maxresdefault.jpg" class="article-image img-responsive">
                     </a>
     </div>
     <div class="sk-content col-xs-8">
-        <h3 class="sk-title"><a href="/p/2596" class="article-url article-title">상관관계와 인과관계</a></h3>
+        <h3 class="sk-title"><a href="/p/2542" class="article-url article-title">논문을 읽는법, 그리고 읽었다는 것의 의미</a></h3>
         <div class="sk-meta article-updated">
-            2016-02-17. | By: Kenny Suh
+            2016-02-08. | By: neurosum
         </div>
         <div class="sk-excerpt article-excerpt">
-            과학 부문 기사를 쭉 읽다보면 “암을 정복할 열쇠”같은 마치 세상의 모든 비밀을 다 풀어버린 듯한 제목의 기사가 무슨 월간지마냥 쏟아져 나옵니다&hellip;
+            논문을 읽었다는 것은 최소한 그 전체 의미를 이해했고, 그게 무슨 말인지를 알았다는 뜻입니다. 창조설자들의 경우, 과학자들과는 달리 논문을 읽지&hellip;
         </div>
     </div>
 </article>
             <article class="row">
     <div class="sk-main-img col-xs-4">
-        <a href="/p/2432" class="article-url">
-                                                                                <img src="/img/2016/coyne_why_evolution_is_true-1.jpg" class="article-image img-responsive">
+        <a href="/p/2429" class="article-url">
+                                                                                <img src="/img/2016/Hovind_portrait.jpg" class="article-image img-responsive">
                     </a>
     </div>
     <div class="sk-content col-xs-8">
-        <h3 class="sk-title"><a href="/p/2432" class="article-url article-title">잘 모르는 사람들에게 알려주는 진화학과 창조과학에 관한 사실들</a></h3>
+        <h3 class="sk-title"><a href="/p/2429" class="article-url article-title">창조론자의 우상인 캔트 호빈드의 학위를 살펴보자!</a></h3>
         <div class="sk-meta article-updated">
-            2016-02-03. | By: neurosum
+            2016-02-03. | By: apple_plum
         </div>
         <div class="sk-excerpt article-excerpt">
-            과학은 일반적으로 대중들이 이해하기 힘든 부분들이 많습니다. 진화론 혹은 진화학 역시도 과학의 한 부분이기에 일반인에게 설명해주는 것이 쉽지는 &hellip;
+            창조론자들이 좋아하는 사람이 있습니다. 잘 생겼고, 청산유수 저리가라 할 정도의 언변의 달인이며 외부에서 보기에는 창조론을 증명하는 유명한 사람&hellip;
         </div>
     </div>
 </article>
             <article class="row">
     <div class="sk-main-img col-xs-4">
-        <a href="/p/2294" class="article-url">
-                                                                                <img src="/img/2016/pill_1453199723.jpg" class="article-image img-responsive">
+        <a href="/p/2324" class="article-url">
+                                                                                <img src="/img/2016/gay_1453361042.jpg" class="article-image img-responsive">
                     </a>
     </div>
     <div class="sk-content col-xs-8">
-        <h3 class="sk-title"><a href="/p/2294" class="article-url article-title">천연 엽산 줄까? 합성 엽산 줄까?</a></h3>
+        <h3 class="sk-title"><a href="/p/2324" class="article-url article-title">게이(남성 동성애자)의 변실금 위험? 의학적 근거 없는 낭설에 불과하다</a></h3>
         <div class="sk-meta article-updated">
-            2016-01-20. | By: d_yoon
+            2016-01-26. | By: 헌터
         </div>
         <div class="sk-excerpt article-excerpt">
-            한두 달 전 '천연 엽산'이 네이버 인기검색어에 올라온 적이 있었다. 그런데 검색 결과의 블로그 글 대부분은 은근슬쩍 특정 제품을 광고하는 것처&hellip;
+            주장: 두 논문(Miles AJ, et al., 1993)(Chun AB, et al., 1997)에 따르면 게이의 변실금 위험이 있다.원문대답&hellip;
         </div>
     </div>
 </article>
