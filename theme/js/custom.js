@@ -11,18 +11,18 @@ var global_json = {};
         $(tag).each( function(){
             var anchor = $(this);
             var nposts = $(this).attr("nposts");
-            console.log("### NPOST: "+nposts );
+            //console.log("### NPOST: "+nposts );
             _get_posts(nposts, function(_posts){
                 var fields = posts_ex.fields;
-                console.log("#### POSTS");
-                console.log(_posts);
+                //console.log("#### POSTS");
+                ////console.log(_posts);
                 var i=0;
-                _.each(_posts, function(x){console.log(x[0]+"\t"+x[posts_ex['fields']['popular']]+"\t"+i++);});
+                //_.each(_posts, function(x){console.log(x[0]+"\t"+x[posts_ex['fields']['popular']]+"\t"+i++);});
                 anchor.find("article").each(function(){
                     if( _posts.length == 0 ) return;
                     var post = _posts.pop();
                     var img = post[fields["featured_img"]];
-                    console.log("==== "+img);
+                    //console.log("==== "+img);
                     var posturl = post[fields["url"]];
                     $(this).find(".article-url").attr("href", base_url+posturl);
                     $(this).find(".article-image").each( function(){
@@ -34,7 +34,7 @@ var global_json = {};
                                 img = base_url+img;
                             }
                         }
-                        console.log("### img = "+img)
+                        //console.log("### img = "+img)
                             $(this).attr("src", img);
                     });
                     $(this).find(".article-title").html(post[fields["title"]]);
@@ -54,14 +54,12 @@ var global_json = {};
     }
 
     posts_ex = sk_base_data['list_post'];
-    sorted_posts = _.sortBy( posts_ex['data'], function(x){
-        return posts_ex['data'][posts_ex['fields']['popular']];
-    });
-    console.log("### Sorted_posts :" );console.log(sorted_posts);
+    popular_field = posts_ex['fields']['popular'];
+    sorted_posts = _.sortBy( posts_ex['data'], popular_field );
     replace_posts('.random_posts', function(nposts, cb){
         cb(_.sample( posts_ex['data'], nposts ));
     });
-    console.log("BEGIN popular_posts");
+    //console.log("BEGIN popular_posts");
     replace_posts('.popular_posts', function(nposts, cb){
         cb( _.last( sorted_posts, nposts ) );
     });
